@@ -1,11 +1,77 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import ProgressHero from '../components/ProgressHero';
+import { getOrderedTopics, modules } from '../lib/course';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const topics = await getOrderedTopics();
+const topicList = topics.map((t) => ({ slug: t.id, title: t.data.title }));
+const topicsByModule = new Map(modules.map((m) => [m.slug, m.topics]));
+const resourceCount = topics.reduce((n, t) => n + t.data.resources.length, 0);
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="The AI Course — learn AI engineering, agents & prompting">
+  <section class="py-14 sm:py-20">
+    <p class="text-sm font-semibold tracking-wide text-accent-600 uppercase dark:text-accent-400">Free · self-paced · no signup</p>
+    <h1 class="mt-3 max-w-2xl text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+      One course for AI engineering, agents, and prompting.
+    </h1>
+    <p class="mt-4 max-w-2xl text-lg text-zinc-600 dark:text-zinc-400">
+      Three roadmap.sh roadmaps merged into a single, logically-ordered curriculum — {topics.length} topics
+      across {modules.length} modules, each with a plain-English overview and {resourceCount}+ hand-picked
+      articles, docs, and videos. Your progress stays in your browser.
+    </p>
+
+    <div class="mt-8 max-w-2xl">
+      <ProgressHero client:load topics={topicList} />
+    </div>
+  </section>
+
+  <section class="pb-8">
+    <h2 class="text-2xl font-bold tracking-tight">Curriculum</h2>
+    <p class="mt-2 text-zinc-600 dark:text-zinc-400">Modules build on each other — start at the top, or jump to what you need.</p>
+    <ol class="mt-6 grid gap-4 sm:grid-cols-2">
+      {modules.map((m, i) => (
+        <li>
+          <a
+            href={`/course#${m.slug}`}
+            class="flex h-full flex-col rounded-2xl border border-zinc-200 p-5 transition-colors hover:border-accent-400 dark:border-zinc-800 dark:hover:border-accent-500"
+          >
+            <div class="flex items-baseline gap-3">
+              <span class="font-mono text-sm text-zinc-400">{String(i + 1).padStart(2, '0')}</span>
+              <h3 class="font-semibold">{m.title}</h3>
+            </div>
+            <p class="mt-2 grow text-sm text-zinc-600 dark:text-zinc-400">{m.description}</p>
+            <div class="mt-4 flex items-center gap-3">
+              <div class="h-1.5 grow overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
+                <div
+                  class="h-full w-0 rounded-full bg-accent-600 transition-all"
+                  data-module-bar
+                  data-topics={topicsByModule.get(m.slug)!.join(',')}
+                >
+                </div>
+              </div>
+              <span class="text-xs tabular-nums text-zinc-500" data-module-count>
+                {m.topics.length} topics
+              </span>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </section>
 </Layout>
+
+<script>
+  import { readProgress, countDone } from '../lib/progress';
+
+  const progress = readProgress();
+  document.querySelectorAll<HTMLElement>('[data-module-bar]').forEach((bar) => {
+    const slugs = bar.dataset.topics!.split(',');
+    const done = countDone(progress, slugs);
+    bar.style.width = `${(done / slugs.length) * 100}%`;
+    if (done > 0) {
+      const count = bar.closest('div')!.parentElement!.querySelector('[data-module-count]')!;
+      count.textContent = `${done}/${slugs.length}`;
+    }
+  });
+</script>

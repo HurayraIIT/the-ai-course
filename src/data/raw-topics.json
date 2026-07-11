@@ -1,0 +1,5936 @@
+[
+  {
+    "slug": "what-is-an-ai-engineer",
+    "title": "What is an AI Engineer?",
+    "sources": {
+      "ai-engineer": 0
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "How to Become an AI Engineer: Duties, Skills, and Salary",
+        "url": "https://www.simplilearn.com/tutorials/artificial-intelligence-tutorial/how-to-become-an-ai-engineer"
+      },
+      {
+        "type": "article",
+        "title": "AI Engineers: What they do and how to become one",
+        "url": "https://www.techtarget.com/whatis/feature/How-to-become-an-artificial-intelligence-engineer"
+      },
+      {
+        "type": "article",
+        "title": "I Transitioned from Data Science to AI Engineering: Here’s Everything You Need to Know",
+        "url": "https://towardsdatascience.com/i-transitioned-from-data-science-to-ai-engineering-heres-everything-you-need-to-know/"
+      }
+    ]
+  },
+  {
+    "slug": "roles-and-responsiblities",
+    "title": "Roles and Responsiblities",
+    "sources": {
+      "ai-engineer": 1
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "AI Engineer Job Description",
+        "url": "https://resources.workable.com/ai-engineer-job-description"
+      },
+      {
+        "type": "article",
+        "title": "How To Become an AI Engineer (Plus Job Duties and Skills)",
+        "url": "https://www.indeed.com/career-advice/finding-a-job/ai-engineer"
+      }
+    ]
+  },
+  {
+    "slug": "introduction",
+    "title": "Introduction",
+    "sources": {
+      "ai-engineer": 2,
+      "prompt-engineering": 2
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "AI Engineering",
+        "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_engineering"
+      },
+      {
+        "type": "video",
+        "title": "AI vs Machine Learning",
+        "url": "https://www.youtube.com/watch?v=4RixMPF4xis"
+      },
+      {
+        "type": "video",
+        "title": "AI vs Machine Learning vs Deep Learning vs GenAI",
+        "url": "https://youtu.be/qYNweeDHiyU?si=eRJXjtk8Q-RKQ8Ms"
+      },
+      {
+        "type": "article",
+        "title": "What is Generative AI? - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/generative_ai"
+      }
+    ]
+  },
+  {
+    "slug": "impact-on-product-development",
+    "title": "Impact on Product Development",
+    "sources": {
+      "ai-engineer": 3
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "AI in Product Development: Netflix, BMW, and PepsiCo",
+        "url": "https://www.virtasant.com/ai-today/ai-in-product-development-netflix-bmw#:~:text=AI%20can%20help%20make%20product,and%20gain%20a%20competitive%20edge."
+      },
+      {
+        "type": "article",
+        "title": "AI Product Development: Why Are Founders So Fascinated By The Potential?",
+        "url": "https://www.techmagic.co/blog/ai-product-development/"
+      }
+    ]
+  },
+  {
+    "slug": "ai-engineer-vs-ml-engineer",
+    "title": "AI Engineer vs ML Engineer",
+    "sources": {
+      "ai-engineer": 4
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What does an AI Engineer do?",
+        "url": "https://www.codecademy.com/resources/blog/what-does-an-ai-engineer-do/"
+      },
+      {
+        "type": "article",
+        "title": "What is an ML Engineer?",
+        "url": "https://www.coursera.org/articles/what-is-machine-learning-engineer"
+      },
+      {
+        "type": "article",
+        "title": "Machine Learning vs AI Engineer: What Are the Differences?",
+        "url": "https://towardsdatascience.com/machine-learning-vs-ai-engineer-no-confusing-jargon/"
+      },
+      {
+        "type": "video",
+        "title": "AI vs ML",
+        "url": "https://www.youtube.com/watch?v=4RixMPF4xis"
+      }
+    ]
+  },
+  {
+    "slug": "ai-vs-agi",
+    "title": "AI vs AGI",
+    "sources": {
+      "ai-engineer": 5,
+      "prompt-engineering": 21
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is AGI?",
+        "url": "https://aws.amazon.com/what-is/artificial-general-intelligence/"
+      },
+      {
+        "type": "article",
+        "title": "The crucial difference between AI and AGI",
+        "url": "https://www.forbes.com/sites/bernardmarr/2024/05/20/the-crucial-difference-between-ai-and-agi/"
+      },
+      {
+        "type": "article",
+        "title": "Stop Worrying about AGI: The Immediate Danger is Reduced General Intelligence (RGI)",
+        "url": "https://towardsdatascience.com/stop-worrying-about-agi-the-immediate-danger-is-reduced-general-intelligence-rgi/"
+      },
+      {
+        "type": "article",
+        "title": "Artificial general intelligence - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
+      }
+    ]
+  },
+  {
+    "slug": "large-language-model-llm",
+    "title": "Large Language Model (LLM)",
+    "sources": {
+      "ai-engineer": 6,
+      "prompt-engineering": 4
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a large language model (LLM)?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ai/what-is-large-language-model/"
+      },
+      {
+        "type": "article",
+        "title": "New to LLMs? Start Here",
+        "url": "https://towardsdatascience.com/new-to-llms-start-here/"
+      },
+      {
+        "type": "video",
+        "title": "How Large Language Models Work",
+        "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ"
+      },
+      {
+        "type": "official",
+        "title": "LLM - Anthropic Glossary",
+        "url": "https://platform.claude.com/docs/en/about-claude/glossary"
+      },
+      {
+        "type": "article",
+        "title": "Differences Between Chatbots and LLMs - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/chatbot_basics"
+      }
+    ]
+  },
+  {
+    "slug": "embeddings",
+    "title": "Embeddings",
+    "sources": {
+      "ai-engineer": 95
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What are Embeddings in Machine Learning?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ai/what-are-embeddings/"
+      },
+      {
+        "type": "article",
+        "title": "What is Embedding?",
+        "url": "https://www.ibm.com/topics/embedding"
+      },
+      {
+        "type": "video",
+        "title": "What are Word Embeddings",
+        "url": "https://www.youtube.com/watch?v=wgfSDrqYMJ4"
+      },
+      {
+        "type": "article",
+        "title": "Understanding the role of embeddings in RAG LLMs",
+        "url": "https://www.aporia.com/learn/understanding-the-role-of-embeddings-in-rag-llms/"
+      },
+      {
+        "type": "article",
+        "title": "Mastering RAG: How to Select an Embedding Model",
+        "url": "https://www.rungalileo.io/blog/mastering-rag-how-to-select-an-embedding-model"
+      }
+    ]
+  },
+  {
+    "slug": "training",
+    "title": "Training",
+    "sources": {
+      "ai-engineer": 8
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Model Training?",
+        "url": "https://oden.io/glossary/model-training/"
+      },
+      {
+        "type": "article",
+        "title": "Machine learning model training: What it is and why it’s important",
+        "url": "https://domino.ai/blog/what-is-machine-learning-model-training"
+      },
+      {
+        "type": "article",
+        "title": "Training ML Models - Amazon",
+        "url": "https://docs.aws.amazon.com/machine-learning/latest/dg/training-ml-models.html"
+      }
+    ]
+  },
+  {
+    "slug": "tokens",
+    "title": "Tokens",
+    "sources": {
+      "ai-engineer": 9,
+      "ai-agents": 10,
+      "prompt-engineering": 5
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Explaining Tokens — the Language and Currency of AI",
+        "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/"
+      },
+      {
+        "type": "article",
+        "title": "Understanding Tokens and Parameters in Model Training: A Deep Dive",
+        "url": "https://www.functionize.com/blog/understanding-tokens-and-parameters-in-model-training"
+      },
+      {
+        "type": "article",
+        "title": "What is Tokenization? Types, Use Cases, Implementation",
+        "url": "https://www.datacamp.com/blog/what-is-tokenization"
+      },
+      {
+        "type": "article",
+        "title": "Understanding tokens - Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/dotnet/ai/conceptual/understanding-tokens"
+      },
+      {
+        "type": "article",
+        "title": "What Are Tokens in LLMs and Why They Matter - LLM Guides",
+        "url": "https://llmguides.ai/learn/what-are-tokens/"
+      }
+    ]
+  },
+  {
+    "slug": "context",
+    "title": "Context",
+    "sources": {
+      "ai-engineer": 43
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a Context Window in AI?",
+        "url": "https://www.ibm.com/think/topics/context-window"
+      },
+      {
+        "type": "article",
+        "title": "What Is an AI Context Window?",
+        "url": "https://www.coursera.org/articles/context-window"
+      },
+      {
+        "type": "article",
+        "title": "Cutting Through the Noise: Smarter Context Management for LLM-Powered Agents",
+        "url": "https://blog.jetbrains.com/research/2025/12/efficient-context-management/"
+      },
+      {
+        "type": "video",
+        "title": "What is a Context Window? Unlocking LLM Secrets",
+        "url": "https://www.youtube.com/watch?v=-QVoIxEpFkM"
+      }
+    ]
+  },
+  {
+    "slug": "inference",
+    "title": "Inference",
+    "sources": {
+      "ai-engineer": 11
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Inference vs Training",
+        "url": "https://www.cloudflare.com/learning/ai/inference-vs-training/"
+      },
+      {
+        "type": "article",
+        "title": "What is Machine Learning Inference?",
+        "url": "https://hazelcast.com/glossary/machine-learning-inference/"
+      }
+    ]
+  },
+  {
+    "slug": "vector-dbs",
+    "title": "Vector DBs",
+    "sources": {
+      "ai-engineer": 97
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Vector Databases",
+        "url": "https://developers.cloudflare.com/vectorize/reference/what-is-a-vector-database/"
+      },
+      {
+        "type": "article",
+        "title": "What are Vector Databases?",
+        "url": "https://www.mongodb.com/resources/basics/databases/vector-databases"
+      },
+      {
+        "type": "article",
+        "title": "How to Implement Graph RAG Using Knowledge Graphs and Vector Databases",
+        "url": "https://towardsdatascience.com/how-to-implement-graph-rag-using-knowledge-graphs-and-vector-databases-60bb69a22759"
+      },
+      {
+        "type": "article",
+        "title": "Retrieval Augmented Generation (RAG) with Vector Databases: Expanding AI Capabilities",
+        "url": "https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/"
+      }
+    ]
+  },
+  {
+    "slug": "sampling-parameters",
+    "title": "Sampling Parameters",
+    "sources": {
+      "ai-engineer": 13,
+      "prompt-engineering": 14
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "LLM Settings (Temperature, Top-K, Top-P) - DAIR.AI",
+        "url": "https://www.promptingguide.ai/introduction/settings"
+      }
+    ]
+  },
+  {
+    "slug": "ai-agents",
+    "title": "AI Agents",
+    "sources": {
+      "ai-engineer": 102,
+      "ai-agents": 25,
+      "prompt-engineering": 10
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Building an AI Agent Tutorial - LangChain",
+        "url": "https://python.langchain.com/docs/tutorials/agents/"
+      },
+      {
+        "type": "article",
+        "title": "AI Agents and Their Types",
+        "url": "https://www.digitalocean.com/resources/articles/types-of-ai-agents"
+      },
+      {
+        "type": "video",
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
+      },
+      {
+        "type": "article",
+        "title": "AI Agents and Their Types",
+        "url": "https://play.ht/blog/ai-agents-use-cases/"
+      },
+      {
+        "type": "article",
+        "title": "How to Design My First AI Agent",
+        "url": "https://towardsdatascience.com/how-to-design-my-first-ai-agent/"
+      },
+      {
+        "type": "article",
+        "title": "What are AI Agents? - Agents in Artificial Intelligence Explained",
+        "url": "https://aws.amazon.com/what-is/ai-agents/"
+      },
+      {
+        "type": "article",
+        "title": "AI Agents Explained in Simple Terms for Beginners",
+        "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/"
+      },
+      {
+        "type": "video",
+        "title": "What are AI Agents?",
+        "url": "https://www.youtube.com/watch?v=F8NKVhkZZWI"
+      },
+      {
+        "type": "official",
+        "title": "Tool use overview - Anthropic",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview"
+      },
+      {
+        "type": "article",
+        "title": "Introduction to AI Agents - DAIR.AI",
+        "url": "https://www.promptingguide.ai/agents/introduction"
+      }
+    ]
+  },
+  {
+    "slug": "rag",
+    "title": "RAG",
+    "sources": {
+      "ai-engineer": 92,
+      "ai-agents": 9,
+      "prompt-engineering": 22
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Retrieval-Augmented Generation? - Google",
+        "url": "https://cloud.google.com/use-cases/retrieval-augmented-generation"
+      },
+      {
+        "type": "article",
+        "title": "RAG Explained: Understanding Embeddings, Similarity, and Retrieval",
+        "url": "https://towardsdatascience.com/rag-explained-understanding-embeddings-similarity-and-retrieval/"
+      },
+      {
+        "type": "video",
+        "title": "What is Retrieval-Augmented Generation? - IBM",
+        "url": "https://www.youtube.com/watch?v=T-D1OfcDW1M"
+      },
+      {
+        "type": "article",
+        "title": "What is RAG?",
+        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
+      },
+      {
+        "type": "article",
+        "title": "What Is RAG in AI and How to Use It?",
+        "url": "https://www.v7labs.com/blog/what-is-rag"
+      },
+      {
+        "type": "article",
+        "title": "An Introduction to RAG and Simple & Complex RAG",
+        "url": "https://medium.com/enterprise-rag/an-introduction-to-rag-and-simple-complex-rag-9c3aa9bd017b"
+      },
+      {
+        "type": "video",
+        "title": "Learn RAG From Scratch",
+        "url": "https://www.youtube.com/watch?v=sVcwVQRHIc8"
+      },
+      {
+        "type": "opensource",
+        "title": "Introduction to RAG - LlamaIndex",
+        "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/"
+      },
+      {
+        "type": "article",
+        "title": "Retrieval Augmented Generation (RAG) - DAIR.AI",
+        "url": "https://www.promptingguide.ai/techniques/rag"
+      }
+    ]
+  },
+  {
+    "slug": "how-llms-work",
+    "title": "How LLMs Work",
+    "sources": {
+      "ai-engineer": 16,
+      "prompt-engineering": 0
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a large language model (LLM)?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ai/what-is-large-language-model/"
+      },
+      {
+        "type": "article",
+        "title": "New to LLMs? Start Here",
+        "url": "https://towardsdatascience.com/new-to-llms-start-here/"
+      },
+      {
+        "type": "video",
+        "title": "How Large Language Models Work",
+        "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ"
+      },
+      {
+        "type": "article",
+        "title": "What are large language models (LLMs)? - IBM",
+        "url": "https://www.ibm.com/think/topics/large-language-models"
+      },
+      {
+        "type": "article",
+        "title": "Large language model - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Large_language_model"
+      },
+      {
+        "type": "article",
+        "title": "How Large Language Models Work: Explained Simply",
+        "url": "https://justainews.com/applications/chatbots-and-virtual-assistants/how-large-language-models-work/"
+      },
+      {
+        "type": "video",
+        "title": "How Large Language Models Work",
+        "url": "https://youtu.be/5sLYAQS9sWQ"
+      }
+    ]
+  },
+  {
+    "slug": "temperature",
+    "title": "Temperature",
+    "sources": {
+      "ai-engineer": 17,
+      "ai-agents": 15,
+      "prompt-engineering": 17
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What Temperature Means in Natural Language Processing and AI",
+        "url": "https://thenewstack.io/what-temperature-means-in-natural-language-processing-and-ai/"
+      },
+      {
+        "type": "article",
+        "title": "What is LLM Temperature? - IBM",
+        "url": "https://www.ibm.com/think/topics/llm-temperature"
+      },
+      {
+        "type": "article",
+        "title": "How Temperature Settings Transform Your AI Agent's Responses",
+        "url": "https://docsbot.ai/article/how-temperature-settings-transform-your-ai-agents-responses"
+      },
+      {
+        "type": "article",
+        "title": "LLM Temperature: How It Works and When You Should Use It",
+        "url": "https://www.vellum.ai/llm-parameters/temperature"
+      }
+    ]
+  },
+  {
+    "slug": "fine-tuning",
+    "title": "Fine-tuning",
+    "sources": {
+      "ai-engineer": 18
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is fine-tuning?",
+        "url": "https://www.ibm.com/think/topics/fine-tuning"
+      },
+      {
+        "type": "article",
+        "title": "How I Fine-Tuned Granite-Vision 2B to Beat a 90B Model — Insights and Lessons Learned",
+        "url": "https://towardsdatascience.com/how-i-fine-tuned-granite-vision-2b-to-beat-a-90b-model-insights-and-lessons-learned/"
+      },
+      {
+        "type": "video",
+        "title": "RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models",
+        "url": "https://www.youtube.com/watch?v=zYGDpG-pTho"
+      }
+    ]
+  },
+  {
+    "slug": "top-k",
+    "title": "Top-K",
+    "sources": {
+      "ai-engineer": 19,
+      "prompt-engineering": 19
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Top-K Sampling: The Complete Token Selection Guide",
+        "url": "https://www.dataannotation.tech/blog/top-k-sampling"
+      },
+      {
+        "type": "video",
+        "title": "What are the LLM’s Top-P + Top-K ?",
+        "url": "https://www.youtube.com/watch?v=aDmp2Uim0zQ"
+      },
+      {
+        "type": "official",
+        "title": "Gemini API Prompting Strategies - Google",
+        "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+      },
+      {
+        "type": "article",
+        "title": "Top K - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/top-k"
+      }
+    ]
+  },
+  {
+    "slug": "top-p",
+    "title": "Top-P",
+    "sources": {
+      "ai-engineer": 20,
+      "ai-agents": 16,
+      "prompt-engineering": 20
+    },
+    "resources": [
+      {
+        "type": "video",
+        "title": "What are the LLM’s Top-P + Top-K ?",
+        "url": "https://www.youtube.com/watch?v=aDmp2Uim0zQ"
+      },
+      {
+        "type": "article",
+        "title": "Nucleus Sampling",
+        "url": "https://nn.labml.ai/sampling/nucleus.html"
+      },
+      {
+        "type": "article",
+        "title": "Sampling Techniques in Large Language Models (LLMs)",
+        "url": "https://medium.com/@shashankag14/understanding-sampling-techniques-in-large-language-models-llms-dfc28b93f518"
+      },
+      {
+        "type": "article",
+        "title": "Temperature, top_p and top_k for chatbot responses",
+        "url": "https://community.openai.com/t/temperature-top-p-and-top-k-for-chatbot-responses/295542"
+      },
+      {
+        "type": "article",
+        "title": "Top P - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/top-p"
+      }
+    ]
+  },
+  {
+    "slug": "prompt-engineering",
+    "title": "Prompt Engineering",
+    "sources": {
+      "ai-engineer": 21,
+      "ai-agents": 29,
+      "prompt-engineering": 3
+    },
+    "resources": [
+      {
+        "type": "roadmap",
+        "title": "Visit Dedicated Prompt Engineering Roadmap",
+        "url": "https://roadmap.sh/prompt-engineering"
+      },
+      {
+        "type": "article",
+        "title": "What is Prompt Engineering? - AI Prompt Engineering Explained - AWS",
+        "url": "https://aws.amazon.com/what-is/prompt-engineering/"
+      },
+      {
+        "type": "article",
+        "title": "Advanced Prompt Engineering for Data Science Projects",
+        "url": "https://towardsdatascience.com/advanced-prompt-engineering-for-data-science-projects/"
+      },
+      {
+        "type": "video",
+        "title": "What is Prompt Engineering?",
+        "url": "https://www.youtube.com/watch?v=nf1e-55KKbg"
+      },
+      {
+        "type": "article",
+        "title": "What is Prompt Engineering? A Detailed Guide For 2025",
+        "url": "https://www.datacamp.com/blog/what-is-prompt-engineering-the-future-of-ai-communication"
+      },
+      {
+        "type": "article",
+        "title": "Prompt engineering - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+      },
+      {
+        "type": "article",
+        "title": "Introduction to Prompt Engineering - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/prompt_engineering"
+      },
+      {
+        "type": "video",
+        "title": "RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models",
+        "url": "https://youtu.be/zYGDpG-pTho?si=yov4dDrcsHBAkey-&t=522"
+      }
+    ]
+  },
+  {
+    "slug": "repetition-penalties",
+    "title": "Repetition Penalties",
+    "sources": {
+      "ai-engineer": 22,
+      "prompt-engineering": 27
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Stop the LLM From Rambling: Using Penalties to Control Repetition",
+        "url": "https://dev.to/superorange0707/stop-the-llm-from-rambling-using-penalties-to-control-repetition-5h8"
+      },
+      {
+        "type": "video",
+        "title": "What are LLM Presence and Frequency Penalties?",
+        "url": "https://www.youtube.com/watch?v=J66CRz6s734"
+      },
+      {
+        "type": "article",
+        "title": "Tips for Writing Better Prompts - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/ai_prompt_tips"
+      }
+    ]
+  },
+  {
+    "slug": "context-engineering",
+    "title": "Context Engineering",
+    "sources": {
+      "ai-engineer": 23
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Context Engineering Guide",
+        "url": "https://www.promptingguide.ai/guides/context-engineering-guide"
+      },
+      {
+        "type": "article",
+        "title": "Effective context engineering for AI agents",
+        "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+      },
+      {
+        "type": "article",
+        "title": "How to Perform Effective Agentic Context Engineering",
+        "url": "https://towardsdatascience.com/how-to-perform-effective-agentic-context-engineering/"
+      },
+      {
+        "type": "video",
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://www.youtube.com/watch?v=vD0E3EUb8-8"
+      }
+    ]
+  },
+  {
+    "slug": "prompt-vs-context-engineering",
+    "title": "Prompt vs Context Engineering",
+    "sources": {
+      "ai-engineer": 24
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Context engineering vs. prompt engineering",
+        "url": "https://www.elastic.co/search-labs/blog/context-engineering-vs-prompt-engineering"
+      },
+      {
+        "type": "article",
+        "title": "Effective context engineering for AI agents",
+        "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
+      },
+      {
+        "type": "article",
+        "title": "Beyond Prompting: The Power of Context Engineering",
+        "url": "https://towardsdatascience.com/beyond-prompting-the-power-of-context-engineering/"
+      },
+      {
+        "type": "video",
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://www.youtube.com/watch?v=vD0E3EUb8-8"
+      }
+    ]
+  },
+  {
+    "slug": "zero-shot",
+    "title": "Zero-Shot",
+    "sources": {
+      "ai-engineer": 25,
+      "prompt-engineering": 31
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is zero-shot prompting?",
+        "url": "https://www.ibm.com/think/topics/zero-shot-prompting"
+      },
+      {
+        "type": "article",
+        "title": "Zero-Shot Prompting",
+        "url": "https://www.promptingguide.ai/techniques/zeroshot"
+      },
+      {
+        "type": "video",
+        "title": "Zero-shot, One-shot and Few-shot Prompting Explained | Prompt Engineering 101",
+        "url": "https://www.youtube.com/watch?v=sW5xoicq5TY"
+      },
+      {
+        "type": "article",
+        "title": "Introduction to Zero-Shot Techniques - LearnPrompting",
+        "url": "https://learnprompting.org/docs/advanced/zero_shot/introduction"
+      }
+    ]
+  },
+  {
+    "slug": "few-shot",
+    "title": "Few-Shot",
+    "sources": {
+      "ai-engineer": 26,
+      "prompt-engineering": 33
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Few-Shot Prompting",
+        "url": "https://www.promptingguide.ai/techniques/fewshot"
+      },
+      {
+        "type": "article",
+        "title": "What is few shot prompting?",
+        "url": "https://www.ibm.com/think/topics/few-shot-prompting"
+      },
+      {
+        "type": "video",
+        "title": "Discover Few-Shot Prompting | Google AI Essentials",
+        "url": "https://www.youtube.com/watch?v=9qdgEBVkWR4"
+      },
+      {
+        "type": "article",
+        "title": "Few-Shot Prompting - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/few_shot"
+      },
+      {
+        "type": "article",
+        "title": "Few-Shot Introduction - LearnPrompting",
+        "url": "https://learnprompting.org/docs/advanced/few_shot/introduction"
+      },
+      {
+        "type": "video",
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=Fi2igdPTBUocqnX7&t=177"
+      }
+    ]
+  },
+  {
+    "slug": "external-memory",
+    "title": "External Memory",
+    "sources": {
+      "ai-engineer": 27
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "How to Maximize Agentic Memory for Continual Learning",
+        "url": "https://towardsdatascience.com/how-to-maximize-agentic-memory-for-continual-learning/"
+      }
+    ]
+  },
+  {
+    "slug": "react",
+    "title": "ReAct",
+    "sources": {
+      "ai-engineer": 101,
+      "ai-agents": 65,
+      "prompt-engineering": 39
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "ReAct Prompting",
+        "url": "https://www.promptingguide.ai/techniques/react"
+      },
+      {
+        "type": "video",
+        "title": "4 Methods of Prompt Engineering",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203"
+      },
+      {
+        "type": "article",
+        "title": "ReAct Prompting: How We Prompt for High-Quality Results from LLMs",
+        "url": "https://www.width.ai/post/react-prompting"
+      },
+      {
+        "type": "official",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "url": "https://react-lm.github.io/"
+      },
+      {
+        "type": "article",
+        "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+        "url": "https://learnprompting.org/docs/agents/react"
+      },
+      {
+        "type": "article",
+        "title": "ReAct: Synergizing Reasoning and Acting - LearnPrompting",
+        "url": "https://learnprompting.org/docs/techniques/react"
+      }
+    ]
+  },
+  {
+    "slug": "cot",
+    "title": "CoT",
+    "sources": {
+      "ai-engineer": 29,
+      "ai-agents": 35,
+      "prompt-engineering": 32
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is chain of thought (CoT) prompting?",
+        "url": "https://www.ibm.com/think/topics/chain-of-thoughts"
+      },
+      {
+        "type": "article",
+        "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+        "url": "https://arxiv.org/abs/2201.11903"
+      },
+      {
+        "type": "article",
+        "title": "Evoking Chain of Thought Reasoning in LLMs - Prompting Guide",
+        "url": "https://www.promptingguide.ai/techniques/cot"
+      },
+      {
+        "type": "video",
+        "title": "ChatGPT Prompt Engineering Principles: Chain of Thought Prompting",
+        "url": "https://www.youtube.com/watch?v=Kar2qfLDQ2c"
+      },
+      {
+        "type": "article",
+        "title": "Chain-of-Thought Prompting - LearnPrompting",
+        "url": "https://learnprompting.org/docs/intermediate/chain_of_thought"
+      },
+      {
+        "type": "article",
+        "title": "Reasoning LLMs Guide - DAIR.AI",
+        "url": "https://www.promptingguide.ai/guides/reasoning-llms"
+      },
+      {
+        "type": "video",
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203"
+      }
+    ]
+  },
+  {
+    "slug": "rag-and-dynamic-filters",
+    "title": "RAG and Dynamic Filters",
+    "sources": {
+      "ai-engineer": 30
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "4 context engineering strategies every AI engineer needs to know",
+        "url": "https://newsletter.owainlewis.com/p/4-context-engineering-strategies"
+      },
+      {
+        "type": "article",
+        "title": "Context Engineering",
+        "url": "https://blog.langchain.com/context-engineering-for-agents/"
+      },
+      {
+        "type": "article",
+        "title": "Is RAG Dead? The Rise of Context Engineering and Semantic Layers for Agentic AI",
+        "url": "https://towardsdatascience.com/beyond-rag/"
+      }
+    ]
+  },
+  {
+    "slug": "input-format",
+    "title": "Input Format",
+    "sources": {
+      "ai-engineer": 31
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Elements of a Prompt",
+        "url": "https://www.promptingguide.ai/introduction/elements"
+      },
+      {
+        "type": "article",
+        "title": "Does Prompt Formatting Have Any Impact on LLM Performance?",
+        "url": "https://arxiv.org/html/2411.10541v1"
+      }
+    ]
+  },
+  {
+    "slug": "context-compaction",
+    "title": "Context compaction",
+    "sources": {
+      "ai-engineer": 32
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Context Engineering",
+        "url": "https://blog.langchain.com/context-engineering-for-agents/"
+      },
+      {
+        "type": "article",
+        "title": "Context Compaction",
+        "url": "https://gist.github.com/badlogic/cd2ef65b0697c4dbe2d13fbecb0a0a5f"
+      }
+    ]
+  },
+  {
+    "slug": "function-calling",
+    "title": "Function Calling",
+    "sources": {
+      "ai-engineer": 103
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "A Comprehensive Guide to Function Calling in LLMs",
+        "url": "https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/"
+      },
+      {
+        "type": "article",
+        "title": "Function Calling with LLMs | Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/applications/function_calling"
+      },
+      {
+        "type": "video",
+        "title": "LLM Function Calling - AI Tools Deep Dive",
+        "url": "https://www.youtube.com/watch?v=gMeTK6zzaO4"
+      },
+      {
+        "type": "official",
+        "title": "What are Tools? - Hugging Face",
+        "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
+      },
+      {
+        "type": "article",
+        "title": "Compare 50+ AI Agent Tools in 2026",
+        "url": "https://aimultiple.com/ai-agent-tools"
+      },
+      {
+        "type": "article",
+        "title": "AI Agents Explained in Simple Terms for Beginners",
+        "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/"
+      }
+    ]
+  },
+  {
+    "slug": "context-isolation",
+    "title": "Context Isolation",
+    "sources": {
+      "ai-engineer": 34
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "4 context engineering strategies every AI engineer needs to know",
+        "url": "https://newsletter.owainlewis.com/p/4-context-engineering-strategies"
+      },
+      {
+        "type": "article",
+        "title": "Context Engineering",
+        "url": "https://blog.langchain.com/context-engineering-for-agents/"
+      }
+    ]
+  },
+  {
+    "slug": "prompt-caching",
+    "title": "Prompt Caching",
+    "sources": {
+      "ai-engineer": 35
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Prompt Caching?",
+        "url": "https://www.ibm.com/think/topics/prompt-caching"
+      },
+      {
+        "type": "video",
+        "title": "What is Prompt Caching? Optimize LLM Latency with AI Transformers",
+        "url": "https://www.youtube.com/watch?v=u57EnkQaUTY"
+      }
+    ]
+  },
+  {
+    "slug": "pre-trained-models",
+    "title": "Pre-trained Models",
+    "sources": {
+      "ai-engineer": 36
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Pre-trained Models: Past, Present and Future",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2666651021000231"
+      },
+      {
+        "type": "video",
+        "title": "Transforming Language with Generative Pre-trained Transformers (GPT)",
+        "url": "https://www.youtube.com/watch?v=bdICz_sBI34"
+      }
+    ]
+  },
+  {
+    "slug": "streaming-responses",
+    "title": "Streaming Responses",
+    "sources": {
+      "ai-engineer": 37,
+      "ai-agents": 2
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Streaming Responses in AI: How AI Outputs Are Generated in Real Time",
+        "url": "https://dev.to/pranshu_kabra_fe98a73547a/streaming-responses-in-ai-how-ai-outputs-are-generated-in-real-time-18kb"
+      },
+      {
+        "type": "article",
+        "title": "Streaming vs Non-Streaming LLM Responses",
+        "url": "https://medium.com/@vasanthancomrads/streaming-vs-non-streaming-llm-responses-db297ba5467e"
+      },
+      {
+        "type": "article",
+        "title": "AI for Web Devs: Faster Responses with HTTP Streaming",
+        "url": "https://austingil.com/ai-for-web-devs-streaming/"
+      },
+      {
+        "type": "article",
+        "title": "Master the OpenAI API: Stream Responses",
+        "url": "https://www.toolify.ai/gpts/master-the-openai-api-stream-responses-139447"
+      }
+    ]
+  },
+  {
+    "slug": "type-of-models",
+    "title": "Type of Models",
+    "sources": {
+      "ai-engineer": 38
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Recap of all types of LLM Agents",
+        "url": "http://towardsdatascience.com/recap-of-all-types-of-llm-agents/"
+      }
+    ]
+  },
+  {
+    "slug": "closed-vs-open-source-models",
+    "title": "Closed vs Open Source Models",
+    "sources": {
+      "ai-engineer": 39
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "https://hatchworks.com/blog/gen-ai/open-source-vs-closed-llms-guide/",
+        "url": "https://hatchworks.com/blog/gen-ai/open-source-vs-closed-llms-guide/"
+      },
+      {
+        "type": "video",
+        "title": "Open Source vs Closed AI: LLMs, Agents & the AI Stack Explained",
+        "url": "https://www.youtube.com/watch?v=_QfxGZGITGw"
+      },
+      {
+        "type": "video",
+        "title": "Open-Source vs Closed-Source LLMs",
+        "url": "https://www.youtube.com/watch?v=710PDpuLwOc"
+      }
+    ]
+  },
+  {
+    "slug": "system-prompting",
+    "title": "System Prompting",
+    "sources": {
+      "ai-engineer": 40,
+      "prompt-engineering": 36
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "User prompts vs. system prompts: What’s the difference?",
+        "url": "https://www.regie.ai/blog/user-prompts-vs-system-prompts"
+      },
+      {
+        "type": "video",
+        "title": "System Prompt Fundamentals",
+        "url": "https://www.youtube.com/watch?v=RMR0Y8esSmE"
+      },
+      {
+        "type": "official",
+        "title": "Prompt Engineering Overview - Anthropic",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview"
+      },
+      {
+        "type": "article",
+        "title": "Instructions - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/instructions"
+      }
+    ]
+  },
+  {
+    "slug": "self-hosted-models",
+    "title": "Self-Hosted Models",
+    "sources": {
+      "ai-engineer": 41
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Self-Hosted LLM: A Practical Guide for DevOps",
+        "url": "https://www.plural.sh/blog/self-hosting-large-language-models/"
+      },
+      {
+        "type": "article",
+        "title": "Serverless vs. self-hosted LLM inference",
+        "url": "https://bentoml.com/llm/llm-inference-basics/serverless-vs-self-hosted-llm-inference"
+      }
+    ]
+  },
+  {
+    "slug": "role-behavior",
+    "title": "Role & Behavior",
+    "sources": {
+      "ai-engineer": 42
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Beyond Basics: Contextual & Role Prompting That Actually Works",
+        "url": "https://medium.com/@the_manoj_desai/beyond-basics-contextual-role-prompting-that-actually-works-bd75a0c5086b"
+      }
+    ]
+  },
+  {
+    "slug": "constrains",
+    "title": "Constrains",
+    "sources": {
+      "ai-engineer": 137
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Introduction: The Power of Clear Instructions",
+        "url": "https://codesignal.com/learn/courses/prompting-foundations/lessons/defining-constraints-and-requirements-for-effective-prompts"
+      },
+      {
+        "type": "article",
+        "title": "Preventing Prompt Injection",
+        "url": "https://learnprompting.org/docs/prompt_hacking/defensive_measures/introduction"
+      },
+      {
+        "type": "article",
+        "title": "Introducing Structured Outputs in the API - OpenAI",
+        "url": "https://openai.com/index/introducing-structured-outputs-in-the-api/"
+      }
+    ]
+  },
+  {
+    "slug": "anthropic-claude",
+    "title": "Anthropic Claude",
+    "sources": {
+      "ai-engineer": 45,
+      "prompt-engineering": 11
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Claude 101",
+        "url": "https://anthropic.skilljar.com/claude-101"
+      },
+      {
+        "type": "official",
+        "title": "Claude",
+        "url": "https://claude.ai/"
+      },
+      {
+        "type": "video",
+        "title": "How To Use Claude Pro For Beginners",
+        "url": "https://www.youtube.com/watch?v=J3X_JWQkvo8"
+      },
+      {
+        "type": "video",
+        "title": "Claude FULL COURSE 1 HOUR (Build & Automate Anything)",
+        "url": "https://www.youtube.com/watch?v=KrKhfm2Xuho"
+      },
+      {
+        "type": "roadmap",
+        "title": "Visit the Dedicated Claude Code Roadmap",
+        "url": "https://roadmap.sh/claude-code"
+      },
+      {
+        "type": "official",
+        "title": "Claude API Documentation",
+        "url": "https://docs.anthropic.com/en/docs/intro"
+      },
+      {
+        "type": "official",
+        "title": "Anthropic Research",
+        "url": "https://www.anthropic.com/research"
+      }
+    ]
+  },
+  {
+    "slug": "structured-output",
+    "title": "Structured Output",
+    "sources": {
+      "ai-engineer": 46,
+      "prompt-engineering": 26
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Structured Output",
+        "url": "https://abdullin.com/structured-output/"
+      },
+      {
+        "type": "article",
+        "title": "Generating Structured Outputs from LLMs",
+        "url": "https://towardsdatascience.com/generating-structured-outputs-from-llms/"
+      },
+      {
+        "type": "article",
+        "title": "How do Structured Outputs Work?",
+        "url": "https://docs.cohere.com/docs/structured-outputs"
+      },
+      {
+        "type": "official",
+        "title": "Structured Output - Google Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs/structured-output"
+      },
+      {
+        "type": "official",
+        "title": "Structured Outputs - Anthropic",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/structured-outputs"
+      },
+      {
+        "type": "opensource",
+        "title": "Instructor - Structured Output Library",
+        "url": "https://github.com/jxnl/instructor"
+      },
+      {
+        "type": "article",
+        "title": "Structured Outputs - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/structured-outputs"
+      }
+    ]
+  },
+  {
+    "slug": "google-gemini",
+    "title": "Google Gemini",
+    "sources": {
+      "ai-engineer": 160
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Google AI Training",
+        "url": "https://grow.google/ai/"
+      },
+      {
+        "type": "official",
+        "title": "Google Gemini",
+        "url": "https://gemini.google.com/"
+      },
+      {
+        "type": "official",
+        "title": "Google's Gemini Documentation",
+        "url": "https://workspace.google.com/solutions/ai/"
+      },
+      {
+        "type": "video",
+        "title": "Welcome to the Gemini era",
+        "url": "https://www.youtube.com/watch?v=_fuimO6ErKI"
+      },
+      {
+        "type": "official",
+        "title": "Helpful Tips for using Gemini at work",
+        "url": "https://services.google.com/fh/files/misc/quick_start_guide_to_google_ai_at_work.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "openai-gpt-o-series",
+    "title": "OpenAI (GPT, o-series)",
+    "sources": {
+      "ai-engineer": 48
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Platform",
+        "url": "https://openai.com/api/"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI Models",
+        "url": "https://developers.openai.com/api/docs/models"
+      },
+      {
+        "type": "article",
+        "title": "Your guide to the complete OpenAI models list",
+        "url": "https://www.eesel.ai/blog/openai-models-list"
+      }
+    ]
+  },
+  {
+    "slug": "choosing-the-right-model",
+    "title": "Choosing the Right Model",
+    "sources": {
+      "ai-engineer": 49
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Choosing the right model",
+        "url": "https://bentoml.com/llm/getting-started/choosing-the-right-model"
+      },
+      {
+        "type": "article",
+        "title": "Beyond vibes: How to properly select the right LLM for the right task",
+        "url": "https://aws.amazon.com/blogs/machine-learning/beyond-vibes-how-to-properly-select-the-right-llm-for-the-right-task/"
+      }
+    ]
+  },
+  {
+    "slug": "hugging-face",
+    "title": "Hugging Face",
+    "sources": {
+      "ai-engineer": 50
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Hugging Face Official Video Course",
+        "url": "https://www.youtube.com/watch?v=00GKzGyWFEs&list=PLo2EIpI_JMQvWfQndUesu0nPBAtZ9gP1o"
+      },
+      {
+        "type": "official",
+        "title": "Hugging Face",
+        "url": "https://huggingface.co/"
+      },
+      {
+        "type": "video",
+        "title": "What is Hugging Face? - Machine Learning Hub Explained",
+        "url": "https://www.youtube.com/watch?v=1AUjKfpRZVo"
+      }
+    ]
+  },
+  {
+    "slug": "cohere",
+    "title": "Cohere",
+    "sources": {
+      "ai-engineer": 76
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Cohere",
+        "url": "https://cohere.com/"
+      },
+      {
+        "type": "official",
+        "title": "LLM University - Cohere",
+        "url": "https://cohere.com/llmu"
+      },
+      {
+        "type": "article",
+        "title": "What Does Cohere Do?",
+        "url": "https://medium.com/geekculture/what-does-cohere-do-cdadf6d70435"
+      },
+      {
+        "type": "official",
+        "title": "Introduction to Embeddings at Cohere",
+        "url": "https://docs.cohere.com/docs/embeddings"
+      },
+      {
+        "type": "official",
+        "title": "What are embedding models? Benefits and best practices",
+        "url": "https://cohere.com/blog/embedding-models"
+      }
+    ]
+  },
+  {
+    "slug": "mistral",
+    "title": "Mistral",
+    "sources": {
+      "ai-engineer": 52
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Mistral AI",
+        "url": "https://mistral.ai/"
+      },
+      {
+        "type": "video",
+        "title": "Mistral AI: The Gen AI Start-up you did not know existed",
+        "url": "https://www.youtube.com/watch?v=vzrRGd18tAg"
+      }
+    ]
+  },
+  {
+    "slug": "hugging-face-tasks",
+    "title": "Hugging Face Tasks",
+    "sources": {
+      "ai-engineer": 53
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Task and Model",
+        "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/tasks-models-part1"
+      },
+      {
+        "type": "official",
+        "title": "Task Summary",
+        "url": "https://huggingface.co/docs/transformers/v4.14.1/en/task_summary"
+      },
+      {
+        "type": "official",
+        "title": "Task Manager",
+        "url": "https://huggingface.co/docs/optimum/en/exporters/task_manager"
+      }
+    ]
+  },
+  {
+    "slug": "meta-llama",
+    "title": "Meta Llama",
+    "sources": {
+      "ai-engineer": 54,
+      "prompt-engineering": 12
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Building with Llama 4",
+        "url": "https://www.deeplearning.ai/short-courses/building-with-llama-4/"
+      },
+      {
+        "type": "official",
+        "title": "Llama",
+        "url": "https://www.llama.com/"
+      },
+      {
+        "type": "opensource",
+        "title": "Llama Models (GitHub)",
+        "url": "https://github.com/meta-llama/llama-models"
+      }
+    ]
+  },
+  {
+    "slug": "hugging-face-hub",
+    "title": "Hugging Face Hub",
+    "sources": {
+      "ai-engineer": 55
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "The Hugging Face Hub (LLM Course)",
+        "url": "https://huggingface.co/learn/nlp-course/en/chapter4/1"
+      },
+      {
+        "type": "official",
+        "title": "Hugging Face Documentation",
+        "url": "https://huggingface.co/docs/hub/en/index"
+      }
+    ]
+  },
+  {
+    "slug": "deepseek",
+    "title": "DeepSeek",
+    "sources": {
+      "ai-engineer": 56
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Deepseek",
+        "url": "https://www.deepseek.com/en/"
+      },
+      {
+        "type": "article",
+        "title": "DeepSeek explained: Everything you need to know",
+        "url": "https://www.techtarget.com/whatis/feature/DeepSeek-explained-Everything-you-need-to-know"
+      },
+      {
+        "type": "video",
+        "title": "What is DeepSeek? AI Model Basics Explained",
+        "url": "https://www.youtube.com/watch?v=KTonvXhsxpc"
+      }
+    ]
+  },
+  {
+    "slug": "transformers-js",
+    "title": "Transformers.js",
+    "sources": {
+      "ai-engineer": 57
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Transformers.js on Hugging Face",
+        "url": "https://huggingface.co/docs/transformers.js/en/index"
+      },
+      {
+        "type": "video",
+        "title": "How Transformer.js Can Help You Create Smarter AI In Your Browser",
+        "url": "https://www.youtube.com/watch?v=MNJHu9zjpqg"
+      }
+    ]
+  },
+  {
+    "slug": "qwen",
+    "title": "Qwen",
+    "sources": {
+      "ai-engineer": 58
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Qwen",
+        "url": "https://chat.qwen.ai/"
+      },
+      {
+        "type": "article",
+        "title": "What is Qwen AI?",
+        "url": "https://zapier.com/blog/qwen/"
+      }
+    ]
+  },
+  {
+    "slug": "gemma2",
+    "title": "Gemma2",
+    "sources": {
+      "ai-engineer": 59
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Gemma",
+        "url": "https://deepmind.google/models/gemma/"
+      },
+      {
+        "type": "official",
+        "title": "Gemma explained: What’s new in Gemma 2",
+        "url": "https://developers.googleblog.com/gemma-explained-new-in-gemma-2/"
+      }
+    ]
+  },
+  {
+    "slug": "ollama",
+    "title": "Ollama",
+    "sources": {
+      "ai-engineer": 60
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Ollama",
+        "url": "https://ollama.com/"
+      },
+      {
+        "type": "article",
+        "title": "Ollama: Easily run LLMs locally",
+        "url": "https://klu.ai/glossary/ollama"
+      },
+      {
+        "type": "video",
+        "title": "What is Ollama? Running Local LLMs Made Simple",
+        "url": "https://www.youtube.com/watch?v=5RIOQuHOihY"
+      }
+    ]
+  },
+  {
+    "slug": "semantic-search",
+    "title": "Semantic Search",
+    "sources": {
+      "ai-engineer": 61
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Semantic Search?",
+        "url": "https://www.elastic.co/what-is/semantic-search"
+      },
+      {
+        "type": "video",
+        "title": "What is Semantic Search? - Cohere",
+        "url": "https://www.youtube.com/watch?v=fFt4kR4ntAA"
+      }
+    ]
+  },
+  {
+    "slug": "lm-studio",
+    "title": "LM Studio",
+    "sources": {
+      "ai-engineer": 62
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LMStudio",
+        "url": "https://lmstudio.ai/"
+      },
+      {
+        "type": "video",
+        "title": "LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop",
+        "url": "https://www.youtube.com/watch?v=ygUEbCpOOLg"
+      }
+    ]
+  },
+  {
+    "slug": "data-classification",
+    "title": "Data Classification",
+    "sources": {
+      "ai-engineer": 63
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What Is Data Classification?",
+        "url": "https://www.paloaltonetworks.com/cyberpedia/data-classification"
+      },
+      {
+        "type": "video",
+        "title": "Text Embeddings, Classification, and Semantic Search (w/ Python Code)",
+        "url": "https://www.youtube.com/watch?v=sNa_uiqSlJo"
+      }
+    ]
+  },
+  {
+    "slug": "openrouter",
+    "title": "OpenRouter",
+    "sources": {
+      "ai-engineer": 64
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenRouter",
+        "url": "https://openrouter.ai/"
+      },
+      {
+        "type": "article",
+        "title": "What is OpenRouter? A Guide with Practical Examples",
+        "url": "https://www.codecademy.com/article/what-is-openrouter"
+      },
+      {
+        "type": "video",
+        "title": "What is Open Router ?",
+        "url": "https://www.youtube.com/watch?v=pfT6l0yMsB0"
+      }
+    ]
+  },
+  {
+    "slug": "recommendation-systems",
+    "title": "Recommendation Systems",
+    "sources": {
+      "ai-engineer": 66
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What Role does AI Play in Recommendation Systems and Engines?",
+        "url": "https://www.algolia.com/blog/ai/what-role-does-ai-play-in-recommendation-systems-and-engines/"
+      },
+      {
+        "type": "article",
+        "title": "What is a Recommendation Engine?",
+        "url": "https://www.ibm.com/think/topics/recommendation-engine"
+      }
+    ]
+  },
+  {
+    "slug": "anomaly-detection",
+    "title": "Anomaly Detection",
+    "sources": {
+      "ai-engineer": 67
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Anomaly in Embeddings",
+        "url": "https://ai.google.dev/gemini-api/tutorials/anomaly_detection"
+      },
+      {
+        "type": "article",
+        "title": "Boosting Your Anomaly Detection With LLMs",
+        "url": "https://towardsdatascience.com/boosting-your-anomaly-detection-with-llms/"
+      }
+    ]
+  },
+  {
+    "slug": "openai-response-api",
+    "title": "OpenAI Response API",
+    "sources": {
+      "ai-engineer": 68
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Responses API",
+        "url": "https://developers.openai.com/api/reference/resources/responses/"
+      },
+      {
+        "type": "opensource",
+        "title": "Why we built the Responses API",
+        "url": "https://developers.openai.com/blog/responses-api/"
+      },
+      {
+        "type": "video",
+        "title": "OpenAI Responses API Tutorial (2025)",
+        "url": "https://www.youtube.com/playlist?list=PL4HikwTaYE0EWV3qieOYooyxb9osQLgou"
+      }
+    ]
+  },
+  {
+    "slug": "claude-messages-api",
+    "title": "Claude Messages API",
+    "sources": {
+      "ai-engineer": 69
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Messages API",
+        "url": "https://platform.claude.com/docs/en/api/messages"
+      },
+      {
+        "type": "official",
+        "title": "Using the Messages API",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/working-with-messages"
+      },
+      {
+        "type": "article",
+        "title": "Claude API: How to get a key and use the API",
+        "url": "https://zapier.com/blog/claude-api/"
+      }
+    ]
+  },
+  {
+    "slug": "google-gemini-api",
+    "title": "Google Gemini APi",
+    "sources": {
+      "ai-engineer": 70
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs"
+      },
+      {
+        "type": "article",
+        "title": "Everything you need to know about the Gemini API as a developer in less than 5 minutes",
+        "url": "https://medium.com/around-the-prompt/everything-you-need-to-know-about-the-gemini-api-as-a-developer-in-less-than-5-minutes-5e75343ccff9"
+      },
+      {
+        "type": "video",
+        "title": "Introduction to Gemini APIs and AI Studio",
+        "url": "https://www.youtube.com/watch?v=4oyqd7CB09c"
+      }
+    ]
+  },
+  {
+    "slug": "hugging-face-inference-sdk",
+    "title": "Hugging Face Inference SDK",
+    "sources": {
+      "ai-engineer": 71
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Inference",
+        "url": "https://huggingface.co/docs/huggingface_hub/en/package_reference/inference_client"
+      },
+      {
+        "type": "article",
+        "title": "Endpoint Setup",
+        "url": "https://www.npmjs.com/package/@huggingface/inference"
+      }
+    ]
+  },
+  {
+    "slug": "open-ai-embeddings-api",
+    "title": "Open AI Embeddings API",
+    "sources": {
+      "ai-engineer": 72
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Embeddings API",
+        "url": "https://platform.openai.com/docs/api-reference/embeddings/create"
+      },
+      {
+        "type": "video",
+        "title": "Master OpenAI Embedding API",
+        "url": "https://www.youtube.com/watch?v=9oCS-VQupoc"
+      }
+    ]
+  },
+  {
+    "slug": "embedding-models",
+    "title": "Embedding Models",
+    "sources": {
+      "ai-engineer": 73
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What are Embedding Models? An Overview",
+        "url": "https://www.couchbase.com/blog/embedding-models/"
+      },
+      {
+        "type": "article",
+        "title": "Best Open-Source Embedding Models Benchmarked and Ranked",
+        "url": "https://supermemory.ai/blog/best-open-source-embedding-models-benchmarked-and-ranked/"
+      }
+    ]
+  },
+  {
+    "slug": "openai-compatible-apis",
+    "title": "OpenAI-compatible APIs",
+    "sources": {
+      "ai-engineer": 74
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "OpenAI-compatible API",
+        "url": "https://bentoml.com/llm/llm-inference-basics/openai-compatible-api"
+      },
+      {
+        "type": "article",
+        "title": "OpenAI compatibility - Gemini",
+        "url": "https://ai.google.dev/gemini-api/docs/openai"
+      }
+    ]
+  },
+  {
+    "slug": "gemini-embedding",
+    "title": "Gemini Embedding",
+    "sources": {
+      "ai-engineer": 75
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Embeddings",
+        "url": "https://ai.google.dev/gemini-api/docs/embeddings"
+      },
+      {
+        "type": "official",
+        "title": "Gemini Embedding now generally available in the Gemini API",
+        "url": "https://developers.googleblog.com/gemini-embedding-available-gemini-api/"
+      },
+      {
+        "type": "video",
+        "title": "What are text embeddings?",
+        "url": "https://www.youtube.com/watch?v=vlcQV4j2kTo&t=117s"
+      }
+    ]
+  },
+  {
+    "slug": "purpose-and-functionality",
+    "title": "Purpose and Functionality",
+    "sources": {
+      "ai-engineer": 77
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a Vector Database? Top 12 Use Cases",
+        "url": "https://lakefs.io/blog/what-is-vector-databases/"
+      },
+      {
+        "type": "article",
+        "title": "Vector Databases: Intro, Use Cases",
+        "url": "https://www.v7labs.com/blog/vector-databases"
+      },
+      {
+        "type": "article",
+        "title": "When (Not) to Use Vector DB",
+        "url": "https://towardsdatascience.com/when-not-to-use-vector-db/"
+      }
+    ]
+  },
+  {
+    "slug": "sentence-transformers",
+    "title": "Sentence Transformers",
+    "sources": {
+      "ai-engineer": 78
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is BERT?",
+        "url": "https://h2o.ai/wiki/bert/"
+      },
+      {
+        "type": "article",
+        "title": "SentenceTransformers Documentation",
+        "url": "https://sbert.net/"
+      },
+      {
+        "type": "article",
+        "title": "Using Sentence Transformers at Hugging Face",
+        "url": "https://huggingface.co/docs/hub/sentence-transformers"
+      }
+    ]
+  },
+  {
+    "slug": "models-on-hugging-face",
+    "title": "Models on Hugging Face",
+    "sources": {
+      "ai-engineer": 170
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Hugging Face Embedding Models",
+        "url": "https://huggingface.co/models?pipeline_tag=feature-extraction"
+      },
+      {
+        "type": "video",
+        "title": "Hugging Face - Text embeddings & semantic search",
+        "url": "https://www.youtube.com/watch?v=OATCgQtNX2o"
+      },
+      {
+        "type": "official",
+        "title": "Hugging Face Models",
+        "url": "https://huggingface.co/models"
+      },
+      {
+        "type": "video",
+        "title": "How to Use Pretrained Models from Hugging Face in a Few Lines of Code",
+        "url": "https://www.youtube.com/watch?v=ntz160EnWIc"
+      }
+    ]
+  },
+  {
+    "slug": "chroma",
+    "title": "Chroma",
+    "sources": {
+      "ai-engineer": 81
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Chroma",
+        "url": "https://www.trychroma.com/"
+      },
+      {
+        "type": "article",
+        "title": "Chroma Tutorials",
+        "url": "https://lablab.ai/tech/chroma"
+      },
+      {
+        "type": "video",
+        "title": "Chroma - Chroma - Vector Database for LLM Applications",
+        "url": "https://youtu.be/Qs_y0lTJAp0?si=Z2-eSmhf6PKrEKCW"
+      }
+    ]
+  },
+  {
+    "slug": "pinecone",
+    "title": "Pinecone",
+    "sources": {
+      "ai-engineer": 82
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Pinecone",
+        "url": "https://www.pinecone.io/"
+      },
+      {
+        "type": "article",
+        "title": "Everything you need to know about Pinecone",
+        "url": "https://www.packtpub.com/article-hub/everything-you-need-to-know-about-pinecone-a-vector-database?srsltid=AfmBOorXsy9WImpULoLjd-42ERvTzj3pQb7C2EFgamWlRobyGJVZKKdz"
+      },
+      {
+        "type": "video",
+        "title": "Introducing Pinecone Serverless",
+        "url": "https://www.youtube.com/watch?v=iCuR6ihHQgc"
+      }
+    ]
+  },
+  {
+    "slug": "jina",
+    "title": "Jina",
+    "sources": {
+      "ai-engineer": 83
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Jina Embeddings",
+        "url": "https://jina.ai/en-US/embeddings/"
+      },
+      {
+        "type": "official",
+        "title": "https://jina.ai/news/jina-embeddings-v5-text-distilling-4b-quality-into-sub-1b-multilingual-embeddings/",
+        "url": "https://jina.ai/news/jina-embeddings-v5-text-distilling-4b-quality-into-sub-1b-multilingual-embeddings/"
+      }
+    ]
+  },
+  {
+    "slug": "weaviate",
+    "title": "Weaviate",
+    "sources": {
+      "ai-engineer": 84
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Weaviate",
+        "url": "https://weaviate.io/"
+      },
+      {
+        "type": "video",
+        "title": "Advanced AI Agents with RAG",
+        "url": "https://www.youtube.com/watch?v=UoowC-hsaf0&list=PLTL2JUbrY6tVmVxY12e6vRDmY-maAXzR1"
+      }
+    ]
+  },
+  {
+    "slug": "faiss",
+    "title": "FAISS",
+    "sources": {
+      "ai-engineer": 85
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "FAISS",
+        "url": "https://ai.meta.com/tools/faiss/"
+      },
+      {
+        "type": "article",
+        "title": "What Is Faiss (Facebook AI Similarity Search)?",
+        "url": "https://www.datacamp.com/blog/faiss-facebook-ai-similarity-search"
+      },
+      {
+        "type": "video",
+        "title": "FAISS Vector Library with LangChain and OpenAI",
+        "url": "https://www.youtube.com/watch?v=ZCSsIkyCZk4"
+      }
+    ]
+  },
+  {
+    "slug": "lancedb",
+    "title": "LanceDB",
+    "sources": {
+      "ai-engineer": 86
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LanceDB",
+        "url": "https://lancedb.com/"
+      },
+      {
+        "type": "official",
+        "title": "LanceDB Documentation",
+        "url": "https://docs.lancedb.com/enterprise/introduction"
+      },
+      {
+        "type": "opensource",
+        "title": "LanceDB on GitHub",
+        "url": "https://github.com/lancedb/lancedb"
+      }
+    ]
+  },
+  {
+    "slug": "qdrant",
+    "title": "Qdrant",
+    "sources": {
+      "ai-engineer": 87
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Qdrant",
+        "url": "https://qdrant.tech/"
+      },
+      {
+        "type": "opensource",
+        "title": "Qdrant on GitHub",
+        "url": "https://github.com/qdrant/qdrant"
+      },
+      {
+        "type": "video",
+        "title": "Getting started with Qdrant",
+        "url": "https://www.youtube.com/watch?v=LRcZ9pbGnno"
+      }
+    ]
+  },
+  {
+    "slug": "rag-usecases",
+    "title": "RAG Usecases",
+    "sources": {
+      "ai-engineer": 88
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Retrieval augmented generation use cases: Transforming data into insights",
+        "url": "https://www.glean.com/blog/retrieval-augmented-generation-use-cases"
+      },
+      {
+        "type": "article",
+        "title": "Retrieval Augmented Generation (RAG) – 5 Use Cases",
+        "url": "https://theblue.ai/blog/rag-news/"
+      },
+      {
+        "type": "article",
+        "title": "How to Train a Chatbot Using RAG and Custom Data",
+        "url": "https://towardsdatascience.com/how-to-train-a-chatbot-using-rag-and-custom-data/"
+      },
+      {
+        "type": "video",
+        "title": "Introduction to RAG",
+        "url": "https://www.youtube.com/watch?v=LmiFeXH-kq8&list=PL-pTHQz4RcBbz78Z5QXsZhe9rHuCs1Jw-"
+      }
+    ]
+  },
+  {
+    "slug": "supabase",
+    "title": "Supabase",
+    "sources": {
+      "ai-engineer": 89
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Supabase Vector",
+        "url": "https://supabase.com/docs/guides/ai"
+      },
+      {
+        "type": "video",
+        "title": "Supabase Vector: The Postgres Vector database",
+        "url": "https://www.youtube.com/watch?v=MDxEXKkxf2Q"
+      }
+    ]
+  },
+  {
+    "slug": "rag-vs-fine-tuning",
+    "title": "RAG vs Fine-tuning",
+    "sources": {
+      "ai-engineer": 90
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "RAG vs Fine Tuning: How to Choose the Right Method",
+        "url": "https://www.montecarlodata.com/blog-rag-vs-fine-tuning/"
+      },
+      {
+        "type": "article",
+        "title": "RAG vs Finetuning — Which Is the Best Tool to Boost Your LLM Application?",
+        "url": "https://towardsdatascience.com/rag-vs-finetuning-which-is-the-best-tool-to-boost-your-llm-application-94654b1eaba7"
+      },
+      {
+        "type": "video",
+        "title": "RAG vs Fine-tuning",
+        "url": "https://www.youtube.com/watch?v=00Q0G84kq3M"
+      }
+    ]
+  },
+  {
+    "slug": "mongodb-atlas",
+    "title": "MongoDB Atlas",
+    "sources": {
+      "ai-engineer": 91
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Vector Search in MongoDB Atlas",
+        "url": "https://www.mongodb.com/products/platform/atlas-vector-search"
+      }
+    ]
+  },
+  {
+    "slug": "chunking",
+    "title": "Chunking",
+    "sources": {
+      "ai-engineer": 93
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Understanding LangChain's RecursiveCharacterTextSplitter",
+        "url": "https://dev.to/eteimz/understanding-langchains-recursivecharactertextsplitter-2846"
+      },
+      {
+        "type": "article",
+        "title": "Chunking Strategies for LLM Applications",
+        "url": "https://www.pinecone.io/learn/chunking-strategies/"
+      },
+      {
+        "type": "article",
+        "title": "A Guide to Chunking Strategies for Retrieval Augmented Generation",
+        "url": "https://zilliz.com/learn/guide-to-chunking-strategies-for-rag"
+      }
+    ]
+  },
+  {
+    "slug": "indexing-embeddings",
+    "title": "Indexing Embeddings",
+    "sources": {
+      "ai-engineer": 94
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Indexing & Embeddings",
+        "url": "https://developers.llamaindex.ai/python/framework/understanding/rag/indexing/"
+      },
+      {
+        "type": "video",
+        "title": "Vector Databases Simply Explained! (Embeddings & Indexes)",
+        "url": "https://www.youtube.com/watch?v=dN0lsF2cvm4"
+      }
+    ]
+  },
+  {
+    "slug": "performing-similarity-search",
+    "title": "Performing Similarity Search",
+    "sources": {
+      "ai-engineer": 96
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Similarity Search & How Does it work?",
+        "url": "https://www.truefoundry.com/blog/similarity-search"
+      }
+    ]
+  },
+  {
+    "slug": "retrieval-process",
+    "title": "Retrieval Process",
+    "sources": {
+      "ai-engineer": 98
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Retrieval-Augmented Generation (RAG)?",
+        "url": "https://cloud.google.com/use-cases/retrieval-augmented-generation"
+      },
+      {
+        "type": "article",
+        "title": "What Is Retrieval-Augmented Generation, aka RAG?",
+        "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+      }
+    ]
+  },
+  {
+    "slug": "agents-usecases",
+    "title": "Agents Usecases",
+    "sources": {
+      "ai-engineer": 99
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Top 15 Use Cases Of AI Agents In Business",
+        "url": "https://www.ampcome.com/post/15-use-cases-of-ai-agents-in-business"
+      },
+      {
+        "type": "article",
+        "title": "A Brief Guide on AI Agents: Benefits and Use Cases",
+        "url": "https://www.codica.com/blog/brief-guide-on-ai-agents/"
+      },
+      {
+        "type": "article",
+        "title": "How to Build Effective AI Agents to Process Millions of Requests",
+        "url": "https://towardsdatascience.com/how-to-build-effective-ai-agents-to-process-millions-of-requests/"
+      },
+      {
+        "type": "video",
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
+      }
+    ]
+  },
+  {
+    "slug": "generation",
+    "title": "Generation",
+    "sources": {
+      "ai-engineer": 100
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is RAG (Retrieval-Augmented Generation)?",
+        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
+      },
+      {
+        "type": "video",
+        "title": "Retrieval Augmented Generation (RAG) Explained in 8 Minutes!",
+        "url": "https://www.youtube.com/watch?v=HREbdmOSQ18"
+      }
+    ]
+  },
+  {
+    "slug": "using-sdks-directly",
+    "title": "Using SDKs Directly",
+    "sources": {
+      "ai-engineer": 104
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Langchain Text Splitter Package",
+        "url": "https://www.npmjs.com/package/@langchain/textsplitters"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI Embedding API",
+        "url": "https://platform.openai.com/docs/guides/embeddings"
+      },
+      {
+        "type": "official",
+        "title": "Supabase AI & Vector Documentation",
+        "url": "https://supabase.com/docs/guides/ai"
+      }
+    ]
+  },
+  {
+    "slug": "multi-agents",
+    "title": "Multi-agents",
+    "sources": {
+      "ai-engineer": 105,
+      "ai-agents": 70
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a multi-agent system?",
+        "url": "https://www.ibm.com/think/topics/multiagent-system"
+      },
+      {
+        "type": "article",
+        "title": "Multi-Agent Systems",
+        "url": "https://huggingface.co/learn/agents-course/en/unit2/smolagents/multi_agent_systems"
+      },
+      {
+        "type": "article",
+        "title": "Guide to multi-agent systems (MAS)",
+        "url": "https://cloud.google.com/discover/what-is-a-multi-agent-system"
+      },
+      {
+        "type": "article",
+        "title": "Agentic AI 103: Building Multi-Agent Teams",
+        "url": "https://towardsdatascience.com/agentic-ai-103-building-multi-agent-teams/"
+      },
+      {
+        "type": "article",
+        "title": "What is multi-agent collaboration?",
+        "url": "https://www.ibm.com/think/topics/multi-agent-collaboration"
+      },
+      {
+        "type": "video",
+        "title": "Multi Agent Systems Explained: How AI Agents & LLMs Work Together",
+        "url": "https://www.youtube.com/watch?v=sWH0T4Zez6I"
+      }
+    ]
+  },
+  {
+    "slug": "langchain",
+    "title": "Langchain",
+    "sources": {
+      "ai-engineer": 106,
+      "ai-agents": 78
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Langchain",
+        "url": "https://www.langchain.com/"
+      },
+      {
+        "type": "video",
+        "title": "What is LangChain?",
+        "url": "https://www.youtube.com/watch?v=1bUy-1hGZpI"
+      },
+      {
+        "type": "official",
+        "title": "LangChain Documentation",
+        "url": "https://python.langchain.com/docs/introduction/"
+      },
+      {
+        "type": "opensource",
+        "title": "langchain-ai/langchain",
+        "url": "https://github.com/langchain-ai/langchain"
+      },
+      {
+        "type": "article",
+        "title": "AI Agents with LangChain and LangGraph",
+        "url": "https://www.udacity.com/course/ai-agents-with-langchain-and-langgraph--cd13764"
+      },
+      {
+        "type": "video",
+        "title": "LangChain Crash Course - Build LLM Apps Fast (YouTube)",
+        "url": "https://www.youtube.com/watch?v=nAmC7SoVLd8"
+      }
+    ]
+  },
+  {
+    "slug": "llama-index",
+    "title": "Llama Index",
+    "sources": {
+      "ai-engineer": 107,
+      "ai-agents": 83
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Llama Index",
+        "url": "https://docs.llamaindex.ai/en/stable/"
+      },
+      {
+        "type": "video",
+        "title": "Introduction to LlamaIndex with Python (2025)",
+        "url": "https://www.youtube.com/watch?v=cCyYGYyCka4"
+      },
+      {
+        "type": "official",
+        "title": "LlamaIndex",
+        "url": "https://llamaindex.ai/"
+      },
+      {
+        "type": "official",
+        "title": "LlamaIndex Documentation",
+        "url": "https://docs.smith.langchain.com/"
+      },
+      {
+        "type": "official",
+        "title": "What is LlamaIndex.TS",
+        "url": "https://ts.llamaindex.ai/docs/llamaindex"
+      },
+      {
+        "type": "opensource",
+        "title": "run-llama/llama_index",
+        "url": "https://github.com/run-llama/llama_index"
+      },
+      {
+        "type": "article",
+        "title": "What is LlamaIndex? - IBM",
+        "url": "https://www.ibm.com/think/topics/llamaindex"
+      },
+      {
+        "type": "article",
+        "title": "LlamaIndex - Hugging Face",
+        "url": "https://huggingface.co/llamaindex"
+      }
+    ]
+  },
+  {
+    "slug": "haystack",
+    "title": "Haystack",
+    "sources": {
+      "ai-engineer": 108,
+      "ai-agents": 82
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Haystack",
+        "url": "https://haystack.deepset.ai/"
+      },
+      {
+        "type": "official",
+        "title": "Haystack Overview",
+        "url": "https://docs.haystack.deepset.ai/docs/intro"
+      },
+      {
+        "type": "opensource",
+        "title": "deepset-ai/haystack",
+        "url": "https://github.com/deepset-ai/haystack"
+      }
+    ]
+  },
+  {
+    "slug": "ragflow",
+    "title": "RAGFlow",
+    "sources": {
+      "ai-engineer": 109
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "RagFlow",
+        "url": "https://ragflow.io/"
+      },
+      {
+        "type": "opensource",
+        "title": "ragflow",
+        "url": "https://github.com/infiniflow/ragflow"
+      },
+      {
+        "type": "video",
+        "title": "RagFlow: Ultimate RAG Engine",
+        "url": "https://www.youtube.com/watch?v=ApA-7G7FGRc"
+      }
+    ]
+  },
+  {
+    "slug": "manual-implementation",
+    "title": "Manual Implementation",
+    "sources": {
+      "ai-engineer": 110,
+      "ai-agents": 68
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "A practical guide to building agents - OpenAI",
+        "url": "https://cdn.openai.com/business-guides-and-resources/a-practical-guide-to-building-agents.pdf"
+      },
+      {
+        "type": "official",
+        "title": "Create custom subagents - Claude",
+        "url": "https://code.claude.com/docs/en/sub-agents"
+      },
+      {
+        "type": "article",
+        "title": "A Step-by-Step Guide to Building an AI Agent From Scratch",
+        "url": "https://www.neurond.com/blog/how-to-build-an-ai-agent"
+      },
+      {
+        "type": "article",
+        "title": "How to Build AI Agents",
+        "url": "https://wotnot.io/blog/build-ai-agents"
+      },
+      {
+        "type": "article",
+        "title": "Build Your Own AI Agent from Scratch in 30 Minutes",
+        "url": "https://medium.com/@gurpartap.sandhu3/build-you-own-ai-agent-from-scratch-in-30-mins-using-simple-python-1458f8099da0"
+      },
+      {
+        "type": "video",
+        "title": "Building an AI Agent From Scratch",
+        "url": "https://www.youtube.com/watch?v=bTMPwUgLZf0"
+      }
+    ]
+  },
+  {
+    "slug": "openai-agentkit-agent-sdk",
+    "title": "OpenAI AgentKit & Agent SDK",
+    "sources": {
+      "ai-engineer": 111
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Introducing AgentKit",
+        "url": "https://openai.com/index/introducing-agentkit/"
+      },
+      {
+        "type": "official",
+        "title": "Build every step of agents on one platform",
+        "url": "https://openai.com/agent-platform/"
+      },
+      {
+        "type": "video",
+        "title": "OpenAI Agents SDK Tutorial (FULL SERIES)",
+        "url": "https://www.youtube.com/watch?v=gFcAfU3V1Zo"
+      }
+    ]
+  },
+  {
+    "slug": "model-context-protocol-mcp",
+    "title": "Model Context Protocol (MCP)",
+    "sources": {
+      "ai-engineer": 112,
+      "ai-agents": 48
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Model Context Protocol (MCP) Course",
+        "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
+      },
+      {
+        "type": "official",
+        "title": "Model Context Protocol",
+        "url": "https://modelcontextprotocol.io/"
+      },
+      {
+        "type": "opensource",
+        "title": "Model Context Protocol",
+        "url": "https://github.com/modelcontextprotocol"
+      },
+      {
+        "type": "article",
+        "title": "Discover more aritlces on MCP",
+        "url": "https://towardsdatascience.com/tag/mcp/"
+      },
+      {
+        "type": "course",
+        "title": "MCP: Build Rich-Context AI Apps with Anthropic",
+        "url": "https://www.deeplearning.ai/short-courses/mcp-build-rich-context-ai-apps-with-anthropic/"
+      },
+      {
+        "type": "official",
+        "title": "Model Context Protocol",
+        "url": "https://modelcontextprotocol.io/introduction"
+      },
+      {
+        "type": "opensource",
+        "title": "Model Context Protocol",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol"
+      },
+      {
+        "type": "article",
+        "title": "Introducing the Azure MCP Server",
+        "url": "https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/"
+      },
+      {
+        "type": "article",
+        "title": "The Ultimate Guide to MCP",
+        "url": "https://guangzhengli.com/blog/en/model-context-protocol"
+      }
+    ]
+  },
+  {
+    "slug": "claude-agent-sdk",
+    "title": "Claude Agent SDK",
+    "sources": {
+      "ai-engineer": 113
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Agent SDK overview",
+        "url": "https://platform.claude.com/docs/en/agent-sdk/overview"
+      },
+      {
+        "type": "article",
+        "title": "Getting Started with the Claude Agent SDK",
+        "url": "https://www.kdnuggets.com/getting-started-with-the-claude-agent-sdk"
+      },
+      {
+        "type": "video",
+        "title": "Building Custom AI Agents Just Got EASIER - Claude Agent SDK",
+        "url": "https://www.youtube.com/watch?v=NsROagHaKxA"
+      },
+      {
+        "type": "video",
+        "title": "Claude Agents SDK BEATS all Agent Framework! (Beginners Guide)",
+        "url": "https://www.youtube.com/watch?v=i6N8oQQ0tUE"
+      }
+    ]
+  },
+  {
+    "slug": "mcp-host",
+    "title": "MCP Host",
+    "sources": {
+      "ai-engineer": 114,
+      "ai-agents": 51
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Model Context Protocol (MCP) Course",
+        "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
+      },
+      {
+        "type": "official",
+        "title": "Concepts of MCP",
+        "url": "https://modelcontextprotocol.io/docs/learn/architecture#concepts-of-mcp"
+      },
+      {
+        "type": "official",
+        "title": "Vercel Serverless Hosting",
+        "url": "https://vercel.com/docs"
+      },
+      {
+        "type": "opensource",
+        "title": "punkeye/awesome-mcp-servers",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers"
+      },
+      {
+        "type": "article",
+        "title": "The Ultimate Guide to MCP",
+        "url": "https://guangzhengli.com/blog/en/model-context-protocol"
+      },
+      {
+        "type": "article",
+        "title": "AWS MCP Servers for Code Assistants",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/"
+      }
+    ]
+  },
+  {
+    "slug": "mcp-client",
+    "title": "MCP Client",
+    "sources": {
+      "ai-engineer": 115,
+      "ai-agents": 52
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Model Context Protocol (MCP) Course",
+        "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
+      },
+      {
+        "type": "official",
+        "title": "Understanding MCP clients",
+        "url": "https://modelcontextprotocol.io/docs/learn/client-concepts#understanding-mcp-clients"
+      },
+      {
+        "type": "video",
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
+      },
+      {
+        "type": "official",
+        "title": "Model Context Protocol",
+        "url": "https://modelcontextprotocol.io/introduction"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI API Reference",
+        "url": "https://platform.openai.com/docs/api-reference"
+      },
+      {
+        "type": "official",
+        "title": "Anthropic API Documentation",
+        "url": "https://docs.anthropic.com/claude/reference"
+      },
+      {
+        "type": "opensource",
+        "title": "Model Context Protocol",
+        "url": "https://github.com/modelcontextprotocol/modelcontextprotocol"
+      }
+    ]
+  },
+  {
+    "slug": "vertex-ai-agent-builder",
+    "title": "Vertex AI Agent Builder",
+    "sources": {
+      "ai-engineer": 116
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Vertex AI",
+        "url": "https://cloud.google.com/generative-ai-studio?hl=en"
+      },
+      {
+        "type": "article",
+        "title": "Vertex AI Tutorial: A Comprehensive Guide For Beginners",
+        "url": "https://www.datacamp.com/tutorial/vertex-ai-tutorial"
+      },
+      {
+        "type": "video",
+        "title": "Introduction to Vertex AI Studio",
+        "url": "https://www.youtube.com/watch?v=KWarqNq195M"
+      }
+    ]
+  },
+  {
+    "slug": "mcp-server",
+    "title": "MCP Server",
+    "sources": {
+      "ai-engineer": 117,
+      "ai-agents": 54
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Model Context Protocol (MCP) Course",
+        "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
+      },
+      {
+        "type": "official",
+        "title": "Understanding MCP Servers",
+        "url": "https://modelcontextprotocol.io/docs/learn/server-concepts#understanding-mcp-servers"
+      },
+      {
+        "type": "article",
+        "title": "Awesome MCP Servers",
+        "url": "https://mcpservers.org/"
+      },
+      {
+        "type": "video",
+        "title": "The Complete Guide to Building AI Agents for Beginners",
+        "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
+      },
+      {
+        "type": "opensource",
+        "title": "punkeye/awesome-mcp-servers",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers"
+      },
+      {
+        "type": "article",
+        "title": "Introducing the Azure MCP Server",
+        "url": "https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/"
+      },
+      {
+        "type": "article",
+        "title": "The Ultimate Guide to MCP",
+        "url": "https://guangzhengli.com/blog/en/model-context-protocol"
+      },
+      {
+        "type": "article",
+        "title": "AWS MCP Servers for Code Assistants",
+        "url": "https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/"
+      }
+    ]
+  },
+  {
+    "slug": "google-adk",
+    "title": "Google ADK",
+    "sources": {
+      "ai-engineer": 118
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "ADK Crash Course - From Beginner To Expert",
+        "url": "https://codelabs.developers.google.com/onramp/instructions#0"
+      },
+      {
+        "type": "official",
+        "title": "Agent Development Kit",
+        "url": "https://google.github.io/adk-docs/"
+      },
+      {
+        "type": "official",
+        "title": "Overview of Agent Development Kit",
+        "url": "https://docs.cloud.google.com/agent-builder/agent-development-kit/overview"
+      }
+    ]
+  },
+  {
+    "slug": "data-layer",
+    "title": "Data Layer",
+    "sources": {
+      "ai-engineer": 119
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Layer",
+        "url": "https://modelcontextprotocol.io/docs/learn/architecture#layers"
+      }
+    ]
+  },
+  {
+    "slug": "transport-layer",
+    "title": "Transport Layer",
+    "sources": {
+      "ai-engineer": 120
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Layer",
+        "url": "https://modelcontextprotocol.io/docs/learn/architecture#layers"
+      }
+    ]
+  },
+  {
+    "slug": "prompt-injection-attacks",
+    "title": "Prompt Injection Attacks",
+    "sources": {
+      "ai-engineer": 121,
+      "ai-agents": 96,
+      "prompt-engineering": 13
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Prompt Injection in LLMs",
+        "url": "https://www.promptingguide.ai/prompts/adversarial-prompting/prompt-injection"
+      },
+      {
+        "type": "article",
+        "title": "What is a Prompt Injection Attack?",
+        "url": "https://www.wiz.io/academy/prompt-injection-attack"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Injection vs. Jailbreaking: What's the Difference?",
+        "url": "https://learnprompting.org/blog/injection_jailbreaking"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Injection vs Prompt Jailbreak",
+        "url": "https://codoid.com/ai/prompt-injection-vs-prompt-jailbreak-a-detailed-comparison/"
+      },
+      {
+        "type": "article",
+        "title": "How Prompt Attacks Exploit GenAI and How to Fight Back",
+        "url": "https://unit42.paloaltonetworks.com/new-frontier-of-genai-threats-a-comprehensive-guide-to-prompt-attacks/"
+      },
+      {
+        "type": "official",
+        "title": "Mitigate jailbreaks and prompt injections - Anthropic",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/mitigate-jailbreaks"
+      },
+      {
+        "type": "official",
+        "title": "LLM01:2025 Prompt Injection - OWASP",
+        "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/"
+      },
+      {
+        "type": "video",
+        "title": "What Is a Prompt Injection Attack?",
+        "url": "https://www.youtube.com/watch?v=jrHRe9lSqqA"
+      }
+    ]
+  },
+  {
+    "slug": "security-and-privacy-concerns",
+    "title": "Security and Privacy Concerns",
+    "sources": {
+      "ai-engineer": 122
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Examining Privacy Risks in AI Systems",
+        "url": "https://transcend.io/blog/ai-and-privacy"
+      },
+      {
+        "type": "video",
+        "title": "AI Is Dangerous, but Not for the Reasons You Think | Sasha Luccioni | TED",
+        "url": "https://www.youtube.com/watch?v=eXdVDhOGqoE"
+      }
+    ]
+  },
+  {
+    "slug": "building-an-mcp-server",
+    "title": "Building an MCP Server",
+    "sources": {
+      "ai-engineer": 123,
+      "ai-agents": 50
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Build an MCP server",
+        "url": "https://modelcontextprotocol.io/docs/develop/build-server#build-an-mcp-server"
+      },
+      {
+        "type": "article",
+        "title": "MCP server: A step-by-step guide to building from scratch",
+        "url": "https://composio.dev/blog/mcp-server-step-by-step-guide-to-building-from-scrtch"
+      },
+      {
+        "type": "video",
+        "title": "Build and Ship Any MCP Server in MINUTES (Full Guide)",
+        "url": "https://www.youtube.com/watch?v=Zw3sfAIpeH8"
+      },
+      {
+        "type": "official",
+        "title": "Model Context Protocol (MCP) Specification",
+        "url": "https://www.anthropic.com/news/model-context-protocol"
+      },
+      {
+        "type": "article",
+        "title": "How to Build and Host Your Own MCP Servers in Easy Steps?",
+        "url": "https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/"
+      }
+    ]
+  },
+  {
+    "slug": "bias-and-fairness",
+    "title": "Bias and Fairness",
+    "sources": {
+      "ai-engineer": 124
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What Do We Do About the Biases in AI?",
+        "url": "https://hbr.org/2019/10/what-do-we-do-about-the-biases-in-ai"
+      },
+      {
+        "type": "article",
+        "title": "AI Bias - What Is It and How to Avoid It?",
+        "url": "https://levity.ai/blog/ai-bias-how-to-avoid"
+      },
+      {
+        "type": "article",
+        "title": "What about fairness, bias and discrimination?",
+        "url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/guidance-on-ai-and-data-protection/how-do-we-ensure-fairness-in-ai/what-about-fairness-bias-and-discrimination/"
+      }
+    ]
+  },
+  {
+    "slug": "building-an-mcp-client",
+    "title": "Building an MCP Client",
+    "sources": {
+      "ai-engineer": 125
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Build an MCP client",
+        "url": "https://modelcontextprotocol.io/docs/develop/build-client"
+      },
+      {
+        "type": "article",
+        "title": "MCP Client - Step by Step Guide to Building from Scratch",
+        "url": "https://composio.dev/blog/mcp-client-step-by-step-guide-to-building-from-scratch"
+      },
+      {
+        "type": "video",
+        "title": "Create an MCP Client in Python - FastAPI Tutorial",
+        "url": "https://www.youtube.com/watch?v=mhdGVbJBswA"
+      }
+    ]
+  },
+  {
+    "slug": "ai-safety-and-ethics",
+    "title": "AI Safety and Ethics",
+    "sources": {
+      "ai-engineer": 126
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Understanding Artificial Intelligence Ethics and Safety",
+        "url": "https://www.turing.ac.uk/news/publications/understanding-artificial-intelligence-ethics-and-safety"
+      },
+      {
+        "type": "article",
+        "title": "The Hidden Security Risks of LLMs",
+        "url": "https://towardsdatascience.com/the-hidden-security-risks-of-llms/"
+      },
+      {
+        "type": "video",
+        "title": "What is AI Ethics?",
+        "url": "https://www.youtube.com/watch?v=aGwYtUzMQUk"
+      }
+    ]
+  },
+  {
+    "slug": "connect-to-local-server",
+    "title": "Connect to Local Server",
+    "sources": {
+      "ai-engineer": 127
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Connect to local MCP servers",
+        "url": "https://modelcontextprotocol.io/docs/develop/connect-local-servers"
+      },
+      {
+        "type": "article",
+        "title": "How to Build and Host Your Own MCP Servers in Easy Steps",
+        "url": "ttps://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/"
+      },
+      {
+        "type": "video",
+        "title": "Local MCP Servers for Cursor (Step by step)",
+        "url": "https://www.youtube.com/watch?v=_Qr0WTgR5EM"
+      }
+    ]
+  },
+  {
+    "slug": "content-moderation-apis",
+    "title": "Content Moderation APIs",
+    "sources": {
+      "ai-engineer": 128
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Moderation API",
+        "url": "https://platform.openai.com/docs/guides/moderation"
+      },
+      {
+        "type": "article",
+        "title": "How to use the moderation API",
+        "url": "https://cookbook.openai.com/examples/how_to_use_moderation"
+      },
+      {
+        "type": "article",
+        "title": "Content moderation: What it is, how it works, and the best APIs",
+        "url": "https://www.assemblyai.com/blog/content-moderation-what-it-is-how-it-works-best-apis-2"
+      }
+    ]
+  },
+  {
+    "slug": "connect-to-remote-server",
+    "title": "Connect to Remote Server",
+    "sources": {
+      "ai-engineer": 129
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Connect to remote MCP Servers",
+        "url": "https://modelcontextprotocol.io/docs/develop/connect-remote-servers"
+      },
+      {
+        "type": "article",
+        "title": "Remote MCP Servers",
+        "url": "https://mcpservers.org/remote-mcp-servers"
+      },
+      {
+        "type": "video",
+        "title": "Deploy Remote MCP Servers in Python (Step by Step)",
+        "url": "https://www.youtube.com/watch?v=wXAqv8uvY0M"
+      }
+    ]
+  },
+  {
+    "slug": "adding-end-user-ids-in-prompts",
+    "title": "Adding end-user IDs in prompts",
+    "sources": {
+      "ai-engineer": 130
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Sending End-user IDs - OpenAI",
+        "url": "https://platform.openai.com/docs/guides/safety-best-practices/end-user-ids"
+      }
+    ]
+  },
+  {
+    "slug": "conducting-adversarial-testing",
+    "title": "Conducting adversarial testing",
+    "sources": {
+      "ai-engineer": 131
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Adversarial Testing for Generative AI",
+        "url": "https://developers.google.com/machine-learning/resources/adv-testing"
+      },
+      {
+        "type": "article",
+        "title": "Adversarial Testing: Definition, Examples and Resources",
+        "url": "https://www.leapwork.com/blog/adversarial-testing"
+      }
+    ]
+  },
+  {
+    "slug": "robust-prompt-engineering",
+    "title": "Robust prompt engineering",
+    "sources": {
+      "ai-engineer": 133
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Building Robust Prompt Engineering Capability",
+        "url": "https://aimresearch.co/product/building-robust-prompt-engineering-capability"
+      },
+      {
+        "type": "article",
+        "title": "Effective Prompt Engineering: A Comprehensive Guide",
+        "url": "https://medium.com/@nmurugs/effective-prompt-engineering-a-comprehensive-guide-803160c571ed"
+      }
+    ]
+  },
+  {
+    "slug": "know-your-customers-usecases",
+    "title": "Know your Customers / Usecases",
+    "sources": {
+      "ai-engineer": 135
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Assigning Roles",
+        "url": "https://learnprompting.org/docs/basics/roles"
+      }
+    ]
+  },
+  {
+    "slug": "multimodal-ai-usecases",
+    "title": "Multimodal AI Usecases",
+    "sources": {
+      "ai-engineer": 146
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Hugging Face Multimodal Models",
+        "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/a_multimodal_world"
+      }
+    ]
+  },
+  {
+    "slug": "image-understanding",
+    "title": "Image Understanding",
+    "sources": {
+      "ai-engineer": 149
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Low or High Fidelity Image Understanding - OpenAI",
+        "url": "https://platform.openai.com/docs/guides/images"
+      }
+    ]
+  },
+  {
+    "slug": "image-generation",
+    "title": "Image Generation",
+    "sources": {
+      "ai-engineer": 151
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "DALL-E",
+        "url": "https://openai.com/index/dall-e-2/"
+      },
+      {
+        "type": "article",
+        "title": "How DALL-E 2 Actually Works",
+        "url": "https://www.assemblyai.com/blog/how-dall-e-2-actually-works/"
+      },
+      {
+        "type": "video",
+        "title": "How AI Image Generators Work (Stable Diffusion / Dall-E)",
+        "url": "https://www.youtube.com/watch?v=1CIpzeNxIhU"
+      }
+    ]
+  },
+  {
+    "slug": "video-understanding",
+    "title": "Video Understanding",
+    "sources": {
+      "ai-engineer": 152
+    },
+    "resources": [
+      {
+        "type": "opensource",
+        "title": "Awesome LLM for Video Understanding",
+        "url": "https://github.com/yunlong10/Awesome-LLMs-for-Video-Understanding"
+      },
+      {
+        "type": "article",
+        "title": "Video Understanding",
+        "url": "https://dl.acm.org/doi/10.1145/3503161.3551600"
+      }
+    ]
+  },
+  {
+    "slug": "audio-processing",
+    "title": "Audio Processing",
+    "sources": {
+      "ai-engineer": 155
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "The State of Audio Processing",
+        "url": "https://appwrite.io/blog/post/state-of-audio-processing"
+      },
+      {
+        "type": "video",
+        "title": "Audio Signal Processing for Machine Learning",
+        "url": "https://www.youtube.com/watch?v=iCwMQJnKk2c"
+      }
+    ]
+  },
+  {
+    "slug": "multimodal-ai",
+    "title": "Multimodal AI",
+    "sources": {
+      "ai-engineer": 156
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "A Multimodal World - Hugging Face",
+        "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/a_multimodal_world"
+      },
+      {
+        "type": "article",
+        "title": "Multimodal AI - Google",
+        "url": "https://cloud.google.com/use-cases/multimodal-ai?hl=en"
+      },
+      {
+        "type": "article",
+        "title": "What Is Multimodal AI? A Complete Introduction",
+        "url": "https://www.splunk.com/en_us/blog/learn/multimodal-ai.html"
+      }
+    ]
+  },
+  {
+    "slug": "text-to-speech",
+    "title": "Text-to-Speech",
+    "sources": {
+      "ai-engineer": 157
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Text-to-Speech?",
+        "url": "https://aws.amazon.com/polly/what-is-text-to-speech/"
+      },
+      {
+        "type": "article",
+        "title": "From Text to Speech: The Evolution of Synthetic Voices",
+        "url": "https://ignitetech.ai/about/blogs/text-speech-evolution-synthetic-voices"
+      }
+    ]
+  },
+  {
+    "slug": "speech-to-text",
+    "title": "Speech-to-Text",
+    "sources": {
+      "ai-engineer": 158
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Speech to Text?",
+        "url": "https://aws.amazon.com/what-is/speech-to-text/"
+      },
+      {
+        "type": "article",
+        "title": "Turn Speech into Text using Google AI",
+        "url": "https://cloud.google.com/speech-to-text"
+      },
+      {
+        "type": "article",
+        "title": "How is Speech to Text Used?",
+        "url": "https://h2o.ai/wiki/speech-to-text/"
+      }
+    ]
+  },
+  {
+    "slug": "claude-code",
+    "title": "Claude Code",
+    "sources": {
+      "ai-engineer": 159
+    },
+    "resources": [
+      {
+        "type": "roadmap",
+        "title": "Visit the Dedicated Claude Code Roadmap",
+        "url": "https://roadmap.sh/claude-code"
+      },
+      {
+        "type": "course",
+        "title": "Claude Code in Action",
+        "url": "https://anthropic.skilljar.com/claude-code-in-action"
+      },
+      {
+        "type": "official",
+        "title": "Claude Code Overview",
+        "url": "https://code.claude.com/docs/en/overview"
+      },
+      {
+        "type": "video",
+        "title": "Introducing Claude Code",
+        "url": "https://www.youtube.com/watch?v=AJpK3YTTKZ4"
+      }
+    ]
+  },
+  {
+    "slug": "codex",
+    "title": "Codex",
+    "sources": {
+      "ai-engineer": 161
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Codex - Official Webste",
+        "url": "https://chatgpt.com/codex"
+      },
+      {
+        "type": "video",
+        "title": "Getting started with Codex",
+        "url": "https://www.youtube.com/watch?v=px7XlbYgk7I"
+      }
+    ]
+  },
+  {
+    "slug": "cursor",
+    "title": "Cursor",
+    "sources": {
+      "ai-engineer": 162
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Cursor Docs",
+        "url": "https://cursor.com/docs"
+      },
+      {
+        "type": "official",
+        "title": "Cursor Learn",
+        "url": "https://cursor.com/learn"
+      },
+      {
+        "type": "video",
+        "title": "Cursor AI Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=3289vhOUdKA"
+      }
+    ]
+  },
+  {
+    "slug": "openai-vision-api",
+    "title": "OpenAI Vision API",
+    "sources": {
+      "ai-engineer": 163
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Vision",
+        "url": "https://platform.openai.com/docs/guides/vision"
+      },
+      {
+        "type": "video",
+        "title": "OpenAI Vision API Crash Course",
+        "url": "https://www.youtube.com/watch?v=ZjkS11DSeEk"
+      }
+    ]
+  },
+  {
+    "slug": "development-tools",
+    "title": "Development Tools",
+    "sources": {
+      "ai-engineer": 164
+    },
+    "resources": []
+  },
+  {
+    "slug": "windsurf",
+    "title": "Windsurf",
+    "sources": {
+      "ai-engineer": 165
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Windsurf Docs",
+        "url": "https://docs.windsurf.com/windsurf/getting-started"
+      },
+      {
+        "type": "video",
+        "title": "Windsurf Tutorial for Beginners (AI Code Editor) - Better than Cursor??",
+        "url": "https://www.youtube.com/watch?v=8TcWGk1DJVs"
+      },
+      {
+        "type": "video",
+        "title": "Windsurf AI Tutorial for Beginners",
+        "url": "https://www.youtube.com/watch?v=x1VCmB__TDo"
+      }
+    ]
+  },
+  {
+    "slug": "replit",
+    "title": "Replit",
+    "sources": {
+      "ai-engineer": 166
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Replit",
+        "url": "https://replit.com/"
+      },
+      {
+        "type": "article",
+        "title": "What is Replit? An honest look at the AI app builder in 2025",
+        "url": "https://www.eesel.ai/blog/replit"
+      },
+      {
+        "type": "video",
+        "title": "Getting Started with Replit",
+        "url": "https://www.youtube.com/watch?v=St95nPOwsa8&list=PLto9KpJAqHMTzEMDAFT4r5LlI4NByngyT"
+      }
+    ]
+  },
+  {
+    "slug": "dall-e-api",
+    "title": "DALL-E API",
+    "sources": {
+      "ai-engineer": 167
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Image Generation",
+        "url": "https://platform.openai.com/docs/guides/images"
+      },
+      {
+        "type": "video",
+        "title": "DALL E API - Introduction (Generative AI Pictures from OpenAI)",
+        "url": "https://www.youtube.com/watch?v=Zr6vAWwjHN0"
+      }
+    ]
+  },
+  {
+    "slug": "nanobanana-api",
+    "title": "NanoBanana API",
+    "sources": {
+      "ai-engineer": 168
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "NanoBanana API",
+        "url": "https://nanobananaapi.ai/"
+      },
+      {
+        "type": "article",
+        "title": "Generating Consistent Imagery with Gemini",
+        "url": "https://towardsdatascience.com/generating-consistent-imagery-with-gemini/"
+      }
+    ]
+  },
+  {
+    "slug": "whisper-api",
+    "title": "Whisper API",
+    "sources": {
+      "ai-engineer": 169
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Whisper",
+        "url": "https://openai.com/index/whisper/"
+      },
+      {
+        "type": "opensource",
+        "title": "Whisper on GitHub",
+        "url": "https://github.com/openai/whisper"
+      }
+    ]
+  },
+  {
+    "slug": "langchain-for-multimodal-apps",
+    "title": "LangChain for Multimodal Apps",
+    "sources": {
+      "ai-engineer": 171
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LangChain",
+        "url": "https://www.langchain.com/"
+      },
+      {
+        "type": "video",
+        "title": "Build a Multimodal GenAI App with LangChain and Gemini LLMs",
+        "url": "https://www.youtube.com/watch?v=bToMzuiOMhg"
+      }
+    ]
+  },
+  {
+    "slug": "llamaindex-for-multimodal-apps",
+    "title": "LlamaIndex for Multimodal Apps",
+    "sources": {
+      "ai-engineer": 172
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LlamaIndex Multi-modal",
+        "url": "https://docs.llamaindex.ai/en/stable/use_cases/multimodal/"
+      },
+      {
+        "type": "video",
+        "title": "Multi-modal Retrieval Augmented Generation with LlamaIndex",
+        "url": "https://www.youtube.com/watch?v=35RlrrgYDyU"
+      }
+    ]
+  },
+  {
+    "slug": "basic-backend-development",
+    "title": "Basic Backend Development",
+    "sources": {
+      "ai-agents": 0
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Introduction to the server-side",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/First_steps/Introduction"
+      },
+      {
+        "type": "article",
+        "title": "What is a REST API? - Red Hat",
+        "url": "https://www.redhat.com/en/topics/api/what-is-a-rest-api"
+      },
+      {
+        "type": "article",
+        "title": "What is a Database? - Oracle",
+        "url": "https://www.oracle.com/database/what-is-database/"
+      }
+    ]
+  },
+  {
+    "slug": "git-and-terminal-usage",
+    "title": "Git and Terminal Usage",
+    "sources": {
+      "ai-agents": 1
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Git Basics",
+        "url": "https://git-scm.com/doc"
+      },
+      {
+        "type": "official",
+        "title": "Introduction to the Terminal",
+        "url": "https://ubuntu.com/tutorials/command-line-for-beginners#1-overview"
+      },
+      {
+        "type": "video",
+        "title": "Git and Terminal Basics Crash Course (YouTube)",
+        "url": "https://www.youtube.com/watch?v=HVsySz-h9r4"
+      }
+    ]
+  },
+  {
+    "slug": "rest-api-knowledge",
+    "title": "REST API Knowledge",
+    "sources": {
+      "ai-agents": 3
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is RESTful API? - RESTful API Explained - AWS",
+        "url": "https://aws.amazon.com/what-is/restful-api/"
+      },
+      {
+        "type": "article",
+        "title": "What Is a REST API? Examples, Uses & Challenges",
+        "url": "https://blog.postman.com/rest-api-examples/"
+      }
+    ]
+  },
+  {
+    "slug": "reasoning-vs-standard-models",
+    "title": "Reasoning vs Standard Models",
+    "sources": {
+      "ai-agents": 4
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "url": "https://react-lm.github.io/"
+      },
+      {
+        "type": "article",
+        "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+        "url": "https://learnprompting.org/docs/agents/react"
+      }
+    ]
+  },
+  {
+    "slug": "fine-tuning-vs-prompt-engineering",
+    "title": "Fine-tuning vs Prompt Engineering",
+    "sources": {
+      "ai-agents": 5,
+      "prompt-engineering": 18
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "OpenAI Fine Tuning",
+        "url": "https://platform.openai.com/docs/guides/fine-tuning"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Engineering vs Prompt Tuning: A Detailed Explanation",
+        "url": "https://medium.com/@aabhi02/prompt-engineering-vs-prompt-tuning-a-detailed-explanation-19ea8ce62ac4"
+      },
+      {
+        "type": "video",
+        "title": "RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models",
+        "url": "https://youtu.be/zYGDpG-pTho?si=pFeWqbjSN1RM4WiZ"
+      },
+      {
+        "type": "article",
+        "title": "When to use prompt engineering vs. fine-tuning - TechTarget",
+        "url": "https://www.techtarget.com/searchEnterpriseAI/tip/Prompt-engineering-vs-fine-tuning-Whats-the-difference"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Engineering vs Fine Tuning: When to Use Each - Codecademy",
+        "url": "https://www.codecademy.com/article/prompt-engineering-vs-fine-tuning"
+      }
+    ]
+  },
+  {
+    "slug": "transformer-models-and-llms",
+    "title": "Transformer Models and LLMs",
+    "sources": {
+      "ai-agents": 6
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Exploring Open Source AI Models: LLMs and Transformer Architectures",
+        "url": "https://llmmodels.org/blog/exploring-open-source-ai-models-llms-and-transformer-architectures/"
+      },
+      {
+        "type": "article",
+        "title": "How Transformer LLMs Work",
+        "url": "https://www.deeplearning.ai/short-courses/how-transformer-llms-work/"
+      }
+    ]
+  },
+  {
+    "slug": "embeddings-and-vector-search",
+    "title": "Embeddings and Vector Search",
+    "sources": {
+      "ai-agents": 7
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Embeddings API Documentation",
+        "url": "https://platform.openai.com/docs/guides/embeddings/what-are-embeddings"
+      },
+      {
+        "type": "article",
+        "title": "Understanding Embeddings and Vector Search (Pinecone Blog)",
+        "url": "https://www.pinecone.io/learn/vector-embeddings/"
+      }
+    ]
+  },
+  {
+    "slug": "open-weight-models",
+    "title": "Open Weight Models",
+    "sources": {
+      "ai-agents": 8
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "BLOOM BigScience",
+        "url": "https://bigscience.huggingface.co/"
+      },
+      {
+        "type": "official",
+        "title": "Falcon LLM – Technology Innovation Institute (TII)",
+        "url": "https://falconllm.tii.ae/"
+      },
+      {
+        "type": "official",
+        "title": "Llama 2 – Meta's Official Announcement",
+        "url": "https://ai.meta.com/llama/"
+      },
+      {
+        "type": "official",
+        "title": "Hugging Face – Open LLM Leaderboard (Top Open Models)",
+        "url": "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard"
+      },
+      {
+        "type": "official",
+        "title": "EleutherAI – Open Research Collective (GPT-Neo, GPT-J, etc.)",
+        "url": "https://www.eleuther.ai/"
+      }
+    ]
+  },
+  {
+    "slug": "closed-weight-models",
+    "title": "Closed Weight Models",
+    "sources": {
+      "ai-agents": 11
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Open AI's GPT-4",
+        "url": "https://openai.com/gpt-4"
+      },
+      {
+        "type": "official",
+        "title": "Claude",
+        "url": "https://www.anthropic.com/claude"
+      },
+      {
+        "type": "official",
+        "title": "Gemini",
+        "url": "https://deepmind.google/technologies/gemini/"
+      },
+      {
+        "type": "article",
+        "title": "Open-Source LLMs vs Closed LLMs",
+        "url": "https://hatchworks.com/blog/gen-ai/open-source-vs-closed-llms-guide/"
+      },
+      {
+        "type": "article",
+        "title": "2024 Comparison of Open-Source Vs Closed-Source LLMs",
+        "url": "https://blog.spheron.network/choosing-the-right-llm-2024-comparison-of-open-source-vs-closed-source-llms"
+      }
+    ]
+  },
+  {
+    "slug": "pricing-of-common-models",
+    "title": "Pricing of Common Models",
+    "sources": {
+      "ai-agents": 12
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Pricing",
+        "url": "https://openai.com/api/pricing/"
+      },
+      {
+        "type": "article",
+        "title": "Executive Guide To AI Agent Pricing",
+        "url": "https://www.forbes.com/councils/forbesbusinesscouncil/2025/01/28/executive-guide-to-ai-agent-pricing-winning-strategies-and-models-to-drive-growth/"
+      },
+      {
+        "type": "article",
+        "title": "AI Pricing: How Much Does Artificial Intelligence Cost In 2025?",
+        "url": "https://www.internetsearchinc.com/ai-pricing-how-much-does-artificial-intelligence-cost/"
+      }
+    ]
+  },
+  {
+    "slug": "context-windows",
+    "title": "Context Windows",
+    "sources": {
+      "ai-agents": 13,
+      "prompt-engineering": 6
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a Context Window in AI?",
+        "url": "https://www.ibm.com/think/topics/context-window"
+      },
+      {
+        "type": "article",
+        "title": "Scaling Language Models with Retrieval-Augmented Generation (RAG)",
+        "url": "https://arxiv.org/abs/2005.11401"
+      },
+      {
+        "type": "article",
+        "title": "Long Context in Language Models - Anthropic's Claude 3",
+        "url": "https://www.anthropic.com/news/claude-3-family"
+      },
+      {
+        "type": "official",
+        "title": "Context windows - Anthropic",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows"
+      }
+    ]
+  },
+  {
+    "slug": "token-based-pricing",
+    "title": "Token Based Pricing",
+    "sources": {
+      "ai-agents": 14
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Explaining Tokens — the Language and Currency of AI",
+        "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/"
+      },
+      {
+        "type": "article",
+        "title": "What Are AI Tokens?",
+        "url": "https://methodshop.com/what-are-ai-tokens/"
+      },
+      {
+        "type": "article",
+        "title": "Pricing - OpenAI",
+        "url": "https://openai.com/api/pricing/"
+      }
+    ]
+  },
+  {
+    "slug": "frequency-penalty",
+    "title": "Frequency Penalty",
+    "sources": {
+      "ai-agents": 17,
+      "prompt-engineering": 28
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Frequency Penalty Explanation",
+        "url": "https://platform.openai.com/docs/advanced-usage/advanced-usage#frequency-and-presence-penalties"
+      },
+      {
+        "type": "article",
+        "title": "Understanding Frequency Penalty and Presence Penalty",
+        "url": "https://medium.com/@the_tori_report/understanding-frequency-penalty-and-presence-penalty-how-to-fine-tune-ai-generated-text-e5e4f5e779cd"
+      },
+      {
+        "type": "article",
+        "title": "Frequency Penalty - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/frequency-penalty"
+      }
+    ]
+  },
+  {
+    "slug": "perception-user-input",
+    "title": "Perception / User Input",
+    "sources": {
+      "ai-agents": 18
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Perception in AI: Understanding Its Types and Importance",
+        "url": "https://marktalks.com/perception-in-ai-understanding-its-types-and-importance/"
+      },
+      {
+        "type": "article",
+        "title": "What Is AI Agent Perception? - IBM",
+        "url": "https://www.ibm.com/think/topics/ai-agent-perception"
+      }
+    ]
+  },
+  {
+    "slug": "presence-penalty",
+    "title": "Presence Penalty",
+    "sources": {
+      "ai-agents": 19,
+      "prompt-engineering": 29
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Understanding Presence Penalty and Frequency Penalty",
+        "url": "https://medium.com/@pushparajgenai2025/understanding-presence-penalty-and-frequency-penalty-in-openai-chat-completion-api-calls-2e3a22547b48"
+      },
+      {
+        "type": "article",
+        "title": "Difference between Frequency and Presence Penalties?",
+        "url": "https://community.openai.com/t/difference-between-frequency-and-presence-penalties/2777"
+      },
+      {
+        "type": "article",
+        "title": "LLM Parameters Explained: A Practical Guide with Examples",
+        "url": "https://learnprompting.org/blog/llm-parameters"
+      },
+      {
+        "type": "article",
+        "title": "Presence Penalty - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/presence-penalty"
+      }
+    ]
+  },
+  {
+    "slug": "reason-and-plan",
+    "title": "Reason and Plan",
+    "sources": {
+      "ai-agents": 20
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+        "url": "https://react-lm.github.io/"
+      },
+      {
+        "type": "article",
+        "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
+        "url": "https://learnprompting.org/docs/agents/react"
+      }
+    ]
+  },
+  {
+    "slug": "stopping-criteria",
+    "title": "Stopping Criteria",
+    "sources": {
+      "ai-agents": 21,
+      "prompt-engineering": 25
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Defining Stopping Criteria in Large Language Models",
+        "url": "https://www.metriccoders.com/post/defining-stopping-criteria-in-large-language-models-a-practical-guide"
+      },
+      {
+        "type": "article",
+        "title": "Stopping Criteria for Decision Tree Algorithm and Tree Plots",
+        "url": "https://aieagle.in/stopping-criteria-for-decision-tree-algorithm-and-tree-plots/"
+      },
+      {
+        "type": "official",
+        "title": "Handling Stop Reasons - Anthropic",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/handling-stop-reasons"
+      },
+      {
+        "type": "article",
+        "title": "Stop Sequence - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/stop-sequence"
+      }
+    ]
+  },
+  {
+    "slug": "acting-tool-invocation",
+    "title": "Acting / Tool Invocation",
+    "sources": {
+      "ai-agents": 22
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What are Tools in AI Agents?",
+        "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
+      },
+      {
+        "type": "article",
+        "title": "What is Tool Calling in Agents?",
+        "url": "https://www.useparagon.com/blog/ai-building-blocks-what-is-tool-calling-a-guide-for-pms"
+      }
+    ]
+  },
+  {
+    "slug": "max-length",
+    "title": "Max Length",
+    "sources": {
+      "ai-agents": 23,
+      "prompt-engineering": 24
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Token Usage",
+        "url": "https://platform.openai.com/docs/guides/gpt/managing-tokens"
+      },
+      {
+        "type": "official",
+        "title": "Size and Max Token Limits",
+        "url": "https://docs.anthropic.com/claude/docs/size-and-token-limits"
+      },
+      {
+        "type": "article",
+        "title": "Utilising Max Token Context Window of Anthropic Claude",
+        "url": "https://medium.com/@nampreetsingh/utilising-max-token-context-window-of-anthropic-claude-on-amazon-bedrock-7377d94b2dfa"
+      },
+      {
+        "type": "article",
+        "title": "Controlling the Length of OpenAI Model Responses",
+        "url": "https://help.openai.com/en/articles/5072518-controlling-the-length-of-openai-model-responses"
+      },
+      {
+        "type": "article",
+        "title": "Max Model Length in AI",
+        "url": "https://www.restack.io/p/ai-model-answer-max-model-length-cat-ai"
+      },
+      {
+        "type": "video",
+        "title": "Understanding ChatGPT/OpenAI Tokens",
+        "url": "https://youtu.be/Mo3NV5n1yZk"
+      },
+      {
+        "type": "official",
+        "title": "Token Counting - Anthropic",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/token-counting"
+      },
+      {
+        "type": "article",
+        "title": "Max Tokens - LLM Parameter Guide - Vellum",
+        "url": "https://www.vellum.ai/llm-parameters/max-tokens"
+      }
+    ]
+  },
+  {
+    "slug": "observation-reflection",
+    "title": "Observation & Reflection",
+    "sources": {
+      "ai-agents": 24
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Best Practices for Prompting and Self-checking",
+        "url": "https://platform.openai.com/docs/guides/prompt-engineering"
+      },
+      {
+        "type": "article",
+        "title": "Self-Reflective AI: Building Agents That Learn by Observing Themselves",
+        "url": "https://arxiv.org/abs/2302.14045"
+      }
+    ]
+  },
+  {
+    "slug": "agent-loop",
+    "title": "Agent Loop",
+    "sources": {
+      "ai-agents": 26
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is an Agent Loop?",
+        "url": "https://huggingface.co/learn/agents-course/en/unit1/agent-steps-and-structure"
+      },
+      {
+        "type": "article",
+        "title": "Let's Build your Own Agentic Loop",
+        "url": "https://www.reddit.com/r/AI_Agents/comments/1js1xjz/lets_build_our_own_agentic_loop_running_in_our/"
+      }
+    ]
+  },
+  {
+    "slug": "what-are-tools",
+    "title": "What are Tools?",
+    "sources": {
+      "ai-agents": 27
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Compare 50+ AI Agent Tools in 2025 - AIMultiple",
+        "url": "https://research.aimultiple.com/ai-agent-tools/"
+      },
+      {
+        "type": "article",
+        "title": "AI Agents Explained in Simple Terms for Beginners",
+        "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/"
+      }
+    ]
+  },
+  {
+    "slug": "personal-assistant",
+    "title": "Personal assistant",
+    "sources": {
+      "ai-agents": 28
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "A Complete Guide on AI-powered Personal Assistants",
+        "url": "https://medium.com/@alexander_clifford/a-complete-guide-on-ai-powered-personal-assistants-with-examples-2f5cd894d566"
+      },
+      {
+        "type": "article",
+        "title": "9 Best AI Personal Assistants for Work, Chat and Home",
+        "url": "https://saner.ai/best-ai-personal-assistants/"
+      }
+    ]
+  },
+  {
+    "slug": "code-generation",
+    "title": "Code generation",
+    "sources": {
+      "ai-agents": 30
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "GitHub Copilot",
+        "url": "https://github.com/features/copilot"
+      },
+      {
+        "type": "article",
+        "title": "Multi-Agent-based Code Generation",
+        "url": "https://arxiv.org/abs/2312.13010"
+      },
+      {
+        "type": "article",
+        "title": "From Prompt to Production: GitHub Blog",
+        "url": "https://github.blog/ai-and-ml/github-copilot/from-prompt-to-production-building-a-landing-page-with-copilot-agent-mode/"
+      }
+    ]
+  },
+  {
+    "slug": "tree-of-thought",
+    "title": "Tree-of-Thought",
+    "sources": {
+      "ai-agents": 31,
+      "prompt-engineering": 37
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Tree of Thoughts (ToT) | Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/techniques/tot"
+      },
+      {
+        "type": "article",
+        "title": "What is tree-of-thoughts? - IBM",
+        "url": "https://www.ibm.com/think/topics/tree-of-thoughts"
+      },
+      {
+        "type": "article",
+        "title": "The Revolutionary Approach of Tree-of-Thought Prompting in AI",
+        "url": "https://medium.com/@WeavePlatform/the-revolutionary-approach-of-tree-of-thought-prompting-in-ai-eb7c0872247b"
+      }
+    ]
+  },
+  {
+    "slug": "data-analysis",
+    "title": "Data analysis",
+    "sources": {
+      "ai-agents": 32
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "How AI Will Transform Data Analysis in 2025",
+        "url": "https://www.devfi.com/ai-transform-data-analysis-2025/"
+      },
+      {
+        "type": "article",
+        "title": "How AI Has Changed The World Of Analytics And Data Science",
+        "url": "https://www.forbes.com/councils/forbestechcouncil/2025/01/28/how-ai-has-changed-the-world-of-analytics-and-data-science/k"
+      }
+    ]
+  },
+  {
+    "slug": "web-scraping-crawling",
+    "title": "Web Scraping / Crawling",
+    "sources": {
+      "ai-agents": 33
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Crawl AI - Build Your AI With One Prompt",
+        "url": "https://www.crawlai.org/"
+      },
+      {
+        "type": "article",
+        "title": "AI-Powered Web Scraper with Crawl4AI and DeepSeek",
+        "url": "https://brightdata.com/blog/web-data/crawl4ai-and-deepseek-web-scraping"
+      },
+      {
+        "type": "article",
+        "title": "Best Web Scraping Tools for AI Applications",
+        "url": "https://www.thetoolnerd.com/p/best-web-scraping-tools-for-ai-applications"
+      },
+      {
+        "type": "article",
+        "title": "8 Best AI Web Scraping Tools I Tried - HubSpot Blog",
+        "url": "https://blog.hubspot.com/website/ai-web-scraping"
+      }
+    ]
+  },
+  {
+    "slug": "be-specific-in-what-you-want",
+    "title": "Be specific in what you want",
+    "sources": {
+      "ai-agents": 34
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/"
+      },
+      {
+        "type": "article",
+        "title": "AI Prompting Examples, Templates, and Tips For Educators",
+        "url": "https://honorlock.com/blog/education-ai-prompt-writing/"
+      },
+      {
+        "type": "article",
+        "title": "How to Ask AI for Anything: The Art of Prompting",
+        "url": "https://sixtyandme.com/using-ai-prompts/"
+      }
+    ]
+  },
+  {
+    "slug": "npc-game-ai",
+    "title": "NPC / Game AI",
+    "sources": {
+      "ai-agents": 36
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Unity – AI for NPCs",
+        "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/artificial-intelligence-in-unreal-engine?application_version=5.3"
+      },
+      {
+        "type": "article",
+        "title": "AI-Driven NPCs: The Future of Gaming Explained",
+        "url": "https://www.capermint.com/blog/everything-you-need-to-know-about-non-player-character-npc/"
+      }
+    ]
+  },
+  {
+    "slug": "provide-additional-context",
+    "title": "Provide additional context",
+    "sources": {
+      "ai-agents": 37
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is Context in Prompt Engineering?",
+        "url": "https://www.godofprompt.ai/blog/what-is-context-in-prompt-engineering"
+      },
+      {
+        "type": "article",
+        "title": "The Importance of Context for Reliable AI Systems",
+        "url": "https://medium.com/mathco-ai/the-importance-of-context-for-reliable-ai-systems-and-how-to-provide-context-009bd1ac7189/"
+      },
+      {
+        "type": "article",
+        "title": "Context Engineering: Why Feeding AI the Right Context Matters",
+        "url": "https://inspirednonsense.com/context-engineering-why-feeding-ai-the-right-context-matters-353e8f87d6d3"
+      }
+    ]
+  },
+  {
+    "slug": "use-relevant-technical-terms",
+    "title": "Use relevant technical terms",
+    "sources": {
+      "ai-agents": 38
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "AI Terms Glossary: AI Terms To Know In 2024",
+        "url": "https://www.moveworks.com/us/en/resources/ai-terms-glossary"
+      },
+      {
+        "type": "article",
+        "title": "15 Essential AI Agent Terms You Must Know",
+        "url": "https://shivammore.medium.com/15-essential-ai-agent-terms-you-must-know-6bfc2f332f6d"
+      },
+      {
+        "type": "article",
+        "title": "AI Agent Examples & Use Cases: Real Applications in 2025",
+        "url": "https://eastgate-software.com/ai-agent-examples-use-cases-real-applications-in-2025/"
+      }
+    ]
+  },
+  {
+    "slug": "use-examples-in-your-prompt",
+    "title": "Use Examples in your Prompt",
+    "sources": {
+      "ai-agents": 39
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "10 Real-World AI Agent Examples in 2025",
+        "url": "https://www.chatbase.co/blog/ai-agent-examples"
+      },
+      {
+        "type": "article",
+        "title": "GPT-4.1 Prompting Guide",
+        "url": "https://cookbook.openai.com/examples/gpt4-1_prompting_guide"
+      },
+      {
+        "type": "article",
+        "title": "AI Agent Examples & Use Cases: Real Applications in 2025",
+        "url": "https://eastgate-software.com/ai-agent-examples-use-cases-real-applications-in-2025/"
+      }
+    ]
+  },
+  {
+    "slug": "web-search",
+    "title": "Web Search",
+    "sources": {
+      "ai-agents": 40
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "8 Best AI Search Engines for 2025",
+        "url": "https://usefulai.com/tools/ai-search-engines"
+      },
+      {
+        "type": "article",
+        "title": "Web Search Agent - PraisonAI Documentation",
+        "url": "https://docs.praison.ai/agents/websearch"
+      }
+    ]
+  },
+  {
+    "slug": "tool-definition",
+    "title": "Tool Definition",
+    "sources": {
+      "ai-agents": 41
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What are Tools?",
+        "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
+      },
+      {
+        "type": "article",
+        "title": "Understanding the Agent Function in AI: Key Roles and Responsibilities",
+        "url": "https://genezio.com/blog/ai-agents-101-understanding-their-role-and-functionality/"
+      }
+    ]
+  },
+  {
+    "slug": "iterate-and-test-your-prompts",
+    "title": "Iterate and Test your Prompts",
+    "sources": {
+      "ai-agents": 42
+    },
+    "resources": [
+      {
+        "type": "course",
+        "title": "Prompt Engineering Best Practices",
+        "url": "https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/"
+      },
+      {
+        "type": "article",
+        "title": "Master Iterative Prompting: A Guide",
+        "url": "https://blogs.vreamer.space/master-iterative-prompting-a-guide-to-more-effective-interactions-with-ai-50a736eaec38"
+      },
+      {
+        "type": "video",
+        "title": "Prompt Engineering: The Iterative Process",
+        "url": "https://www.youtube.com/watch?v=dOxUroR57xs"
+      }
+    ]
+  },
+  {
+    "slug": "code-execution-repl",
+    "title": "Code Execution / REPL",
+    "sources": {
+      "ai-agents": 43
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is a REPL?",
+        "url": "https://docs.replit.com/getting-started/intro-replit"
+      },
+      {
+        "type": "article",
+        "title": "Code Execution AI Agent",
+        "url": "https://docs.praison.ai/features/codeagent"
+      },
+      {
+        "type": "article",
+        "title": "Building an AI Agent's Code Execution Environment",
+        "url": "https://murraycole.com/posts/ai-code-execution-environment"
+      },
+      {
+        "type": "article",
+        "title": "Python Code Tool",
+        "url": "https://python.langchain.com/docs/integrations/tools/python/"
+      }
+    ]
+  },
+  {
+    "slug": "specify-length-format-etc",
+    "title": "Specify Length, format etc",
+    "sources": {
+      "ai-agents": 44
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Mastering Prompt Engineering: Format, Length, and Audience",
+        "url": "https://techlasi.com/savvy/mastering-prompt-engineering-format-length-and-audience-examples-for-2024/"
+      },
+      {
+        "type": "article",
+        "title": "Ultimate Guide to Prompt Engineering",
+        "url": "https://promptdrive.ai/prompt-engineering/"
+      }
+    ]
+  },
+  {
+    "slug": "database-queries",
+    "title": "Database Queries",
+    "sources": {
+      "ai-agents": 45
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Building Your Own Database Agent",
+        "url": "https://www.deeplearning.ai/short-courses/building-your-own-database-agent/"
+      }
+    ]
+  },
+  {
+    "slug": "api-requests",
+    "title": "API Requests",
+    "sources": {
+      "ai-agents": 46
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Introduction to APIs - MDN Web Docs",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Client-side_APIs/Introduction"
+      },
+      {
+        "type": "article",
+        "title": "How APIs Power AI Agents: A Comprehensive Guide",
+        "url": "https://blog.treblle.com/api-guide-for-ai-agents/"
+      }
+    ]
+  },
+  {
+    "slug": "email-slack-sms",
+    "title": "Email / Slack / SMS",
+    "sources": {
+      "ai-agents": 47
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Twilio Messaging API",
+        "url": "https://www.twilio.com/docs/usage/api"
+      },
+      {
+        "type": "official",
+        "title": "Slack AI Agents",
+        "url": "https://slack.com/ai-agents"
+      }
+    ]
+  },
+  {
+    "slug": "file-system-access",
+    "title": "File System Access",
+    "sources": {
+      "ai-agents": 49
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Filesystem MCP server for AI Agents",
+        "url": "https://playbooks.com/mcp/mateicanavra-filesystem"
+      },
+      {
+        "type": "article",
+        "title": "File System Access API",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API"
+      },
+      {
+        "type": "article",
+        "title": "Understanding File Permissions and Security",
+        "url": "https://linuxize.com/post/understanding-linux-file-permissions/"
+      },
+      {
+        "type": "video",
+        "title": "How File Systems Work?",
+        "url": "https://www.youtube.com/watch?v=KN8YgJnShPM"
+      }
+    ]
+  },
+  {
+    "slug": "what-is-agent-memory",
+    "title": "What is Agent Memory?",
+    "sources": {
+      "ai-agents": 53
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Agentic Memory for LLM Agents",
+        "url": "https://arxiv.org/abs/2502.12110"
+      },
+      {
+        "type": "article",
+        "title": "Memory Management in AI Agents",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      },
+      {
+        "type": "article",
+        "title": "Storing and Retrieving Knowledge for Agents",
+        "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/"
+      },
+      {
+        "type": "article",
+        "title": "Short-Term vs Long-Term Memory in AI Agents",
+        "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/"
+      },
+      {
+        "type": "video",
+        "title": "Building Brain-Like Memory for AI Agents",
+        "url": "https://www.youtube.com/watch?v=VKPngyO0iKg"
+      }
+    ]
+  },
+  {
+    "slug": "local-desktop",
+    "title": "Local Desktop",
+    "sources": {
+      "ai-agents": 55
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Build a Simple Local MCP Server",
+        "url": "https://blog.stackademic.com/build-simple-local-mcp-server-5434d19572a4"
+      },
+      {
+        "type": "article",
+        "title": "How to Build and Host Your Own MCP Servers in Easy Steps",
+        "url": "https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/"
+      },
+      {
+        "type": "article",
+        "title": "Expose localhost to Internet",
+        "url": "https://ngrok.com/docs"
+      },
+      {
+        "type": "video",
+        "title": "Run a Local Server on Your Machine",
+        "url": "https://www.youtube.com/watch?v=ldGl6L4Vktk"
+      }
+    ]
+  },
+  {
+    "slug": "remote-cloud",
+    "title": "Remote / Cloud",
+    "sources": {
+      "ai-agents": 56
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Edge AI vs. Cloud AI: Real-Time Intelligence Models",
+        "url": "https://medium.com/@hassaanidrees7/edge-ai-vs-cloud-ai-real-time-intelligence-vs-centralized-processing-df8c6e94fd11"
+      },
+      {
+        "type": "article",
+        "title": "Cloud AI vs. On-premises AI",
+        "url": "https://www.pluralsight.com/resources/blog/ai-and-data/ai-on-premises-vs-in-cloud"
+      },
+      {
+        "type": "article",
+        "title": "Cloud vs On-Premises AI Deployment",
+        "url": "https://toxigon.com/cloud-vs-on-premises-ai-deployment"
+      }
+    ]
+  },
+  {
+    "slug": "short-term-memory",
+    "title": "Short Term  Memory",
+    "sources": {
+      "ai-agents": 57
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Memory Management in AI Agents",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      },
+      {
+        "type": "article",
+        "title": "Build Smarter AI Agents: Manage Short-term and Long-term Memory",
+        "url": "https://redis.io/blog/build-smarter-ai-agents-manage-short-term-and-long-term-memory-with-redis/"
+      },
+      {
+        "type": "article",
+        "title": "Storing and Retrieving Knowledge for Agents",
+        "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/"
+      },
+      {
+        "type": "article",
+        "title": "Short-Term vs Long-Term Memory in AI Agents",
+        "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/"
+      },
+      {
+        "type": "video",
+        "title": "Building Brain-Like Memory for AI Agents",
+        "url": "https://www.youtube.com/watch?v=VKPngyO0iKg"
+      }
+    ]
+  },
+  {
+    "slug": "episodic-vs-semantic-memory",
+    "title": "Episodic vs Semantic Memory",
+    "sources": {
+      "ai-agents": 58
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What Is AI Agent Memory? - IBM",
+        "url": "https://www.ibm.com/think/topics/ai-agent-memory"
+      },
+      {
+        "type": "article",
+        "title": "Episodic Memory vs. Semantic Memory: The Key Differences",
+        "url": "https://www.magneticmemorymethod.com/episodic-vs-semantic-memory/"
+      },
+      {
+        "type": "article",
+        "title": "Memory Systems in LangChain",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      }
+    ]
+  },
+  {
+    "slug": "rag-and-vector-databases",
+    "title": "RAG and Vector Databases",
+    "sources": {
+      "ai-agents": 59
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Understanding Retrieval-Augmented Generation (RAG) and Vector Databases",
+        "url": "https://pureai.com/Articles/2025/03/03/Understanding-RAG.aspx"
+      },
+      {
+        "type": "article",
+        "title": "Build Advanced Retrieval-Augmented Generation Systems",
+        "url": "https://learn.microsoft.com/en-us/azure/developer/ai/advanced-retrieval-augmented-generation"
+      },
+      {
+        "type": "article",
+        "title": "What Is Retrieval-Augmented Generation, aka RAG?",
+        "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+      }
+    ]
+  },
+  {
+    "slug": "long-term-memory",
+    "title": "Long Term Memory",
+    "sources": {
+      "ai-agents": 60
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Long Term Memory in AI Agents",
+        "url": "https://medium.com/@alozie_igbokwe/ai-101-long-term-memory-in-ai-agents-35f87f2d0ce0"
+      },
+      {
+        "type": "article",
+        "title": "Memory Management in AI Agents",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      },
+      {
+        "type": "article",
+        "title": "Storing and Retrieving Knowledge for Agents",
+        "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/"
+      },
+      {
+        "type": "article",
+        "title": "Short-Term vs Long-Term Memory in AI Agents",
+        "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/"
+      },
+      {
+        "type": "video",
+        "title": "Building Brain-Like Memory for AI Agents",
+        "url": "https://www.youtube.com/watch?v=VKPngyO0iKg"
+      }
+    ]
+  },
+  {
+    "slug": "user-profile-storage",
+    "title": "User Profile Storage",
+    "sources": {
+      "ai-agents": 61
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Storage Technology Explained: AI and Data Storage",
+        "url": "https://www.computerweekly.com/feature/Storage-technology-explained-AI-and-the-data-storage-it-needs"
+      },
+      {
+        "type": "article",
+        "title": "The Architect's Guide to Storage for AI - The New Stack",
+        "url": "https://thenewstack.io/the-architects-guide-to-storage-for-ai/"
+      }
+    ]
+  },
+  {
+    "slug": "summarization-compression",
+    "title": "Summarization / Compression",
+    "sources": {
+      "ai-agents": 62
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Evaluating LLMs for Text Summarization",
+        "url": "https://insights.sei.cmu.edu/blog/evaluating-llms-for-text-summarization-introduction/"
+      },
+      {
+        "type": "article",
+        "title": "The Ultimate Guide to AI Document Summarization",
+        "url": "https://www.documentllm.com/blog/ai-document-summarization-guide"
+      }
+    ]
+  },
+  {
+    "slug": "forgetting-aging-strategies",
+    "title": "Forgetting / Aging Strategies",
+    "sources": {
+      "ai-agents": 63
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Memory Management",
+        "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
+      },
+      {
+        "type": "article",
+        "title": "Memory Management for AI Agents",
+        "url": "https://techcommunity.microsoft.com/blog/azure-ai-services-blog/memory-management-for-ai-agents/4406359"
+      }
+    ]
+  },
+  {
+    "slug": "rag-agent",
+    "title": "RAG Agent",
+    "sources": {
+      "ai-agents": 64
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What is RAG? - Retrieval-Augmented Generation AI Explained",
+        "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
+      },
+      {
+        "type": "article",
+        "title": "What Is Retrieval-Augmented Generation, aka RAG?",
+        "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
+      }
+    ]
+  },
+  {
+    "slug": "planner-executor",
+    "title": "Planner Executor",
+    "sources": {
+      "ai-agents": 66
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Plan-and-Execute Agents",
+        "url": "https://blog.langchain.dev/planning-agents/"
+      },
+      {
+        "type": "article",
+        "title": "Plan and Execute: AI Agents Architecture",
+        "url": "https://medium.com/@shubham.ksingh.cer14/plan-and-execute-ai-agents-architecture-f6c60b5b9598"
+      }
+    ]
+  },
+  {
+    "slug": "dag-agents",
+    "title": "DAG Agents",
+    "sources": {
+      "ai-agents": 67
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Airflow: Directed Acyclic Graphs Documentation",
+        "url": "https://airflow.apache.org/docs/apache-airflow/stable/concepts/dags.html"
+      },
+      {
+        "type": "article",
+        "title": "What are DAGs in AI Systems?",
+        "url": "https://www.restack.io/p/version-control-for-ai-answer-what-is-dag-in-ai-cat-ai"
+      },
+      {
+        "type": "video",
+        "title": "DAGs Explained Simply",
+        "url": "https://www.youtube.com/watch?v=1Yh5S-S6wsI"
+      }
+    ]
+  },
+  {
+    "slug": "metrics-to-track",
+    "title": "Metrics to Track",
+    "sources": {
+      "ai-agents": 69
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Robustness Testing for AI",
+        "url": "https://mitibmwatsonailab.mit.edu/category/robustness/"
+      },
+      {
+        "type": "article",
+        "title": "Complete Guide to Machine Learning Evaluation Metrics",
+        "url": "https://medium.com/analytics-vidhya/complete-guide-to-machine-learning-evaluation-metrics-615c2864d916"
+      },
+      {
+        "type": "article",
+        "title": "Measuring Model Performance",
+        "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy"
+      },
+      {
+        "type": "article",
+        "title": "A Practical Framework for (Gen)AI Value Measurement",
+        "url": "https://medium.com/google-cloud/a-practical-framework-for-gen-ai-value-measurement-5fccf3b66c43"
+      }
+    ]
+  },
+  {
+    "slug": "unit-testing-for-individual-tools",
+    "title": "Unit Testing for Individual Tools",
+    "sources": {
+      "ai-agents": 71
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Unit Testing Agents",
+        "url": "https://docs.patronus.ai/docs/agent_evals/unit_testing"
+      },
+      {
+        "type": "article",
+        "title": "Best AI Tools for Unit Testing: A Look at Top 14 AI Tools",
+        "url": "https://thetrendchaser.com/best-ai-tools-for-unit-testing/"
+      },
+      {
+        "type": "article",
+        "title": "AI for Unit Testing: Revolutionizing Developer Productivity",
+        "url": "https://www.diffblue.com/resources/ai-for-unit-testing-revolutionizing-developer-productivity/"
+      }
+    ]
+  },
+  {
+    "slug": "self-critique-agents",
+    "title": "Self-critique Agents",
+    "sources": {
+      "ai-agents": 72
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Reflection Agents",
+        "url": "https://blog.langchain.com/reflection-agents/"
+      },
+      {
+        "type": "article",
+        "title": "How Do Agents Learn from Their Own Mistakes? The Role of Reflection in AI",
+        "url": "https://huggingface.co/blog/Kseniase/reflection"
+      }
+    ]
+  },
+  {
+    "slug": "integration-testing-for-flows",
+    "title": "Integration Testing for Flows",
+    "sources": {
+      "ai-agents": 73
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Integration Testing for AI-based Features with Humans",
+        "url": "https://www.microsoft.com/en-us/research/publication/hint-integration-testing-for-ai-based-features-with-humans-in-the-loop/"
+      },
+      {
+        "type": "article",
+        "title": "Integration Testing and Unit Testing in AI",
+        "url": "https://www.aviator.co/blog/integration-testing-and-unit-testing-in-the-age-of-ai/"
+      },
+      {
+        "type": "article",
+        "title": "Integration Testing",
+        "url": "https://www.guru99.com/integration-testing.html"
+      }
+    ]
+  },
+  {
+    "slug": "human-in-the-loop-evaluation",
+    "title": "Human in the Loop Evaluation",
+    "sources": {
+      "ai-agents": 74
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Human in the Loop · Cloudflare Agents",
+        "url": "https://developers.cloudflare.com/agents/concepts/human-in-the-loop/"
+      },
+      {
+        "type": "article",
+        "title": "What is Human-in-the-Loop: A Guide",
+        "url": "https://logifusion.com/what-is-human-in-the-loop-htil/"
+      },
+      {
+        "type": "article",
+        "title": "Human-in-the-Loop ML",
+        "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/sms-human-review-workflow.html"
+      },
+      {
+        "type": "article",
+        "title": "The Importance of Human Feedback in AI (Hugging Face Blog)",
+        "url": "https://huggingface.co/blog/rlhf"
+      }
+    ]
+  },
+  {
+    "slug": "llm-native-function-calling",
+    "title": "LLM Native \"Function Calling\"",
+    "sources": {
+      "ai-agents": 75
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "A Comprehensive Guide to Function Calling in LLMs",
+        "url": "https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/"
+      },
+      {
+        "type": "article",
+        "title": "Function Calling with LLMs | Prompt Engineering Guide",
+        "url": "https://www.promptingguide.ai/applications/function_calling"
+      },
+      {
+        "type": "article",
+        "title": "Function Calling with Open-Source LLMs",
+        "url": "https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304"
+      }
+    ]
+  },
+  {
+    "slug": "langsmith",
+    "title": "LangSmith",
+    "sources": {
+      "ai-agents": 92
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LangSmith",
+        "url": "https://smith.langchain.com/"
+      },
+      {
+        "type": "official",
+        "title": "LangSmith Documentation",
+        "url": "https://docs.smith.langchain.com/"
+      },
+      {
+        "type": "official",
+        "title": "Harden your application with LangSmith Evaluation",
+        "url": "https://www.langchain.com/evaluation"
+      },
+      {
+        "type": "article",
+        "title": "What is LangSmith and Why should I care as a developer?",
+        "url": "https://medium.com/around-the-prompt/what-is-langsmith-and-why-should-i-care-as-a-developer-e5921deb54b5"
+      }
+    ]
+  },
+  {
+    "slug": "deepeval",
+    "title": "DeepEval",
+    "sources": {
+      "ai-agents": 77
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "DeepEval - The Open-Source LLM Evaluation Framework",
+        "url": "https://www.deepeval.com/"
+      },
+      {
+        "type": "opensource",
+        "title": "DeepEval GitHub Repository",
+        "url": "https://github.com/confident-ai/deepeval"
+      },
+      {
+        "type": "article",
+        "title": "Evaluate LLMs Effectively Using DeepEval: A Pratical Guide",
+        "url": "https://www.datacamp.com/tutorial/deepeval"
+      },
+      {
+        "type": "video",
+        "title": "DeepEval - LLM Evaluation Framework",
+        "url": "https://www.youtube.com/watch?v=ZNs2dCXHlfo"
+      }
+    ]
+  },
+  {
+    "slug": "langgraph",
+    "title": "LangGraph",
+    "sources": {
+      "ai-agents": 79
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LangGraph Docs",
+        "url": "https://docs.langchain.com/oss/python/langgraph/overview?_gl=1*wnuiny*_gcl_au*MTI0NjQ3NzM5NS4xNzczMDQ5NDY2*_ga*MTgwMzY5ODQ5OS4xNzczMDQ5NDY2*_ga_47WX3HKKY2*czE3NzMwNDk0NjYkbzEkZzAkdDE3NzMwNDk0NjYkajYwJGwwJGgw"
+      },
+      {
+        "type": "opensource",
+        "title": "langgraph",
+        "url": "https://github.com/langchain-ai/langgraph"
+      },
+      {
+        "type": "article",
+        "title": "LangGraph 101: Let’s Build A Deep Research Agent",
+        "url": "https://towardsdatascience.com/langgraph-101-lets-build-a-deep-research-agent/"
+      },
+      {
+        "type": "video",
+        "title": "LangChain vs LangGraph: A Tale of Two Frameworks",
+        "url": "https://www.youtube.com/watch?v=qAF1NjEVHhY&pp=ygUWbGFuZ2dyYXBoIHZzIGxhbmdjaGFpbg%3D%3D"
+      }
+    ]
+  },
+  {
+    "slug": "ragas",
+    "title": "Ragas",
+    "sources": {
+      "ai-agents": 80
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Ragas Documentation",
+        "url": "https://docs.ragas.io/en/latest/"
+      },
+      {
+        "type": "opensource",
+        "title": "explodinggradients/ragas",
+        "url": "https://github.com/explodinggradients/ragas"
+      },
+      {
+        "type": "article",
+        "title": "Evaluating RAG Applications with RAGAs",
+        "url": "https://towardsdatascience.com/evaluating-rag-applications-with-ragas-81d67b0ee31a/n"
+      }
+    ]
+  },
+  {
+    "slug": "openai-functions-calling",
+    "title": "OpenAI Functions Calling",
+    "sources": {
+      "ai-agents": 81
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Documentation – Function Calling",
+        "url": "https://platform.openai.com/docs/guides/function-calling"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI Cookbook – Using Functions with GPT Models",
+        "url": "https://github.com/openai/openai-cookbook/blob/main/examples/How_to_call_functions_with_chat_models.ipynb"
+      },
+      {
+        "type": "article",
+        "title": "@officialOpenAI Blog – Announcing Function Calling and Other Updates",
+        "url": "https://openai.com/blog/function-calling-and-other-api-updates"
+      },
+      {
+        "type": "article",
+        "title": "@officialOpenAI API Reference – Functions Section",
+        "url": "https://platform.openai.com/docs/api-reference/chat/create#functions"
+      },
+      {
+        "type": "article",
+        "title": "@officialOpenAI Community – Discussions and Examples on Function Calling",
+        "url": "https://community.openai.com/tag/function-calling"
+      }
+    ]
+  },
+  {
+    "slug": "openai-assistant-api",
+    "title": "OpenAI Assistant API",
+    "sources": {
+      "ai-agents": 84
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI Documentation – Assistants API Overview",
+        "url": "https://platform.openai.com/docs/assistants/overview"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI Blog – Introducing the Assistants API",
+        "url": "https://openai.com/blog/assistants-api"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI Cookbook – Assistants API Example",
+        "url": "https://github.com/openai/openai-cookbook/blob/main/examples/Assistants_API_overview_python.ipynb"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI API Reference – Assistants Endpoints",
+        "url": "https://platform.openai.com/docs/api-reference/assistants"
+      }
+    ]
+  },
+  {
+    "slug": "crewai",
+    "title": "CrewAI",
+    "sources": {
+      "ai-agents": 85
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "CrewAI",
+        "url": "https://crewai.com/"
+      },
+      {
+        "type": "official",
+        "title": "CrewAI Documentation",
+        "url": "https://docs.crewai.com/"
+      },
+      {
+        "type": "article",
+        "title": "Getting Started with CrewAI: Building AI Agents That Work Together",
+        "url": "https://medium.com/@cammilo/getting-started-with-crewai-building-ai-agents-that-work-together-9c1f47f185ca"
+      },
+      {
+        "type": "video",
+        "title": "Crew AI Full Tutorial For Beginners",
+        "url": "https://www.youtube.com/watch?v=q6QLGS306d0"
+      }
+    ]
+  },
+  {
+    "slug": "autogen",
+    "title": "AutoGen",
+    "sources": {
+      "ai-agents": 86
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "AutoGen - Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/project/autogen/"
+      },
+      {
+        "type": "opensource",
+        "title": "GitHub - microsoft/autogen",
+        "url": "https://github.com/microsoft/autogen"
+      }
+    ]
+  },
+  {
+    "slug": "structured-logging-tracing",
+    "title": "Structured logging & tracing",
+    "sources": {
+      "ai-agents": 87
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Understanding Structured Logging: A Comprehensive Guide",
+        "url": "https://www.graphapp.ai/blog/understanding-structured-logging-a-comprehensive-guide"
+      },
+      {
+        "type": "article",
+        "title": "Structured Logging & Cloud Logging",
+        "url": "https://cloud.google.com/logging/docs/structured-logging"
+      },
+      {
+        "type": "article",
+        "title": "Best Practices for Logging in AI Applications",
+        "url": "https://www.restack.io/p/best-ai-practices-software-compliance-answer-logging-best-practices-cat-ai"
+      }
+    ]
+  },
+  {
+    "slug": "gemini-function-calling",
+    "title": "Gemini Function Calling",
+    "sources": {
+      "ai-agents": 88
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Function Calling with the Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs/function-calling"
+      },
+      {
+        "type": "article",
+        "title": "Understanding Function Calling in Gemini",
+        "url": "https://medium.com/google-cloud/understanding-function-calling-in-gemini-3097937f1905"
+      }
+    ]
+  },
+  {
+    "slug": "smol-depot",
+    "title": "Smol Depot",
+    "sources": {
+      "ai-agents": 89
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "smol.ai - Continuous Fine-tuning Platform for AI Engineers",
+        "url": "https://smol.candycode.dev/"
+      },
+      {
+        "type": "article",
+        "title": "5-min Smol AI Tutorial",
+        "url": "https://www.ai-jason.com/learning-ai/smol-ai-tutorial"
+      },
+      {
+        "type": "video",
+        "title": "Smol AI Full Beginner Course",
+        "url": "https://www.youtube.com/watch?v=d7qFVrpLh34"
+      }
+    ]
+  },
+  {
+    "slug": "agno",
+    "title": "Agno",
+    "sources": {
+      "ai-agents": 90
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Agno Docs",
+        "url": "https://docs.agno.com/"
+      },
+      {
+        "type": "opensource",
+        "title": "agno",
+        "url": "https://github.com/agno-agi/agno"
+      },
+      {
+        "type": "video",
+        "title": "Building Your First Agent With AGNO AGI ( Previously Phidata ) | For Complete Begineers",
+        "url": "https://www.youtube.com/watch?v=s7Kkc6vA2K0"
+      }
+    ]
+  },
+  {
+    "slug": "anthropic-tool-use",
+    "title": "Anthropic Tool Use",
+    "sources": {
+      "ai-agents": 91
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Anthropic Tool Use",
+        "url": "https://docs.anthropic.com/en/docs/build-with-claude/tool-use/overview"
+      }
+    ]
+  },
+  {
+    "slug": "helicone",
+    "title": "Helicone",
+    "sources": {
+      "ai-agents": 93
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Helicone",
+        "url": "https://www.helicone.ai/"
+      },
+      {
+        "type": "official",
+        "title": "Helicone OSS LLM Observability",
+        "url": "https://docs.helicone.ai/getting-started/quick-start"
+      },
+      {
+        "type": "opensource",
+        "title": "Helicone/helicone",
+        "url": "https://github.com/Helicone/helicone"
+      }
+    ]
+  },
+  {
+    "slug": "langfuse",
+    "title": "LangFuse",
+    "sources": {
+      "ai-agents": 94
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "LangFuse",
+        "url": "https://langfuse.com/"
+      },
+      {
+        "type": "official",
+        "title": "LangFuse Documentation",
+        "url": "https://langfuse.com/docs"
+      },
+      {
+        "type": "opensource",
+        "title": "langfuse/langfuse",
+        "url": "https://github.com/langfuse/langfuse"
+      },
+      {
+        "type": "article",
+        "title": "Langfuse: Open Source LLM Engineering Platform",
+        "url": "https://www.ycombinator.com/companies/langfuse"
+      }
+    ]
+  },
+  {
+    "slug": "openllmetry",
+    "title": "openllmetry",
+    "sources": {
+      "ai-agents": 95
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenTelemetry Documentation",
+        "url": "https://www.traceloop.com/blog/openllmetry"
+      },
+      {
+        "type": "official",
+        "title": "What is OpenLLMetry? - traceloop",
+        "url": "https://www.traceloop.com/docs/openllmetry/introduction"
+      },
+      {
+        "type": "official",
+        "title": "Use Traceloop with Python",
+        "url": "https://www.traceloop.com/docs/openllmetry/getting-started-python"
+      },
+      {
+        "type": "opensource",
+        "title": "traceloop/openllmetry",
+        "url": "https://github.com/traceloop/openllmetry"
+      }
+    ]
+  },
+  {
+    "slug": "tool-sandboxing-permissioning",
+    "title": "Tool sandboxing / Permissioning",
+    "sources": {
+      "ai-agents": 97
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "AI Sandbox | Harvard University Information Technology",
+        "url": "https://www.huit.harvard.edu/ai-sandbox"
+      },
+      {
+        "type": "article",
+        "title": "How to Set Up AI Sandboxes to Maximize Adoption",
+        "url": "https://medium.com/@emilholmegaard/how-to-set-up-ai-sandboxes-to-maximize-adoption-without-compromising-ethics-and-values-637c70626130"
+      },
+      {
+        "type": "article",
+        "title": "Sandboxes for AI - The Datasphere Initiative",
+        "url": "https://www.thedatasphere.org/datasphere-publish/sandboxes-for-ai/"
+      }
+    ]
+  },
+  {
+    "slug": "data-privacy-pii-redaction",
+    "title": "Data Privacy + PII Redaction",
+    "sources": {
+      "ai-agents": 98
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "GDPR Compliance Overview",
+        "url": "https://gdpr.eu/"
+      },
+      {
+        "type": "article",
+        "title": "Protect Sensitive Data with PII Redaction Software",
+        "url": "https://redactor.ai/blog/pii-redaction-software-guide"
+      },
+      {
+        "type": "article",
+        "title": "A Complete Guide on PII Redaction",
+        "url": "https://enthu.ai/blog/what-is-pii-redaction/"
+      }
+    ]
+  },
+  {
+    "slug": "bias-toxicity-guardrails",
+    "title": "Bias & Toxicity Guardrails",
+    "sources": {
+      "ai-agents": 99
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Define the Agent Guardrails",
+        "url": "https://trailhead.salesforce.com/content/learn/modules/agentforce-agent-planning/define-the-agent-guardrails"
+      },
+      {
+        "type": "article",
+        "title": "How to Build Safe AI Agents: Best Practices for Guardrails",
+        "url": "https://medium.com/@sahin.samia/how-to-build-safe-ai-agents-best-practices-for-guardrails-and-oversight-a0085b50c022"
+      }
+    ]
+  },
+  {
+    "slug": "safety-red-team-testing",
+    "title": "Safety + Red Team Testing",
+    "sources": {
+      "ai-agents": 100,
+      "prompt-engineering": 42
+    },
+    "resources": [
+      {
+        "type": "roadmap",
+        "title": "Visit Dedicated AI Red Teaming Roadmap",
+        "url": "https://roadmap.sh/ai-red-teaming"
+      },
+      {
+        "type": "article",
+        "title": "Enhancing AI safety: Insights and lessons from red teaming",
+        "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/01/14/enhancing-ai-safety-insights-and-lessons-from-red-teaming/"
+      },
+      {
+        "type": "article",
+        "title": "AI Safety Testing in the Absence of Regulations",
+        "url": "https://aisecuritycentral.com/ai-safety-testing/"
+      },
+      {
+        "type": "article",
+        "title": "A Guide to AI Red Teaming - HiddenLayer",
+        "url": "https://hiddenlayer.com/innovation-hub/a-guide-to-ai-red-teaming/"
+      }
+    ]
+  },
+  {
+    "slug": "what-is-a-prompt",
+    "title": "What is a Prompt?",
+    "sources": {
+      "prompt-engineering": 1
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Basics of Prompting - DAIR.AI",
+        "url": "https://www.promptingguide.ai/introduction/basics"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Elements - DAIR.AI",
+        "url": "https://www.promptingguide.ai/introduction/elements"
+      }
+    ]
+  },
+  {
+    "slug": "openai",
+    "title": "OpenAI",
+    "sources": {
+      "prompt-engineering": 7
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "OpenAI API Documentation",
+        "url": "https://developers.openai.com/api/docs"
+      },
+      {
+        "type": "official",
+        "title": "OpenAI Cookbook (GitHub)",
+        "url": "https://github.com/openai/openai-cookbook"
+      }
+    ]
+  },
+  {
+    "slug": "google",
+    "title": "Google",
+    "sources": {
+      "prompt-engineering": 8
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Google AI Studio",
+        "url": "https://ai.google.dev/"
+      },
+      {
+        "type": "official",
+        "title": "Gemini API Documentation",
+        "url": "https://ai.google.dev/gemini-api/docs"
+      }
+    ]
+  },
+  {
+    "slug": "hallucination",
+    "title": "Hallucination",
+    "sources": {
+      "prompt-engineering": 9
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Reduce hallucinations - Anthropic",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+      },
+      {
+        "type": "article",
+        "title": "What are AI hallucinations? - IBM",
+        "url": "https://www.ibm.com/think/topics/ai-hallucinations"
+      }
+    ]
+  },
+  {
+    "slug": "xai",
+    "title": "xAI",
+    "sources": {
+      "prompt-engineering": 15
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "xAI Documentation",
+        "url": "https://docs.x.ai/"
+      },
+      {
+        "type": "official",
+        "title": "xAI API Console",
+        "url": "https://console.x.ai/"
+      }
+    ]
+  },
+  {
+    "slug": "model-weights-parameters",
+    "title": "Model Weights / Parameters",
+    "sources": {
+      "prompt-engineering": 16
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "What are LLM parameters? - IBM",
+        "url": "https://www.ibm.com/think/topics/llm-parameters"
+      }
+    ]
+  },
+  {
+    "slug": "output-control",
+    "title": "Output Control",
+    "sources": {
+      "prompt-engineering": 23
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Increase Output Consistency - Anthropic",
+        "url": "https://platform.claude.com/docs/en/test-and-evaluate/strengthen-guardrails/increase-consistency"
+      },
+      {
+        "type": "article",
+        "title": "General Tips for Designing Prompts - DAIR.AI",
+        "url": "https://www.promptingguide.ai/introduction/tips"
+      }
+    ]
+  },
+  {
+    "slug": "step-back-prompting",
+    "title": "Step-back Prompting",
+    "sources": {
+      "prompt-engineering": 30
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Step-Back Prompting - LearnPrompting",
+        "url": "https://learnprompting.org/docs/advanced/thought_generation/step_back_prompting"
+      }
+    ]
+  },
+  {
+    "slug": "automatic-prompt-engineering",
+    "title": "Automatic Prompt Engineering",
+    "sources": {
+      "prompt-engineering": 34
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Automatic Prompt Engineer - DAIR.AI",
+        "url": "https://www.promptingguide.ai/techniques/ape"
+      }
+    ]
+  },
+  {
+    "slug": "self-consistency-prompting",
+    "title": "Self-Consistency Prompting",
+    "sources": {
+      "prompt-engineering": 35
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Self-Consistency - DAIR.AI",
+        "url": "https://www.promptingguide.ai/techniques/consistency"
+      },
+      {
+        "type": "article",
+        "title": "Self-Consistency - LearnPrompting",
+        "url": "https://learnprompting.org/docs/intermediate/self_consistency"
+      }
+    ]
+  },
+  {
+    "slug": "role-prompting",
+    "title": "Role Prompting",
+    "sources": {
+      "prompt-engineering": 38
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Assigning Roles to Chatbots - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/roles"
+      },
+      {
+        "type": "article",
+        "title": "Role Prompting - LearnPrompting",
+        "url": "https://learnprompting.org/docs/advanced/zero_shot/role_prompting"
+      },
+      {
+        "type": "video",
+        "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
+        "url": "https://youtu.be/vD0E3EUb8-8?si=9orzEniOGmRD7g-o&t=136"
+      }
+    ]
+  },
+  {
+    "slug": "contextual-prompting",
+    "title": "Contextual Prompting",
+    "sources": {
+      "prompt-engineering": 40
+    },
+    "resources": [
+      {
+        "type": "official",
+        "title": "Prompting Best Practices - Anthropic",
+        "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+      },
+      {
+        "type": "article",
+        "title": "Prompt Structure and Key Parts - LearnPrompting",
+        "url": "https://learnprompting.org/docs/basics/prompt_structure"
+      }
+    ]
+  },
+  {
+    "slug": "prompt-debiasing",
+    "title": "Prompt Debiasing",
+    "sources": {
+      "prompt-engineering": 43
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Prompt Debiasing - LearnPrompting",
+        "url": "https://learnprompting.org/docs/reliability/debiasing"
+      }
+    ]
+  },
+  {
+    "slug": "prompt-ensembling",
+    "title": "Prompt Ensembling",
+    "sources": {
+      "prompt-engineering": 44
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Introduction to Ensembling - LearnPrompting",
+        "url": "https://learnprompting.org/docs/advanced/ensembling/introduction"
+      }
+    ]
+  },
+  {
+    "slug": "llm-self-evaluation",
+    "title": "LLM Self Evaluation",
+    "sources": {
+      "prompt-engineering": 45
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "LLM Self-Evaluation - LearnPrompting",
+        "url": "https://learnprompting.org/docs/reliability/lm_self_eval"
+      }
+    ]
+  },
+  {
+    "slug": "calibrating-llms",
+    "title": "Calibrating LLMs",
+    "sources": {
+      "prompt-engineering": 46
+    },
+    "resources": [
+      {
+        "type": "article",
+        "title": "Calibrating LLMs - LearnPrompting",
+        "url": "https://learnprompting.org/docs/reliability/calibration"
+      }
+    ]
+  }
+]

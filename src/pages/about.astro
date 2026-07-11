@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ExportImport from '../components/ExportImport';
+---
+
+<Layout title="About — The AI Course">
+  <div class="max-w-2xl py-12">
+    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">About this course</h1>
+
+    <div class="prose mt-6">
+      <p>
+        The AI Course merges three <a href="https://roadmap.sh">roadmap.sh</a> roadmaps —
+        <a href="https://roadmap.sh/ai-engineer">AI Engineer</a>,
+        <a href="https://roadmap.sh/ai-agents">AI Agents</a>, and
+        <a href="https://roadmap.sh/prompt-engineering">Prompt Engineering</a> —
+        into one deduplicated, logically-ordered curriculum. Prerequisites come first, and topics that
+        appear on several roadmaps appear here exactly once.
+      </p>
+      <p>
+        This site doesn't try to teach every concept itself. Each topic gives you a short, original
+        overview — what it is, why it matters, how you'll use it — and then points you at the best
+        external resources to actually learn it. Check off resources as you go and mark topics complete
+        to track your progress through the course.
+      </p>
+      <h2 class="mt-8 text-xl font-semibold">Credits &amp; data</h2>
+      <p>
+        The course structure (topic list and resource links) is adapted from the
+        <a href="https://github.com/kamranahmedse/developer-roadmap">roadmap.sh open-source repository</a>
+        by Kamran Ahmed and contributors — thank you for an amazing resource. All topic overviews on this
+        site are original writing; no roadmap.sh content is republished here. Linked articles and videos
+        belong to their respective authors.
+      </p>
+      <h2 class="mt-8 text-xl font-semibold">Privacy</h2>
+      <p>
+        There is no backend, no account, and no tracking. Everything — including your course progress —
+        lives in your browser's localStorage.
+      </p>
+    </div>
+
+    <div class="mt-10">
+      <ExportImport client:visible />
+    </div>
+  </div>
+</Layout>
