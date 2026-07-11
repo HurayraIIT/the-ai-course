@@ -25,7 +25,8 @@ const catalog = {
   ],
 };
 
-export function onRequestGet() {
+// onRequest (not onRequestGet) so HEAD requests also get the right headers
+export function onRequest() {
   return new Response(JSON.stringify(catalog, null, 2), {
     headers: {
       'Content-Type': 'application/linkset+json',
