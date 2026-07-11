@@ -1,0 +1,39 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "The AI Course — Topic Index",
+    "description": "Read-only index of all course topics on The AI Course, a free curriculum covering AI engineering, AI agents, and prompt engineering. Topic pages live at /topics/{slug}/.",
+    "version": "1.0.0",
+    "license": { "name": "Content usage per site policy", "identifier": "NOASSERTION" }
+  },
+  "servers": [{ "url": "https://the-ai-course.hurayraiit.com" }],
+  "paths": {
+    "/search-index.json": {
+      "get": {
+        "operationId": "listTopics",
+        "summary": "List all course topics in curriculum order",
+        "responses": {
+          "200": {
+            "description": "All 240 topics with their module names, in course order.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "slug": { "type": "string", "description": "Topic URL slug; page at /topics/{slug}/" },
+                      "title": { "type": "string" },
+                      "module": { "type": "string", "description": "Human-readable module title" }
+                    },
+                    "required": ["slug", "title", "module"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,12 +5,14 @@ import react from '@astrojs/react';
 
 import tailwindcss from '@tailwindcss/vite';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://the-ai-course.pages.dev',
+  site: 'https://the-ai-course.hurayraiit.com',
   output: 'static',
   prerenderConflictBehavior: 'error',
-  integrations: [react()],
+  integrations: [react(), sitemap()],
 
   vite: {
     plugins: [tailwindcss()]
