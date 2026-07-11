@@ -20,6 +20,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Native cross-document view transitions (Chromium/Edge; other browsers
+   degrade to instant navigation). Scripts/islands are untouched — these
+   remain real full-page loads. */
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.22s;
+  animation-timing-function: ease;
+}
+
+/* Keep the sticky header stable instead of cross-fading with the page. */
+.site-header {
+  view-transition-name: site-header;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
 /* Prose styles for topic overviews (no typography plugin needed) */
 .prose {
   @apply text-zinc-700 dark:text-zinc-300 leading-relaxed;
