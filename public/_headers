@@ -1,5 +1,4 @@
+# Note: _headers only affects static assets; /.well-known/api-catalog is a
+# Pages Function (functions/.well-known/api-catalog.js) that sets its own headers.
 /*
   Link: </.well-known/api-catalog>; rel="api-catalog"
-
-/.well-known/api-catalog
-  Content-Type: application/linkset+json
