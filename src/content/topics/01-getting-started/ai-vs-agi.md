@@ -10,6 +10,11 @@
   "resources": [
     {
       "type": "article",
+      "title": "What is artificial intelligence (AI)?",
+      "url": "https://www.cloudflare.com/learning/ai/what-is-artificial-intelligence/"
+    },
+    {
+      "type": "article",
       "title": "What is AGI?",
       "url": "https://aws.amazon.com/what-is/artificial-general-intelligence/"
     },

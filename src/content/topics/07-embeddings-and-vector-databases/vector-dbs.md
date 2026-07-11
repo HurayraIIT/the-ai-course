@@ -14,6 +14,11 @@
     },
     {
       "type": "article",
+      "title": "What is a vector database?",
+      "url": "https://www.cloudflare.com/learning/ai/what-is-vector-database/"
+    },
+    {
+      "type": "article",
       "title": "What are Vector Databases?",
       "url": "https://www.mongodb.com/resources/basics/databases/vector-databases"
     },
