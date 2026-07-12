@@ -28,6 +28,14 @@ function LockIcon() {
   );
 }
 
+function PendingIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" fill="currentColor" className="shrink-0 text-amber-500">
+      <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1Zm0 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm.75 2.25a.75.75 0 0 0-1.5 0V8c0 .2.08.39.22.53l2 2a.75.75 0 1 0 1.06-1.06L8.75 7.69V4.75Z" />
+    </svg>
+  );
+}
+
 function CheckIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 16 16" width="14" height="14" fill="currentColor" className="shrink-0 text-green-600">
@@ -90,11 +98,19 @@ export default function Home() {
             <ol className="mt-3 divide-y divide-zinc-100 rounded-md border border-zinc-200">
               {module.lessons.map((lesson) => {
                 const locked = outline.authenticated ? !lesson.unlocked : true;
+                // Frontier = the next lesson to work on (admins have everything unlocked,
+                // but their true frontier is still completed_count + 1).
+                const pending =
+                  !locked &&
+                  !lesson.completed &&
+                  outline.completed_count !== null &&
+                  lesson.position <= outline.completed_count + 1;
                 const inner = (
                   <span className="flex items-center gap-2">
-                    {lesson.completed ? <CheckIcon /> : locked ? <LockIcon /> : null}
+                    {lesson.completed ? <CheckIcon /> : pending ? <PendingIcon /> : locked ? <LockIcon /> : null}
                     <span>{lesson.title}</span>
                     {locked && <span className="sr-only">(locked)</span>}
+                    {pending && <span className="sr-only">(in progress)</span>}
                     {lesson.completed && <span className="sr-only">(completed)</span>}
                   </span>
                 );

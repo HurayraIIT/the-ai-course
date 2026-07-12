@@ -21,6 +21,7 @@ interface LessonData {
   body_md: string;
   resources: Resource[];
   completed: boolean;
+  viewing_locked: boolean;
   prev: { slug: string; title: string } | null;
   next: { slug: string; title: string } | null;
 }
@@ -103,6 +104,11 @@ export default function Lesson() {
           Completed
         </p>
       )}
+      {lesson.viewing_locked && (
+        <p role="status" className="mt-3 rounded-md bg-amber-50 p-3 text-sm text-amber-800">
+          Admin preview — this lesson is still locked for you, so progress tracking is disabled.
+        </p>
+      )}
 
       <div className="prose prose-zinc mt-6 max-w-none">
         <ReactMarkdown>{lesson.body_md}</ReactMarkdown>
@@ -122,7 +128,7 @@ export default function Lesson() {
                 <button
                   onClick={() => markRead(resource)}
                   aria-pressed={resource.read}
-                  disabled={resource.read}
+                  disabled={resource.read || lesson.viewing_locked}
                   aria-label={`Mark "${resource.title}" as read`}
                   className={`flex h-5 w-5 shrink-0 items-center justify-center rounded border focus:outline-none focus:ring-2 focus:ring-blue-400 ${
                     resource.read ? 'border-green-600 bg-green-600 text-white' : 'border-zinc-300 bg-white hover:border-blue-500'
@@ -151,7 +157,8 @@ export default function Lesson() {
           </ul>
         </section>
       ) : (
-        !lesson.completed && (
+        !lesson.completed &&
+        !lesson.viewing_locked && (
           <div className="mt-8">
             <button onClick={markComplete} className={buttonClass}>
               Mark lesson as complete
@@ -169,7 +176,7 @@ export default function Lesson() {
           <span />
         )}
         {lesson.next &&
-          (lesson.completed || allRead ? (
+          (lesson.completed || allRead || lesson.viewing_locked ? (
             <Link to={`/lessons/${lesson.next.slug}`} className="text-right text-blue-700 underline">
               {lesson.next.title} →
             </Link>

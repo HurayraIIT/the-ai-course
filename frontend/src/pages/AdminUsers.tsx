@@ -1,7 +1,21 @@
 import { useEffect, useState, type FormEvent } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api';
-import { Avatar, buttonSecondaryClass, inputClass, PageTitle, Spinner } from '../components/ui';
+import { formatDateTime } from '../format';
+import {
+  AdminNav,
+  Avatar,
+  buttonSecondaryClass,
+  inputClass,
+  PageTitle,
+  Pagination,
+  Spinner,
+  tableClass,
+  tableWrapClass,
+  tdClass,
+  thClass,
+  trZebraClass,
+} from '../components/ui';
 
 interface AdminUser {
   id: number;
@@ -41,16 +55,10 @@ export default function AdminUsers() {
 
   if (!data) return <Spinner label="Loading users" />;
 
-  const pages = Math.max(1, Math.ceil(data.total / data.per_page));
-
   return (
     <div>
       <PageTitle>Admin — Users</PageTitle>
-      <p className="mt-2 text-sm">
-        <Link to="/admin/analytics" className="text-blue-700 underline">
-          View analytics
-        </Link>
-      </p>
+      <AdminNav />
 
       <form onSubmit={search} role="search" className="mt-4 flex gap-2">
         <label htmlFor="user-search" className="sr-only">
@@ -73,22 +81,22 @@ export default function AdminUsers() {
         {data.total} user{data.total === 1 ? '' : 's'}
       </p>
 
-      <div className="mt-2 overflow-x-auto">
-        <table className="w-full text-left text-sm">
+      <div className={`mt-2 ${tableWrapClass}`}>
+        <table className={tableClass}>
           <caption className="sr-only">All users</caption>
           <thead>
-            <tr className="border-b border-zinc-200 text-xs uppercase tracking-wide text-zinc-500">
-              <th scope="col" className="py-2 pr-2">User</th>
-              <th scope="col" className="py-2 pr-2">Email</th>
-              <th scope="col" className="py-2 pr-2">Progress</th>
-              <th scope="col" className="py-2 pr-2">Joined</th>
-              <th scope="col" className="py-2">Last login</th>
+            <tr>
+              <th scope="col" className={thClass}>User</th>
+              <th scope="col" className={thClass}>Email</th>
+              <th scope="col" className={thClass}>Progress</th>
+              <th scope="col" className={thClass}>Joined</th>
+              <th scope="col" className={thClass}>Last login</th>
             </tr>
           </thead>
           <tbody>
             {data.users.map((u) => (
-              <tr key={u.id} className="border-b border-zinc-100">
-                <td className="py-2 pr-2">
+              <tr key={u.id} className={trZebraClass}>
+                <td className={tdClass}>
                   <Link to={`/admin/users/${u.id}`} className="flex items-center gap-2 text-blue-700 underline">
                     <Avatar hash={u.avatar_hash} username={u.username} size={24} />
                     {u.username}
@@ -97,39 +105,19 @@ export default function AdminUsers() {
                     )}
                   </Link>
                 </td>
-                <td className="py-2 pr-2">{u.email}</td>
-                <td className="py-2 pr-2 tabular-nums">
+                <td className={tdClass}>{u.email}</td>
+                <td className={`${tdClass} tabular-nums`}>
                   {u.completed}/{data.total_lessons}
                 </td>
-                <td className="py-2 pr-2 whitespace-nowrap">{u.created_at.slice(0, 10)}</td>
-                <td className="py-2 whitespace-nowrap">{u.last_login_at?.slice(0, 10) ?? '—'}</td>
+                <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(u.created_at)}</td>
+                <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(u.last_login_at)}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      {pages > 1 && (
-        <nav aria-label="Pagination" className="mt-4 flex items-center gap-3 text-sm">
-          <button
-            onClick={() => setPage(page - 1)}
-            disabled={page <= 1}
-            className={buttonSecondaryClass}
-          >
-            Previous
-          </button>
-          <span>
-            Page {page} of {pages}
-          </span>
-          <button
-            onClick={() => setPage(page + 1)}
-            disabled={page >= pages}
-            className={buttonSecondaryClass}
-          >
-            Next
-          </button>
-        </nav>
-      )}
+      <Pagination page={page} total={data.total} perPage={data.per_page} onPage={setPage} />
     </div>
   );
 }

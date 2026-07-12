@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import { api } from '../api';
+import { formatDateTime } from '../format';
 import { Avatar, buttonClass, ErrorMessage, inputClass } from './ui';
 
 interface Comment {
@@ -85,7 +86,7 @@ export default function Comments({ lessonId }: { lessonId: number }) {
               <p className="text-sm">
                 <span className="font-medium">{comment.username}</span>{' '}
                 <time dateTime={comment.created_at} className="text-xs text-zinc-500">
-                  {new Date(comment.created_at.replace(' ', 'T')).toLocaleString()}
+                  {formatDateTime(comment.created_at)}
                 </time>
               </p>
               <p className="mt-1 whitespace-pre-wrap break-words text-sm text-zinc-800">{comment.body}</p>

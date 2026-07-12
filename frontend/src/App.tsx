@@ -13,6 +13,9 @@ import Settings from './pages/Settings';
 import AdminUsers from './pages/AdminUsers';
 import AdminUserDetail from './pages/AdminUserDetail';
 import AdminAnalytics from './pages/AdminAnalytics';
+import AdminComments from './pages/AdminComments';
+import AdminActivity from './pages/AdminActivity';
+import AdminEmails from './pages/AdminEmails';
 import NotFound from './pages/NotFound';
 
 function Header() {
@@ -100,6 +103,9 @@ export default function App() {
             <Route path="/admin/users" element={<RequireAdmin><AdminUsers /></RequireAdmin>} />
             <Route path="/admin/users/:id" element={<RequireAdmin><AdminUserDetail /></RequireAdmin>} />
             <Route path="/admin/analytics" element={<RequireAdmin><AdminAnalytics /></RequireAdmin>} />
+            <Route path="/admin/comments" element={<RequireAdmin><AdminComments /></RequireAdmin>} />
+            <Route path="/admin/activity" element={<RequireAdmin><AdminActivity /></RequireAdmin>} />
+            <Route path="/admin/emails" element={<RequireAdmin><AdminEmails /></RequireAdmin>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

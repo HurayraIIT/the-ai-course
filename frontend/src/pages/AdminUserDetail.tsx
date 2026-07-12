@@ -1,7 +1,10 @@
 import { useCallback, useEffect, useState, type FormEvent } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { api } from '../api';
+import { useAuth } from '../auth';
+import { formatDateTime } from '../format';
 import {
+  AdminNav,
   Avatar,
   buttonClass,
   buttonDangerClass,
@@ -10,6 +13,11 @@ import {
   inputClass,
   PageTitle,
   Spinner,
+  tableClass,
+  tableWrapClass,
+  tdClass,
+  thClass,
+  trZebraClass,
 } from '../components/ui';
 
 interface Detail {
@@ -31,6 +39,7 @@ interface Detail {
 export default function AdminUserDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user: me } = useAuth();
   const [detail, setDetail] = useState<Detail | null>(null);
   const [form, setForm] = useState({ username: '', email: '', phone: '', leaderboard_opt_in: true });
   const [msg, setMsg] = useState<string | null>(null);
@@ -53,6 +62,8 @@ export default function AdminUserDetail() {
   useEffect(load, [load]);
 
   if (!detail) return <Spinner label="Loading user" />;
+
+  const isSelf = me?.id === detail.user.id;
 
   const flash = (message: string) => {
     setMsg(message);
@@ -117,8 +128,9 @@ export default function AdminUserDetail() {
         <Avatar hash={detail.user.avatar_hash} username={detail.user.username} size={40} />
         <PageTitle>{detail.user.username}</PageTitle>
       </div>
-      <p className="mt-2 text-sm text-zinc-600">
-        Joined {detail.user.created_at.slice(0, 10)} · Last login {detail.user.last_login_at?.slice(0, 10) ?? 'never'} ·{' '}
+      <AdminNav />
+      <p className="mt-3 text-sm text-zinc-600">
+        Joined {formatDateTime(detail.user.created_at)} · Last login {formatDateTime(detail.user.last_login_at)} ·{' '}
         {detail.completions.length}/{detail.total_lessons} lessons completed
       </p>
 
@@ -228,7 +240,9 @@ export default function AdminUserDetail() {
                 Reset progress
               </button>
             )}
-            {confirming === 'delete' ? (
+            {isSelf ? (
+              <p className="text-sm text-zinc-500">You cannot delete your own account.</p>
+            ) : confirming === 'delete' ? (
               <div className="flex items-center gap-2">
                 <span className="text-sm">Permanently delete this user?</span>
                 <button onClick={deleteUser} className={buttonDangerClass}>
@@ -253,22 +267,26 @@ export default function AdminUserDetail() {
           {detail.completions.length === 0 ? (
             <p className="mt-4 text-sm text-zinc-600">No lessons completed yet.</p>
           ) : (
-            <div className="mt-4 max-h-96 overflow-y-auto rounded-md border border-zinc-200">
-              <table className="w-full text-left text-sm">
+            <div className={`mt-4 max-h-96 overflow-y-auto ${tableWrapClass}`}>
+              <table className={tableClass}>
                 <caption className="sr-only">Lessons completed by this user with completion dates</caption>
-                <thead className="sticky top-0 bg-white">
-                  <tr className="border-b border-zinc-200 text-xs uppercase tracking-wide text-zinc-500">
-                    <th scope="col" className="px-3 py-2">#</th>
-                    <th scope="col" className="px-3 py-2">Lesson</th>
-                    <th scope="col" className="px-3 py-2">Completed</th>
+                <thead className="sticky top-0">
+                  <tr>
+                    <th scope="col" className={thClass}>#</th>
+                    <th scope="col" className={thClass}>Lesson</th>
+                    <th scope="col" className={thClass}>Completed</th>
                   </tr>
                 </thead>
                 <tbody>
                   {detail.completions.map((c) => (
-                    <tr key={c.slug} className="border-b border-zinc-100">
-                      <td className="px-3 py-1.5 tabular-nums">{c.position}</td>
-                      <td className="px-3 py-1.5">{c.title}</td>
-                      <td className="px-3 py-1.5 whitespace-nowrap">{c.completed_at}</td>
+                    <tr key={c.slug} className={trZebraClass}>
+                      <td className={`${tdClass} tabular-nums`}>{c.position}</td>
+                      <td className={tdClass}>
+                        <Link to={`/lessons/${c.slug}`} className="text-blue-700 underline">
+                          {c.title}
+                        </Link>
+                      </td>
+                      <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(c.completed_at)}</td>
                     </tr>
                   ))}
                 </tbody>
