@@ -14,5 +14,11 @@ function routes(): array
 {
     return [
         ['GET', '#^/health$#', fn() => json_response(['ok' => true]), 'public'],
+        ['GET', '#^/me$#', 'handle_me', 'public'],
+        ['POST', '#^/auth/register$#', 'handle_register', 'public'],
+        ['POST', '#^/auth/login$#', 'handle_login', 'public'],
+        ['POST', '#^/auth/logout$#', 'handle_logout', 'user'],
+        ['POST', '#^/auth/forgot-password$#', 'handle_forgot_password', 'public'],
+        ['POST', '#^/auth/reset-password$#', 'handle_reset_password', 'public'],
     ];
 }
