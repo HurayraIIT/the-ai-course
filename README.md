@@ -1,95 +1,85 @@
 <div align="center">
 
-# 🎓 The AI Course
+# 🎓 The AI Course — LMS
 
-**One course for AI engineering, agents, and prompting.**
+**One course for AI engineering, agents, and prompting — now a full LMS.**
 
 Three [roadmap.sh](https://roadmap.sh) roadmaps — [AI Engineer](https://roadmap.sh/ai-engineer) · [AI Agents](https://roadmap.sh/ai-agents) · [Prompt Engineering](https://roadmap.sh/prompt-engineering) — merged into a single, deduplicated, logically-ordered curriculum.
 
-**240 topics · 17 modules · 745+ curated resources**
+**240 lessons · 17 modules · 745+ curated resources**
 
-![Astro](https://img.shields.io/badge/Astro_7-BC52EE?logo=astro&logoColor=white)
 ![React](https://img.shields.io/badge/React_19-087EA4?logo=react&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS_4-38BDF8?logo=tailwindcss&logoColor=white)
-![No backend](https://img.shields.io/badge/backend-none-success)
+![PHP](https://img.shields.io/badge/PHP_8.2+-777BB4?logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL_8-4479A1?logo=mysql&logoColor=white)
 
-*Free · self-paced · no signup · your progress never leaves your browser*
+*Accounts · sequential lesson unlocking · leaderboard · comments · admin panel*
 
 </div>
 
 ---
 
-## ✨ What it does
+## Stack
 
-Learning AI from the roadmap.sh roadmaps means hopping between three maps full of overlapping topics. This site fixes that:
+- **Frontend**: React 19 SPA (Vite, Tailwind CSS v4, react-router), built into `public/`
+- **Backend**: vanilla PHP 8.2+ JSON API (`/api/*`), single front controller, session-cookie auth
+- **Database**: MySQL 8 (PDO, prepared statements everywhere)
+- **Email**: PHPMailer with main + fallback SMTP profiles
 
-- **One linear curriculum** — 304 roadmap topics deduplicated into 240, ordered so prerequisites always come first (LLM fundamentals before prompting, embeddings before RAG, tools before agents…).
-- **Original overviews** — every topic gets a plain-English explainer: *what it is, why it matters, how you'll use it*. The site doesn't reteach everything; it orients you, then hands you the best external resources.
-- **Curated resources** — 745+ articles, official docs, videos, and courses with per-resource checkboxes and type filters.
-- **Progress that's yours** — completion state lives in `localStorage`. A resume button takes you back to where you left off, and you can export/import progress as JSON to move devices.
-- **⌘K search** — instant client-side fuzzy search across all 240 topics.
-- **Light & dark mode** — no-flash theme toggle, fully responsive down to small phones.
+## Features
 
-## 📚 Curriculum
+- Register / login / logout / forgot + reset password (email verification schema-ready, not enforced yet)
+- Fully linear course: lesson N unlocks only when lessons 1..N−1 are complete; a lesson completes when all its resources are marked read (zero-resource lessons get a "Mark as complete" button)
+- Guests see the curriculum outline (titles + lock icons) only — no lesson content
+- Global leaderboard (Gravatar avatar + username), ranked by completed lessons, ties broken by who got there first; users can opt out in Settings
+- Flat comments per lesson with 👍/👎 reactions
+- Admin panel: user list/search, per-user progress with completion dates, profile editing, password/progress resets, user deletion, basic analytics
+- Security: CSRF tokens on all mutations, rate-limited auth endpoints, `password_hash`, hashed single-use reset tokens, no account enumeration, server-side authorization on every route
+- Accessibility: skip link, focus management on route change, labeled inputs with `aria-live` errors, `aria-pressed` toggles, locked items announced to screen readers
 
-| # | Module | Topics |
-|---|--------|-------:|
-| 01 | Getting Started | 9 |
-| 02 | LLM Fundamentals | 17 |
-| 03 | The Model Landscape | 23 |
-| 04 | Prompt Engineering Fundamentals | 21 |
-| 05 | Advanced Prompting & Context Engineering | 9 |
-| 06 | Working with Model APIs | 19 |
-| 07 | Embeddings & Vector Databases | 23 |
-| 08 | Retrieval-Augmented Generation (RAG) | 8 |
-| 09 | AI Agents | 18 |
-| 10 | Tools & Function Calling | 13 |
-| 11 | Agent Memory | 8 |
-| 12 | Agent Frameworks & SDKs | 14 |
-| 13 | Model Context Protocol (MCP) | 12 |
-| 14 | Multimodal AI | 14 |
-| 15 | Evaluation & Observability | 14 |
-| 16 | Security, Safety & Ethics | 12 |
-| 17 | AI Coding Tools | 6 |
+## Local setup
 
-## 🛠 Tech stack
+Requirements: PHP 8.2+, Composer, Node 22+, MySQL 8.
 
-- **[Astro 7](https://astro.build)** — fully static output (`243` prerendered pages), content collections for the topic files
-- **React 19 islands** — only 4 of them: search palette, progress hero, resource checklist, export/import. Everything else is static HTML.
-- **Tailwind CSS 4** — via the `@tailwindcss/vite` plugin, class-based dark mode
-- **nanostores** + `@nanostores/persistent` — one progress store shared across islands, synced to `localStorage`
-- **No backend, no database, no analytics** — deploys to any static host (built for Cloudflare Pages)
-
-## 🚀 Getting started
-
-```sh
+```bash
+composer install
 npm install
-npm run dev        # http://localhost:4321
-npm run build      # static site → dist/
-npm run preview    # preview the production build
+cp .env.example .env          # fill in DB_* (and SMTP_* for real email)
+
+php scripts/migrate.php       # creates DB, applies schema, seeds admin user
+php scripts/seed.php          # imports 240 lessons from src/content/topics
+
+npm run build                 # builds the SPA into public/
+php -S localhost:8000 -t public scripts/dev-router.php
 ```
 
-## 🔄 Content pipeline
+Open http://localhost:8000. For frontend development with hot reload, additionally run `npm run dev` (Vite on :5173, proxying `/api` to :8000).
 
-Topic titles, structure, and resource links are extracted from the roadmap.sh data; **all overview prose is original** (see licensing below).
+Seeded admin: `hurayraiit+admin@gmail.com` / `Pass1234@@` — **change this password immediately in production.**
 
+With `MAIL_DRIVER=log` (default), password-reset emails are appended to `storage/mail.log` instead of being sent. Set `MAIL_DRIVER=smtp` and the `SMTP_MAIN_*` / `SMTP_FALLBACK_*` variables for real delivery (main is tried first, fallback on failure).
+
+## Tests
+
+```bash
+php tests/api/run-all.php     # 81 checks against a disposable test DB on :8001
 ```
-roadmap.sh graphs + GitHub content files
-  → scripts/fetch-roadmaps.mjs     titles, ordering, resource links ONLY
-  → src/data/raw-topics.json       304 topics → 240 after synonym dedup
-  → src/data/curriculum.ts         hand-curated module/order source of truth
-  → scripts/scaffold-content.mjs   → src/content/topics/<NN-module>/<slug>.md
-  → original overviews authored into each file's body
+
+Covers auth (validation, duplicates, CSRF, rate limits), the reset flow (token single-use), progress (locking, skip-ahead rejection, auto-completion), comments/reactions, leaderboard (tie-break, opt-out), and every admin route (including 403s for non-admins).
+
+## Deploying (xCloud / nginx + PHP-FPM)
+
+1. Point the site's web root at `public/`.
+2. Standard `try_files $uri $uri/ /index.php?$args` (xCloud default) is all that's needed — `public/index.php` dispatches `/api/*` and serves the SPA for everything else.
+3. Create `.env` from `.env.example` with production DB + SMTP credentials (never commit it).
+4. Run `composer install --no-dev`, `php scripts/migrate.php`, `php scripts/seed.php`.
+5. Build the frontend (`npm ci && npm run build`) locally or in CI and deploy the resulting `public/` — the server doesn't need Node.
+
+## Content pipeline
+
+Lesson content lives as markdown in `src/content/topics/` (JSON frontmatter) with ordering in `src/data/curriculum.ts`. To change content:
+
+```bash
+npm run export:curriculum > database/curriculum.json   # if curriculum.ts changed
+php scripts/seed.php                                   # refuses if user progress exists; --force to override
 ```
-
-| Command | Action |
-| --- | --- |
-| `npm run data:fetch` | Re-fetch topics + resource links into `raw-topics.json` |
-| `npm run data:scaffold` | Re-generate topic frontmatter (preserves authored bodies) |
-| `npm run data:validate` | Check every topic file has valid frontmatter + an overview |
-
-Topic URLs are flat (`/topics/<slug>/`) and stable across module reshuffles; all ordering flows from `curriculum.ts`.
-
-## ⚖️ Licensing & credits
-
-The [roadmap.sh repository](https://github.com/kamranahmedse/developer-roadmap)'s content is copyrighted — so this project **never republishes roadmap.sh prose**. It extracts only topic titles, structure, and resource links, and every overview on this site is original writing. Huge thanks to Kamran Ahmed and the roadmap.sh contributors for the incredible roadmaps that shaped this curriculum. All linked articles and videos belong to their respective authors.
