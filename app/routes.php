@@ -24,5 +24,9 @@ function routes(): array
         ['GET', '#^/lessons/([a-z0-9-]+)$#', 'handle_lesson', 'user'],
         ['POST', '#^/lessons/(\d+)/resources/(\d+)/read$#', 'handle_resource_read', 'user'],
         ['POST', '#^/lessons/(\d+)/complete$#', 'handle_lesson_complete', 'user'],
+        ['GET', '#^/lessons/(\d+)/comments$#', 'handle_comments_list', 'user'],
+        ['POST', '#^/lessons/(\d+)/comments$#', 'handle_comment_create', 'user'],
+        ['DELETE', '#^/comments/(\d+)$#', 'handle_comment_delete', 'user'],
+        ['PUT', '#^/comments/(\d+)/reaction$#', 'handle_comment_reaction', 'user'],
     ];
 }
