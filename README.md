@@ -57,7 +57,7 @@ Open http://localhost:8000. For frontend development with hot reload, additional
 
 Seeded admin: `hurayraiit+admin@gmail.com` / `Pass1234@@` — **change this password immediately in production.**
 
-With `MAIL_DRIVER=log` (default), password-reset emails are appended to `storage/mail.log` instead of being sent. Set `MAIL_DRIVER=smtp` and the `SMTP_MAIN_*` / `SMTP_FALLBACK_*` variables for real delivery (main is tried first, fallback on failure).
+With `MAIL_DRIVER=log` (default), password-reset emails are appended to `storage/mail.log` instead of being sent. Set `MAIL_DRIVER=smtp` and the `MAIL_PRIMARY_*` / `MAIL_FAILOVER_*` variables for real delivery (primary is tried first, failover on failure).
 
 ## Tests
 

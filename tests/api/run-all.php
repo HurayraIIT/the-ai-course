@@ -9,19 +9,19 @@ if (PHP_SAPI !== 'cli') {
 
 $root = dirname(__DIR__, 2);
 $testDb = 'the_ai_course_test';
-putenv("DB_NAME=$testDb");
+putenv("DB_DATABASE=$testDb");
 
 // Load .env for DB creds (bootstrap skips keys already in the environment)
 foreach (file("$root/.env", FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
     if ($line !== '' && $line[0] !== '#' && str_contains($line, '=')) {
         [$k, $v] = explode('=', $line, 2);
-        if ($k !== 'DB_NAME' && getenv($k) === false) {
+        if ($k !== 'DB_DATABASE' && getenv($k) === false) {
             putenv(trim($k) . '=' . trim($v));
         }
     }
 }
 
-$envPrefix = "DB_NAME=$testDb MAIL_DRIVER=log";
+$envPrefix = "DB_DATABASE=$testDb MAIL_DRIVER=log";
 echo "Setting up test database `$testDb`...\n";
 passthru("$envPrefix php $root/scripts/migrate.php", $code);
 if ($code !== 0) {
@@ -30,8 +30,8 @@ if ($code !== 0) {
 // Drop and re-apply for a clean slate (schema is idempotent, data is not)
 $pdo = new PDO(
     sprintf('mysql:host=%s;charset=utf8mb4', getenv('DB_HOST') ?: '127.0.0.1'),
-    getenv('DB_USER') ?: 'root',
-    getenv('DB_PASS') ?: '',
+    getenv('DB_USERNAME') ?: 'root',
+    getenv('DB_PASSWORD') ?: '',
     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]
 );
 $pdo->exec("DROP DATABASE `$testDb`");

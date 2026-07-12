@@ -28,20 +28,23 @@ function send_mail(string $to, string $subject, string $html): bool
         return true;
     }
 
-    foreach (['MAIN', 'FALLBACK'] as $profile) {
-        if (env("SMTP_{$profile}_HOST") === '') {
+    foreach (['PRIMARY', 'FAILOVER'] as $profile) {
+        if (env("MAIL_{$profile}_HOST") === '') {
             continue;
         }
         try {
             $mail = new PHPMailer(true);
             $mail->isSMTP();
-            $mail->Host = env("SMTP_{$profile}_HOST");
-            $mail->Port = (int)env("SMTP_{$profile}_PORT", '587');
+            $mail->Host = env("MAIL_{$profile}_HOST");
+            $mail->Port = (int)env("MAIL_{$profile}_PORT", '587');
             $mail->SMTPAuth = true;
-            $mail->Username = env("SMTP_{$profile}_USER");
-            $mail->Password = env("SMTP_{$profile}_PASS");
-            $mail->SMTPSecure = env("SMTP_{$profile}_ENCRYPTION", 'tls');
-            $mail->setFrom(env('MAIL_FROM'), env('MAIL_FROM_NAME'));
+            $mail->Username = env("MAIL_{$profile}_USERNAME");
+            $mail->Password = env("MAIL_{$profile}_PASSWORD");
+            $mail->SMTPSecure = env("MAIL_{$profile}_ENCRYPTION", 'tls');
+            $mail->setFrom(
+                env("MAIL_{$profile}_FROM_ADDRESS"),
+                env("MAIL_{$profile}_FROM_NAME", env('APP_NAME', 'The AI Course'))
+            );
             $mail->addAddress($to);
             $mail->isHTML(true);
             $mail->Subject = $subject;

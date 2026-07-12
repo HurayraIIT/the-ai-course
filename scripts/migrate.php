@@ -10,8 +10,9 @@ if (PHP_SAPI !== 'cli') {
 require dirname(__DIR__) . '/app/bootstrap.php';
 
 $host = env('DB_HOST', '127.0.0.1');
-$name = env('DB_NAME');
-$root = new PDO("mysql:host=$host;charset=utf8mb4", env('DB_USER'), env('DB_PASS'), [
+$port = env('DB_PORT', '3306');
+$name = env('DB_DATABASE');
+$root = new PDO("mysql:host=$host;port=$port;charset=utf8mb4", env('DB_USERNAME'), env('DB_PASSWORD'), [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
 ]);
 $root->exec("CREATE DATABASE IF NOT EXISTS `$name` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
