@@ -28,7 +28,7 @@ function handle_leaderboard(array $user): void
         return [
             'rank' => ++$rank,
             'username' => $row['username'],
-            'avatar_hash' => md5(strtolower(trim($row['email']))),
+            'avatar_hash' => avatar_hash($row['email']),
             'completed' => (int)$row['completed'],
             'is_me' => (int)$row['id'] === (int)$user['id'],
         ];

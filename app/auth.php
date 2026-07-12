@@ -35,6 +35,12 @@ function logout_user(): void
     session_destroy();
 }
 
+/** Gravatar hash — SHA-256 per current Gravatar spec (MD5 misses newer accounts). */
+function avatar_hash(string $email): string
+{
+    return hash('sha256', strtolower(trim($email)));
+}
+
 /** Public-safe shape of a user row for API responses. */
 function user_payload(array $user): array
 {
@@ -45,6 +51,6 @@ function user_payload(array $user): array
         'phone' => $user['phone'],
         'is_admin' => (bool)$user['is_admin'],
         'leaderboard_opt_in' => (bool)$user['leaderboard_opt_in'],
-        'avatar_hash' => md5(strtolower(trim($user['email']))),
+        'avatar_hash' => avatar_hash($user['email']),
     ];
 }

@@ -53,7 +53,7 @@ function admin_user_row(array $u): array
         'created_at' => $u['created_at'],
         'last_login_at' => $u['last_login_at'],
         'completed' => (int)($u['completed'] ?? 0),
-        'avatar_hash' => md5(strtolower(trim($u['email']))),
+        'avatar_hash' => avatar_hash($u['email']),
     ];
 }
 
@@ -167,7 +167,7 @@ function handle_admin_comments(): void
 
     $total = (int)pdo()->query('SELECT COUNT(*) FROM comments')->fetchColumn();
     $stmt = pdo()->query(
-        'SELECT c.id, c.body, c.created_at, u.username, u.email, l.slug AS lesson_slug, l.title AS lesson_title
+        'SELECT c.id, c.body, c.created_at, u.id AS user_id, u.username, u.email, l.slug AS lesson_slug, l.title AS lesson_title
          FROM comments c
          JOIN users u ON u.id = c.user_id
          JOIN lessons l ON l.id = c.lesson_id
@@ -180,8 +180,9 @@ function handle_admin_comments(): void
             'id' => (int)$c['id'],
             'body' => $c['body'],
             'created_at' => $c['created_at'],
+            'user_id' => (int)$c['user_id'],
             'username' => $c['username'],
-            'avatar_hash' => md5(strtolower(trim($c['email']))),
+            'avatar_hash' => avatar_hash($c['email']),
             'lesson_slug' => $c['lesson_slug'],
             'lesson_title' => $c['lesson_title'],
         ], $stmt->fetchAll()),

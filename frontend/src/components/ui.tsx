@@ -19,12 +19,13 @@ export function PageTitle({ children }: { children: ReactNode }) {
 export function Avatar({ hash, username, size = 32 }: { hash: string; username: string; size?: number }) {
   return (
     <img
-      src={`https://gravatar.com/avatar/${hash}?d=mp&s=${size * 2}`}
+      src={`https://gravatar.com/avatar/${hash}?d=retro&s=${size * 2}`}
       alt=""
       aria-hidden="true"
       width={size}
       height={size}
-      className="rounded-full bg-zinc-200"
+      style={{ width: size, height: size }}
+      className="shrink-0 self-start rounded-full bg-zinc-200 object-cover"
       data-username={username}
     />
   );

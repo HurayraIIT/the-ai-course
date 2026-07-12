@@ -24,3 +24,5 @@ npm-debug.log*
 
 # playwright-cli artifacts
 .playwright-cli/
+
+*.png

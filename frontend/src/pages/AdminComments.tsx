@@ -19,6 +19,7 @@ interface AdminComment {
   id: number;
   body: string;
   created_at: string;
+  user_id: number;
   username: string;
   avatar_hash: string;
   lesson_slug: string;
@@ -84,7 +85,9 @@ export default function AdminComments() {
           <li key={comment.id} className="rounded-md border border-zinc-200 p-4 odd:bg-white even:bg-zinc-50">
             <div className="flex flex-wrap items-center gap-2 text-sm">
               <Avatar hash={comment.avatar_hash} username={comment.username} size={24} />
-              <span className="font-medium">{comment.username}</span>
+              <Link to={`/admin/users/${comment.user_id}`} className="font-medium text-blue-700 underline">
+                {comment.username}
+              </Link>
               <span className="text-zinc-400">on</span>
               <Link to={`/lessons/${comment.lesson_slug}`} className="text-blue-700 underline">
                 {comment.lesson_title}

@@ -25,7 +25,7 @@ function handle_comments_list(array $user, array $params): void
         'body' => $c['body'],
         'created_at' => $c['created_at'],
         'username' => $c['username'],
-        'avatar_hash' => md5(strtolower(trim($c['email']))),
+        'avatar_hash' => avatar_hash($c['email']),
         'is_mine' => (int)$c['user_id'] === (int)$user['id'],
         'ups' => (int)$c['ups'],
         'downs' => (int)$c['downs'],
