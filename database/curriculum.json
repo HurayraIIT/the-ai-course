@@ -1,0 +1,361 @@
+[
+  {
+    "slug": "getting-started",
+    "title": "Getting Started",
+    "description": "What AI engineering is, the roles it covers, and the baseline skills you need before diving in.",
+    "topics": [
+      "introduction",
+      "what-is-an-ai-engineer",
+      "roles-and-responsiblities",
+      "ai-engineer-vs-ml-engineer",
+      "impact-on-product-development",
+      "ai-vs-agi",
+      "basic-backend-development",
+      "git-and-terminal-usage",
+      "rest-api-knowledge"
+    ]
+  },
+  {
+    "slug": "llm-fundamentals",
+    "title": "LLM Fundamentals",
+    "description": "How large language models actually work: transformers, tokens, training, inference, and their limits.",
+    "topics": [
+      "large-language-model-llm",
+      "how-llms-work",
+      "transformer-models-and-llms",
+      "tokens",
+      "model-weights-parameters",
+      "training",
+      "pre-trained-models",
+      "fine-tuning",
+      "inference",
+      "context",
+      "context-windows",
+      "reasoning-vs-standard-models",
+      "hallucination",
+      "type-of-models",
+      "closed-vs-open-source-models",
+      "open-weight-models",
+      "closed-weight-models"
+    ]
+  },
+  {
+    "slug": "model-landscape",
+    "title": "The Model Landscape",
+    "description": "The major model providers, open-weight families, local runtimes, and how to choose (and pay for) a model.",
+    "topics": [
+      "openai",
+      "openai-gpt-o-series",
+      "anthropic-claude",
+      "google",
+      "google-gemini",
+      "meta-llama",
+      "mistral",
+      "deepseek",
+      "qwen",
+      "gemma2",
+      "xai",
+      "cohere",
+      "hugging-face",
+      "models-on-hugging-face",
+      "hugging-face-tasks",
+      "hugging-face-hub",
+      "transformers-js",
+      "ollama",
+      "lm-studio",
+      "self-hosted-models",
+      "choosing-the-right-model",
+      "pricing-of-common-models",
+      "token-based-pricing"
+    ]
+  },
+  {
+    "slug": "prompting-fundamentals",
+    "title": "Prompt Engineering Fundamentals",
+    "description": "Writing effective prompts: clarity, context, examples, roles, output control, and the core prompting techniques.",
+    "topics": [
+      "what-is-a-prompt",
+      "prompt-engineering",
+      "be-specific-in-what-you-want",
+      "provide-additional-context",
+      "use-relevant-technical-terms",
+      "use-examples-in-your-prompt",
+      "specify-length-format-etc",
+      "iterate-and-test-your-prompts",
+      "system-prompting",
+      "role-prompting",
+      "role-behavior",
+      "contextual-prompting",
+      "input-format",
+      "output-control",
+      "constrains",
+      "structured-output",
+      "zero-shot",
+      "few-shot",
+      "cot",
+      "tree-of-thought",
+      "fine-tuning-vs-prompt-engineering"
+    ]
+  },
+  {
+    "slug": "advanced-prompting",
+    "title": "Advanced Prompting & Context Engineering",
+    "description": "Beyond single prompts: ensembles, self-consistency, automatic prompt engineering, and managing the context window deliberately.",
+    "topics": [
+      "self-consistency-prompting",
+      "step-back-prompting",
+      "automatic-prompt-engineering",
+      "prompt-ensembling",
+      "prompt-debiasing",
+      "context-engineering",
+      "prompt-vs-context-engineering",
+      "context-compaction",
+      "context-isolation"
+    ]
+  },
+  {
+    "slug": "working-with-apis",
+    "title": "Working with Model APIs",
+    "description": "Calling models in real code: provider APIs and SDKs, streaming, sampling parameters, and cost-saving techniques.",
+    "topics": [
+      "using-sdks-directly",
+      "openai-response-api",
+      "openai-assistant-api",
+      "claude-messages-api",
+      "google-gemini-api",
+      "openai-compatible-apis",
+      "openrouter",
+      "hugging-face-inference-sdk",
+      "streaming-responses",
+      "sampling-parameters",
+      "temperature",
+      "top-k",
+      "top-p",
+      "max-length",
+      "stopping-criteria",
+      "frequency-penalty",
+      "presence-penalty",
+      "repetition-penalties",
+      "prompt-caching"
+    ]
+  },
+  {
+    "slug": "embeddings-and-vector-databases",
+    "title": "Embeddings & Vector Databases",
+    "description": "Turning text into vectors: embedding models, similarity search, and the vector stores that power semantic retrieval.",
+    "topics": [
+      "embeddings-and-vector-search",
+      "embeddings",
+      "purpose-and-functionality",
+      "embedding-models",
+      "open-ai-embeddings-api",
+      "gemini-embedding",
+      "sentence-transformers",
+      "semantic-search",
+      "performing-similarity-search",
+      "indexing-embeddings",
+      "data-classification",
+      "recommendation-systems",
+      "anomaly-detection",
+      "vector-dbs",
+      "chroma",
+      "pinecone",
+      "weaviate",
+      "qdrant",
+      "faiss",
+      "lancedb",
+      "supabase",
+      "mongodb-atlas",
+      "jina"
+    ]
+  },
+  {
+    "slug": "rag",
+    "title": "Retrieval-Augmented Generation (RAG)",
+    "description": "Grounding model answers in your own data: chunking, retrieval, generation, and when RAG beats fine-tuning.",
+    "topics": [
+      "rag",
+      "rag-usecases",
+      "rag-vs-fine-tuning",
+      "chunking",
+      "retrieval-process",
+      "generation",
+      "rag-and-dynamic-filters",
+      "rag-and-vector-databases"
+    ]
+  },
+  {
+    "slug": "ai-agents",
+    "title": "AI Agents",
+    "description": "From single prompts to autonomous loops: what agents are, where they shine, and the core agent architectures.",
+    "topics": [
+      "ai-agents",
+      "agents-usecases",
+      "personal-assistant",
+      "code-generation",
+      "data-analysis",
+      "web-scraping-crawling",
+      "npc-game-ai",
+      "know-your-customers-usecases",
+      "agent-loop",
+      "perception-user-input",
+      "reason-and-plan",
+      "acting-tool-invocation",
+      "observation-reflection",
+      "react",
+      "rag-agent",
+      "planner-executor",
+      "dag-agents",
+      "multi-agents"
+    ]
+  },
+  {
+    "slug": "tools-and-function-calling",
+    "title": "Tools & Function Calling",
+    "description": "Giving models the ability to act: tool definitions, provider function-calling APIs, and the common tool categories.",
+    "topics": [
+      "what-are-tools",
+      "tool-definition",
+      "function-calling",
+      "llm-native-function-calling",
+      "openai-functions-calling",
+      "gemini-function-calling",
+      "anthropic-tool-use",
+      "web-search",
+      "code-execution-repl",
+      "database-queries",
+      "api-requests",
+      "email-slack-sms",
+      "file-system-access"
+    ]
+  },
+  {
+    "slug": "agent-memory",
+    "title": "Agent Memory",
+    "description": "How agents remember: short vs long-term memory, episodic vs semantic stores, and strategies for summarizing and forgetting.",
+    "topics": [
+      "what-is-agent-memory",
+      "short-term-memory",
+      "long-term-memory",
+      "episodic-vs-semantic-memory",
+      "external-memory",
+      "user-profile-storage",
+      "summarization-compression",
+      "forgetting-aging-strategies"
+    ]
+  },
+  {
+    "slug": "agent-frameworks",
+    "title": "Agent Frameworks & SDKs",
+    "description": "Building agents with (or without) a framework: LangChain, LlamaIndex, LangGraph, CrewAI, and the provider agent SDKs.",
+    "topics": [
+      "manual-implementation",
+      "langchain",
+      "llama-index",
+      "langgraph",
+      "haystack",
+      "ragflow",
+      "crewai",
+      "autogen",
+      "agno",
+      "smol-depot",
+      "openai-agentkit-agent-sdk",
+      "claude-agent-sdk",
+      "google-adk",
+      "vertex-ai-agent-builder"
+    ]
+  },
+  {
+    "slug": "mcp",
+    "title": "Model Context Protocol (MCP)",
+    "description": "The open standard for connecting models to tools and data: MCP architecture, and building your own servers and clients.",
+    "topics": [
+      "model-context-protocol-mcp",
+      "mcp-host",
+      "mcp-client",
+      "mcp-server",
+      "data-layer",
+      "transport-layer",
+      "building-an-mcp-server",
+      "building-an-mcp-client",
+      "connect-to-local-server",
+      "connect-to-remote-server",
+      "local-desktop",
+      "remote-cloud"
+    ]
+  },
+  {
+    "slug": "multimodal-ai",
+    "title": "Multimodal AI",
+    "description": "Beyond text: vision, image generation, video, and speech — and the APIs and frameworks that combine them.",
+    "topics": [
+      "multimodal-ai",
+      "multimodal-ai-usecases",
+      "image-understanding",
+      "openai-vision-api",
+      "image-generation",
+      "dall-e-api",
+      "nanobanana-api",
+      "video-understanding",
+      "audio-processing",
+      "speech-to-text",
+      "whisper-api",
+      "text-to-speech",
+      "langchain-for-multimodal-apps",
+      "llamaindex-for-multimodal-apps"
+    ]
+  },
+  {
+    "slug": "evaluation-and-observability",
+    "title": "Evaluation & Observability",
+    "description": "Knowing whether your AI system works: metrics, testing strategies, eval frameworks, and production tracing.",
+    "topics": [
+      "metrics-to-track",
+      "unit-testing-for-individual-tools",
+      "integration-testing-for-flows",
+      "human-in-the-loop-evaluation",
+      "llm-self-evaluation",
+      "self-critique-agents",
+      "calibrating-llms",
+      "deepeval",
+      "ragas",
+      "langsmith",
+      "langfuse",
+      "helicone",
+      "openllmetry",
+      "structured-logging-tracing"
+    ]
+  },
+  {
+    "slug": "security-safety-and-ethics",
+    "title": "Security, Safety & Ethics",
+    "description": "Shipping AI responsibly: prompt injection, red teaming, sandboxing, privacy, moderation, bias, and ethics.",
+    "topics": [
+      "security-and-privacy-concerns",
+      "prompt-injection-attacks",
+      "robust-prompt-engineering",
+      "conducting-adversarial-testing",
+      "safety-red-team-testing",
+      "tool-sandboxing-permissioning",
+      "data-privacy-pii-redaction",
+      "adding-end-user-ids-in-prompts",
+      "content-moderation-apis",
+      "bias-and-fairness",
+      "bias-toxicity-guardrails",
+      "ai-safety-and-ethics"
+    ]
+  },
+  {
+    "slug": "ai-coding-tools",
+    "title": "AI Coding Tools",
+    "description": "The AI-powered development tools reshaping how software gets built — and how to work with them effectively.",
+    "topics": [
+      "development-tools",
+      "claude-code",
+      "codex",
+      "cursor",
+      "windsurf",
+      "replit"
+    ]
+  }
+]
