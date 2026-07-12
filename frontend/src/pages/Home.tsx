@@ -192,6 +192,9 @@ export default function Home() {
                       const number = String(lesson.position).padStart(2, '0');
                       const inner = (
                         <>
+                          <span className="flex w-5 shrink-0 justify-center">
+                            {lesson.completed ? <CheckIcon /> : pending ? <PendingIcon /> : locked ? <LockIcon /> : null}
+                          </span>
                           <span aria-hidden="true" className="w-8 shrink-0 font-mono text-xs text-zinc-400">
                             {number}
                           </span>
@@ -200,7 +203,6 @@ export default function Home() {
                           {locked && <span className="sr-only">(locked)</span>}
                           {pending && <span className="sr-only">(in progress)</span>}
                           {lesson.completed && <span className="sr-only">(completed)</span>}
-                          {lesson.completed ? <CheckIcon /> : pending ? <PendingIcon /> : locked ? <LockIcon /> : null}
                         </>
                       );
                       return (
