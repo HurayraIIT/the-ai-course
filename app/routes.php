@@ -20,5 +20,9 @@ function routes(): array
         ['POST', '#^/auth/logout$#', 'handle_logout', 'user'],
         ['POST', '#^/auth/forgot-password$#', 'handle_forgot_password', 'public'],
         ['POST', '#^/auth/reset-password$#', 'handle_reset_password', 'public'],
+        ['GET', '#^/outline$#', 'handle_outline', 'public'],
+        ['GET', '#^/lessons/([a-z0-9-]+)$#', 'handle_lesson', 'user'],
+        ['POST', '#^/lessons/(\d+)/resources/(\d+)/read$#', 'handle_resource_read', 'user'],
+        ['POST', '#^/lessons/(\d+)/complete$#', 'handle_lesson_complete', 'user'],
     ];
 }
