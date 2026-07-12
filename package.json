@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite frontend",
-    "build": "vite build frontend",
+    "build": "rm -rf public/assets public/index.html && vite build frontend",
     "export:curriculum": "tsx scripts/export-curriculum.ts"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20",
     "@tailwindcss/vite": "^4.3.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
