@@ -88,7 +88,7 @@ export default function Settings() {
               required
               minLength={3}
               maxLength={50}
-              pattern="[a-zA-Z0-9_-]+"
+              pattern="[a-zA-Z0-9_\-]+"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className={inputClass}

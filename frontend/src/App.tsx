@@ -16,12 +16,12 @@ import AdminAnalytics from './pages/AdminAnalytics';
 import NotFound from './pages/NotFound';
 
 function Header() {
-  const { user, setUser } = useAuth();
+  const { user, refresh } = useAuth();
   const navigate = useNavigate();
 
   const logout = async () => {
     await api('/auth/logout', { method: 'POST' });
-    setUser(null);
+    await refresh(); // picks up the fresh session + CSRF token
     navigate('/');
   };
 

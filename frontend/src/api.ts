@@ -24,6 +24,10 @@ export async function api<T = any>(path: string, opts: { method?: string; body?:
     body: opts.body !== undefined ? JSON.stringify(opts.body) : undefined,
   });
   const data = await res.json().catch(() => ({}));
+  // Sessions rotate the CSRF token on login/logout; adopt it wherever it appears.
+  if (typeof (data as any).csrf === 'string') {
+    csrf = (data as any).csrf;
+  }
   if (!res.ok) {
     throw new ApiError((data as any).error ?? 'Request failed', res.status, data);
   }
