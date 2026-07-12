@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { formatDateTime } from '../format';
 import {
@@ -71,8 +72,16 @@ export default function AdminActivity() {
             {data.activity.map((event) => (
               <tr key={event.id} className={trZebraClass}>
                 <td className={`${tdClass} font-medium`}>
-                  {event.username}
-                  {event.user_id === null && <span className="ml-1 text-xs text-zinc-400">(deleted)</span>}
+                  {event.user_id === null ? (
+                    <>
+                      {event.username}
+                      <span className="ml-1 text-xs text-zinc-400">(deleted)</span>
+                    </>
+                  ) : (
+                    <Link to={`/admin/users/${event.user_id}`} className="text-blue-700 underline">
+                      {event.username}
+                    </Link>
+                  )}
                 </td>
                 <td className={tdClass}>{ACTION_LABELS[event.action] ?? event.action}</td>
                 <td className={`${tdClass} text-zinc-600`}>{event.detail || '—'}</td>

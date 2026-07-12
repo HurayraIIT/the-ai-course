@@ -15,7 +15,7 @@ function handle_outline(?array $user): void
     $pdo = pdo();
     $modules = $pdo->query('SELECT slug, title, description FROM modules ORDER BY position')->fetchAll();
     $lessons = $pdo->query(
-        'SELECT l.position, l.slug, l.title, l.module_slug, COUNT(r.id) AS resource_count
+        'SELECT l.position, l.slug, l.title, l.module_slug, l.sources, COUNT(r.id) AS resource_count
          FROM lessons l LEFT JOIN resources r ON r.lesson_id = l.id
          GROUP BY l.id ORDER BY l.position'
     )->fetchAll();
@@ -28,6 +28,7 @@ function handle_outline(?array $user): void
             'position' => (int)$lesson['position'],
             'slug' => $lesson['slug'],
             'title' => $lesson['title'],
+            'sources' => $lesson['sources'] === '' ? [] : explode(',', $lesson['sources']),
             'resource_count' => (int)$lesson['resource_count'],
         ];
         if ($completedCount !== null) {
@@ -89,6 +90,7 @@ function handle_lesson(array $user, array $params): void
         'slug' => $lesson['slug'],
         'module_slug' => $lesson['module_slug'],
         'title' => $lesson['title'],
+        'sources' => $lesson['sources'] === '' ? [] : explode(',', $lesson['sources']),
         'body_md' => $lesson['body_md'],
         'resources' => $resources,
         'completed' => (int)$lesson['position'] <= $completedCount,

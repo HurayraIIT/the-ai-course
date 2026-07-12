@@ -37,7 +37,8 @@ $pdo->exec('DELETE FROM modules');
 
 $insModule = $pdo->prepare('INSERT INTO modules (slug, position, title, description) VALUES (?, ?, ?, ?)');
 $insLesson = $pdo->prepare(
-    'INSERT INTO lessons (position, slug, module_slug, position_in_module, title, body_md) VALUES (?, ?, ?, ?, ?, ?)'
+    'INSERT INTO lessons (position, slug, module_slug, position_in_module, title, sources, body_md)
+     VALUES (?, ?, ?, ?, ?, ?, ?)'
 );
 $insResource = $pdo->prepare(
     'INSERT INTO resources (lesson_id, position, type, title, url) VALUES (?, ?, ?, ?, ?)'
@@ -62,7 +63,8 @@ foreach ($modules as $mi => $module) {
             fwrite(STDERR, "Invalid frontmatter JSON in {$fileBySlug[$slug]}\n");
             exit(1);
         }
-        $insLesson->execute([++$position, $slug, $module['slug'], $ti + 1, $meta['title'], trim($m[2])]);
+        $sources = implode(',', $meta['sources'] ?? []);
+        $insLesson->execute([++$position, $slug, $module['slug'], $ti + 1, $meta['title'], $sources, trim($m[2])]);
         $lessonId = (int)$pdo->lastInsertId();
         foreach ($meta['resources'] ?? [] as $ri => $res) {
             $insResource->execute([$lessonId, $ri + 1, $res['type'], $res['title'], $res['url']]);

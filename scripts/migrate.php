@@ -18,6 +18,17 @@ $root->exec("CREATE DATABASE IF NOT EXISTS `$name` CHARACTER SET utf8mb4 COLLATE
 echo "Database `$name` ready\n";
 
 pdo()->exec(file_get_contents(dirname(__DIR__) . '/database/schema.sql'));
+
+// Columns added after the initial release (CREATE TABLE IF NOT EXISTS won't add them).
+$hasSources = pdo()->prepare(
+    'SELECT COUNT(*) FROM information_schema.columns
+     WHERE table_schema = ? AND table_name = "lessons" AND column_name = "sources"'
+);
+$hasSources->execute([$name]);
+if ((int)$hasSources->fetchColumn() === 0) {
+    pdo()->exec('ALTER TABLE lessons ADD COLUMN sources VARCHAR(120) NOT NULL DEFAULT "" AFTER title');
+    echo "Added lessons.sources column\n";
+}
 echo "Schema applied\n";
 
 $adminEmail = 'hurayraiit+admin@gmail.com';

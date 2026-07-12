@@ -36,6 +36,7 @@ CREATE TABLE IF NOT EXISTS lessons (
   module_slug VARCHAR(100) NOT NULL,
   position_in_module INT NOT NULL,
   title VARCHAR(255) NOT NULL,
+  sources VARCHAR(120) NOT NULL DEFAULT '',
   body_md MEDIUMTEXT NOT NULL,
   FOREIGN KEY (module_slug) REFERENCES modules(slug),
   INDEX idx_lessons_module (module_slug, position_in_module)

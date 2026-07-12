@@ -36,7 +36,13 @@ function Header() {
   return (
     <header className="border-b border-zinc-200 bg-white">
       <nav aria-label="Main" className="mx-auto flex max-w-4xl flex-wrap items-center gap-2 px-4 py-3">
-        <Link to="/" className="mr-auto text-base font-bold tracking-tight focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <Link
+          to="/"
+          className="mr-auto flex items-center gap-2 text-base font-bold tracking-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
+        >
+          <span aria-hidden="true" className="grid size-7 place-items-center rounded-lg bg-accent-600 text-sm font-bold text-white">
+            AI
+          </span>
           The AI Course
         </Link>
         <NavLink to="/" className={navLink} end>

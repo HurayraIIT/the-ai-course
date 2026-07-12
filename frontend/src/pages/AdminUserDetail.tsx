@@ -4,7 +4,6 @@ import { api } from '../api';
 import { useAuth } from '../auth';
 import { formatDateTime } from '../format';
 import {
-  AdminNav,
   Avatar,
   buttonClass,
   buttonDangerClass,
@@ -128,7 +127,6 @@ export default function AdminUserDetail() {
         <Avatar hash={detail.user.avatar_hash} username={detail.user.username} size={40} />
         <PageTitle>{detail.user.username}</PageTitle>
       </div>
-      <AdminNav />
       <p className="mt-3 text-sm text-zinc-600">
         Joined {formatDateTime(detail.user.created_at)} · Last login {formatDateTime(detail.user.last_login_at)} ·{' '}
         {detail.completions.length}/{detail.total_lessons} lessons completed

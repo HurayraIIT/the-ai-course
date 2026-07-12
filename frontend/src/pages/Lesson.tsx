@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown';
 import { api, ApiError } from '../api';
 import { buttonClass, PageTitle, Spinner } from '../components/ui';
 import Comments from '../components/Comments';
+import SourceBadges from '../components/SourceBadges';
 
 interface Resource {
   id: number;
@@ -18,6 +19,7 @@ interface LessonData {
   position: number;
   slug: string;
   title: string;
+  sources: string[];
   body_md: string;
   resources: Resource[];
   completed: boolean;
@@ -97,7 +99,10 @@ export default function Lesson() {
 
   return (
     <article>
-      <p className="text-sm text-zinc-500">Lesson {lesson.position} of 240</p>
+      <div className="flex flex-wrap items-center gap-3">
+        <p className="text-sm text-zinc-500">Lesson {lesson.position} of 240</p>
+        <SourceBadges sources={lesson.sources} />
+      </div>
       <PageTitle>{lesson.title}</PageTitle>
       {lesson.completed && (
         <p role="status" className="mt-3 inline-block rounded-full bg-green-100 px-3 py-1 text-sm font-medium text-green-800">

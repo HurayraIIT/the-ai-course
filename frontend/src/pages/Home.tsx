@@ -3,11 +3,13 @@ import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { useAuth } from '../auth';
 import { PageTitle, Spinner } from '../components/ui';
+import SourceBadges from '../components/SourceBadges';
 
 interface OutlineLesson {
   position: number;
   slug: string;
   title: string;
+  sources: string[];
   resource_count: number;
   completed?: boolean;
   unlocked?: boolean;
@@ -194,6 +196,7 @@ export default function Home() {
                             {number}
                           </span>
                           <span className="flex-1">{lesson.title}</span>
+                          <SourceBadges sources={lesson.sources} />
                           {locked && <span className="sr-only">(locked)</span>}
                           {pending && <span className="sr-only">(in progress)</span>}
                           {lesson.completed && <span className="sr-only">(completed)</span>}
