@@ -25,6 +25,7 @@ function handle_profile_update(array $user): void
 
     pdo()->prepare('UPDATE users SET username = ?, phone = ?, leaderboard_opt_in = ? WHERE id = ?')
         ->execute([$username, $phone, (int)$optIn, (int)$user['id']]);
+    log_activity((int)$user['id'], $username, 'updated_profile');
 
     json_response(['user' => user_payload(array_merge($user, [
         'username' => $username,
@@ -48,5 +49,6 @@ function handle_password_update(array $user): void
 
     pdo()->prepare('UPDATE users SET password_hash = ? WHERE id = ?')
         ->execute([password_hash($new, PASSWORD_DEFAULT), (int)$user['id']]);
+    log_activity((int)$user['id'], $user['username'], 'changed_password');
     json_response(['ok' => true]);
 }

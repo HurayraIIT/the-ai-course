@@ -4,9 +4,15 @@ declare(strict_types=1);
 
 function handle_leaderboard(array $user): void
 {
+    $perPage = 50;
+    $page = max(1, (int)($_GET['page'] ?? 1));
+    $offset = ($page - 1) * $perPage;
+
+    $total = (int)pdo()->query('SELECT COUNT(*) FROM users WHERE leaderboard_opt_in = 1')->fetchColumn();
+
     // Rank by completed lessons; ties broken by who reached that count first.
     $stmt = pdo()->query(
-        'SELECT u.id, u.username, u.email,
+        "SELECT u.id, u.username, u.email,
                 COUNT(lc.lesson_id) AS completed,
                 MAX(lc.completed_at) AS reached_at
          FROM users u
@@ -14,10 +20,10 @@ function handle_leaderboard(array $user): void
          WHERE u.leaderboard_opt_in = 1
          GROUP BY u.id
          ORDER BY completed DESC, reached_at ASC, u.created_at ASC
-         LIMIT 100'
+         LIMIT $perPage OFFSET $offset"
     );
 
-    $rank = 0;
+    $rank = $offset;
     $rows = array_map(function ($row) use (&$rank, $user) {
         return [
             'rank' => ++$rank,
@@ -28,7 +34,13 @@ function handle_leaderboard(array $user): void
         ];
     }, $stmt->fetchAll());
 
-    json_response(['leaderboard' => $rows, 'total_lessons' => total_lessons()]);
+    json_response([
+        'leaderboard' => $rows,
+        'total' => $total,
+        'page' => $page,
+        'per_page' => $perPage,
+        'total_lessons' => total_lessons(),
+    ]);
 }
 
 function total_lessons(): int

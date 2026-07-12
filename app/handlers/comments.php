@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 function handle_comments_list(array $user, array $params): void
 {
-    $lesson = unlocked_lesson_or_fail((int)$user['id'], (int)$params[0]);
+    $lesson = unlocked_lesson_or_fail($user, (int)$params[0], adminBypass: true);
 
     $stmt = pdo()->prepare(
         'SELECT c.id, c.body, c.created_at, c.user_id, u.username, u.email,
@@ -35,7 +35,7 @@ function handle_comments_list(array $user, array $params): void
 
 function handle_comment_create(array $user, array $params): void
 {
-    $lesson = unlocked_lesson_or_fail((int)$user['id'], (int)$params[0]);
+    $lesson = unlocked_lesson_or_fail($user, (int)$params[0], adminBypass: true);
 
     $body = trim((string)(read_json_body()['body'] ?? ''));
     if ($body === '') {
@@ -47,7 +47,9 @@ function handle_comment_create(array $user, array $params): void
 
     pdo()->prepare('INSERT INTO comments (lesson_id, user_id, body) VALUES (?, ?, ?)')
         ->execute([(int)$lesson['id'], (int)$user['id'], $body]);
-    json_response(['ok' => true, 'id' => (int)pdo()->lastInsertId()], 201);
+    $commentId = (int)pdo()->lastInsertId(); // before log_activity's own insert
+    log_activity((int)$user['id'], $user['username'], 'commented', $lesson['title']);
+    json_response(['ok' => true, 'id' => $commentId], 201);
 }
 
 function handle_comment_delete(array $user, array $params): void

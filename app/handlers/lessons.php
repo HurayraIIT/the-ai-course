@@ -32,7 +32,8 @@ function handle_outline(?array $user): void
         ];
         if ($completedCount !== null) {
             $entry['completed'] = $lesson['position'] <= $completedCount;
-            $entry['unlocked'] = $lesson['position'] <= $completedCount + 1;
+            // Admins can open any lesson; their own completion frontier still applies to progress.
+            $entry['unlocked'] = $user['is_admin'] || $lesson['position'] <= $completedCount + 1;
         }
         $byModule[$lesson['module_slug']][] = $entry;
     }
@@ -55,7 +56,8 @@ function handle_lesson(array $user, array $params): void
     }
 
     $completedCount = completed_count((int)$user['id']);
-    if ((int)$lesson['position'] > $completedCount + 1) {
+    $beyondFrontier = (int)$lesson['position'] > $completedCount + 1;
+    if ($beyondFrontier && !$user['is_admin']) {
         json_error('Lesson is locked', 403, ['locked' => true]);
     }
 
@@ -90,13 +92,18 @@ function handle_lesson(array $user, array $params): void
         'body_md' => $lesson['body_md'],
         'resources' => $resources,
         'completed' => (int)$lesson['position'] <= $completedCount,
+        'viewing_locked' => $beyondFrontier, // admin preview: progress mutations stay disabled
         'prev' => $prevNext['prev'],
         'next' => $prevNext['next'],
     ]);
 }
 
-/** Loads a lesson by id and rejects if it is beyond the user's unlock frontier. */
-function unlocked_lesson_or_fail(int $userId, int $lessonId): array
+/**
+ * Loads a lesson by id and rejects if it is beyond the user's unlock frontier.
+ * $adminBypass permits admins to VIEW ahead; progress mutations must never pass it,
+ * or an out-of-order completion would break the contiguous-prefix unlock invariant.
+ */
+function unlocked_lesson_or_fail(array $user, int $lessonId, bool $adminBypass = false): array
 {
     $stmt = pdo()->prepare('SELECT * FROM lessons WHERE id = ?');
     $stmt->execute([$lessonId]);
@@ -104,7 +111,10 @@ function unlocked_lesson_or_fail(int $userId, int $lessonId): array
     if (!$lesson) {
         json_error('Lesson not found', 404);
     }
-    if ((int)$lesson['position'] > completed_count($userId) + 1) {
+    if ($adminBypass && $user['is_admin']) {
+        return $lesson;
+    }
+    if ((int)$lesson['position'] > completed_count((int)$user['id']) + 1) {
         json_error('Lesson is locked', 403, ['locked' => true]);
     }
     return $lesson;
@@ -113,11 +123,12 @@ function unlocked_lesson_or_fail(int $userId, int $lessonId): array
 function handle_resource_read(array $user, array $params): void
 {
     $userId = (int)$user['id'];
-    $lesson = unlocked_lesson_or_fail($userId, (int)$params[0]);
+    $lesson = unlocked_lesson_or_fail($user, (int)$params[0]);
 
-    $stmt = pdo()->prepare('SELECT id FROM resources WHERE id = ? AND lesson_id = ?');
+    $stmt = pdo()->prepare('SELECT id, title FROM resources WHERE id = ? AND lesson_id = ?');
     $stmt->execute([(int)$params[1], (int)$lesson['id']]);
-    if (!$stmt->fetch()) {
+    $resource = $stmt->fetch();
+    if (!$resource) {
         json_error('Resource not found', 404);
     }
 
@@ -142,13 +153,18 @@ function handle_resource_read(array $user, array $params): void
     }
     $pdo->commit();
 
+    log_activity($userId, $user['username'], 'read_resource', "{$resource['title']} ({$lesson['title']})");
+    if ($completed) {
+        log_activity($userId, $user['username'], 'completed_lesson', $lesson['title']);
+    }
+
     json_response(['ok' => true, 'lesson_completed' => $completed]);
 }
 
 function handle_lesson_complete(array $user, array $params): void
 {
     $userId = (int)$user['id'];
-    $lesson = unlocked_lesson_or_fail($userId, (int)$params[0]);
+    $lesson = unlocked_lesson_or_fail($user, (int)$params[0]);
 
     $stmt = pdo()->prepare('SELECT COUNT(*) FROM resources WHERE lesson_id = ?');
     $stmt->execute([(int)$lesson['id']]);
@@ -158,5 +174,6 @@ function handle_lesson_complete(array $user, array $params): void
 
     pdo()->prepare('INSERT IGNORE INTO lesson_completions (user_id, lesson_id) VALUES (?, ?)')
         ->execute([$userId, (int)$lesson['id']]);
+    log_activity($userId, $user['username'], 'completed_lesson', $lesson['title']);
     json_response(['ok' => true, 'lesson_completed' => true]);
 }

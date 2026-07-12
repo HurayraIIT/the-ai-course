@@ -47,6 +47,7 @@ function handle_register(): void
     pdo()->prepare('INSERT INTO users (username, email, phone, password_hash) VALUES (?, ?, ?, ?)')
         ->execute([$username, $email, $phone, password_hash($password, PASSWORD_DEFAULT)]);
     $id = (int)pdo()->lastInsertId();
+    log_activity($id, $username, 'registered');
     login_user($id);
 
     $stmt = pdo()->prepare('SELECT * FROM users WHERE id = ?');
@@ -136,6 +137,10 @@ function handle_reset_password(): void
         ->execute([password_hash($password, PASSWORD_DEFAULT), (int)$reset['user_id']]);
     $pdo->prepare('UPDATE password_resets SET used_at = NOW() WHERE id = ?')->execute([(int)$reset['id']]);
     $pdo->commit();
+
+    $stmt = $pdo->prepare('SELECT username FROM users WHERE id = ?');
+    $stmt->execute([(int)$reset['user_id']]);
+    log_activity((int)$reset['user_id'], (string)$stmt->fetchColumn(), 'changed_password', 'via reset link');
 
     json_response(['ok' => true]);
 }

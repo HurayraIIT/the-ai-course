@@ -38,5 +38,9 @@ function routes(): array
         ['POST', '#^/admin/users/(\d+)/reset-password$#', 'handle_admin_reset_password', 'admin'],
         ['DELETE', '#^/admin/users/(\d+)$#', 'handle_admin_user_delete', 'admin'],
         ['GET', '#^/admin/analytics$#', 'handle_admin_analytics', 'admin'],
+        ['GET', '#^/admin/comments$#', 'handle_admin_comments', 'admin'],
+        ['PUT', '#^/admin/comments/(\d+)$#', 'handle_admin_comment_update', 'admin'],
+        ['GET', '#^/admin/activity$#', 'handle_admin_activity', 'admin'],
+        ['GET', '#^/admin/emails$#', 'handle_admin_emails', 'admin'],
     ];
 }

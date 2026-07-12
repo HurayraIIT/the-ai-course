@@ -160,6 +160,104 @@ function handle_admin_user_delete(array $admin, array $params): void
     json_response(['ok' => true]);
 }
 
+function handle_admin_comments(): void
+{
+    $perPage = 20;
+    $page = max(1, (int)($_GET['page'] ?? 1));
+
+    $total = (int)pdo()->query('SELECT COUNT(*) FROM comments')->fetchColumn();
+    $stmt = pdo()->query(
+        'SELECT c.id, c.body, c.created_at, u.username, u.email, l.slug AS lesson_slug, l.title AS lesson_title
+         FROM comments c
+         JOIN users u ON u.id = c.user_id
+         JOIN lessons l ON l.id = c.lesson_id
+         ORDER BY c.created_at DESC, c.id DESC
+         LIMIT ' . $perPage . ' OFFSET ' . ($page - 1) * $perPage
+    );
+
+    json_response([
+        'comments' => array_map(fn($c) => [
+            'id' => (int)$c['id'],
+            'body' => $c['body'],
+            'created_at' => $c['created_at'],
+            'username' => $c['username'],
+            'avatar_hash' => md5(strtolower(trim($c['email']))),
+            'lesson_slug' => $c['lesson_slug'],
+            'lesson_title' => $c['lesson_title'],
+        ], $stmt->fetchAll()),
+        'total' => $total,
+        'page' => $page,
+        'per_page' => $perPage,
+    ]);
+}
+
+function handle_admin_comment_update(array $admin, array $params): void
+{
+    $stmt = pdo()->prepare('SELECT id FROM comments WHERE id = ?');
+    $stmt->execute([(int)$params[0]]);
+    if (!$stmt->fetch()) {
+        json_error('Comment not found', 404);
+    }
+
+    $body = trim((string)(read_json_body()['body'] ?? ''));
+    if ($body === '') {
+        json_error('Comment cannot be empty', 422);
+    }
+    if (mb_strlen($body) > 2000) {
+        json_error('Comment is too long (max 2000 characters)', 422);
+    }
+
+    pdo()->prepare('UPDATE comments SET body = ? WHERE id = ?')->execute([$body, (int)$params[0]]);
+    json_response(['ok' => true]);
+}
+
+function handle_admin_activity(): void
+{
+    $perPage = 50;
+    $page = max(1, (int)($_GET['page'] ?? 1));
+
+    $total = (int)pdo()->query('SELECT COUNT(*) FROM activity_log')->fetchColumn();
+    $stmt = pdo()->query(
+        'SELECT id, user_id, username_snapshot, action, detail, created_at
+         FROM activity_log ORDER BY id DESC
+         LIMIT ' . $perPage . ' OFFSET ' . ($page - 1) * $perPage
+    );
+
+    json_response([
+        'activity' => array_map(fn($a) => [
+            'id' => (int)$a['id'],
+            'user_id' => $a['user_id'] !== null ? (int)$a['user_id'] : null,
+            'username' => $a['username_snapshot'],
+            'action' => $a['action'],
+            'detail' => $a['detail'],
+            'created_at' => $a['created_at'],
+        ], $stmt->fetchAll()),
+        'total' => $total,
+        'page' => $page,
+        'per_page' => $perPage,
+    ]);
+}
+
+function handle_admin_emails(): void
+{
+    $perPage = 20;
+    $page = max(1, (int)($_GET['page'] ?? 1));
+
+    $total = (int)pdo()->query('SELECT COUNT(*) FROM email_log')->fetchColumn();
+    $stmt = pdo()->query(
+        'SELECT id, recipient, subject, body, status, created_at
+         FROM email_log ORDER BY id DESC
+         LIMIT ' . $perPage . ' OFFSET ' . ($page - 1) * $perPage
+    );
+
+    json_response([
+        'emails' => $stmt->fetchAll(),
+        'total' => $total,
+        'page' => $page,
+        'per_page' => $perPage,
+    ]);
+}
+
 function handle_admin_analytics(): void
 {
     $pdo = pdo();

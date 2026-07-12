@@ -18,6 +18,10 @@ $adminRoutes = [
     ['POST', "/admin/users/$aliceId/reset-password"],
     ['DELETE', "/admin/users/$aliceId"],
     ['GET', '/admin/analytics'],
+    ['GET', '/admin/comments'],
+    ['PUT', '/admin/comments/1'],
+    ['GET', '/admin/activity'],
+    ['GET', '/admin/emails'],
 ];
 $allBlocked = true;
 foreach ($adminRoutes as [$method, $path]) {
@@ -97,4 +101,44 @@ check(
     && isset($d['total_users'], $d['active_users_7d'], $d['signups_by_day'], $d['top_lessons'], $d['completion_funnel']),
     'analytics returns expected shape'
 );
+
+// Admin lock bypass: view any lesson, but progress mutations stay strict
+$deep = test_pdo()->query('SELECT id, slug FROM lessons WHERE position = 100')->fetch();
+[$s, $d] = $admin->get("/lessons/{$deep['slug']}");
+check($s === 200 && $d['viewing_locked'] === true && $d['body_md'] !== '', 'admin can view a deep locked lesson');
+$deepResource = test_pdo()->query("SELECT id FROM resources WHERE lesson_id = {$deep['id']} LIMIT 1")->fetchColumn();
+if ($deepResource) {
+    [$s] = $admin->request('POST', "/lessons/{$deep['id']}/resources/$deepResource/read");
+    check($s === 403, 'admin resource-read beyond frontier still rejected');
+}
+$aliceClient = new Client();
+$aliceClient->login('alice@example.com', 'adminset99');
+[$s] = $aliceClient->get("/lessons/{$deep['slug']}");
+check($s === 403, 'non-admin still locked out of deep lesson');
+
+// Admin comments moderation
+[$s, $d] = $aliceClient->request('POST', '/lessons/' . test_pdo()->query('SELECT id FROM lessons WHERE position = 1')->fetchColumn() . '/comments', ['body' => 'moderate me']);
+$modId = $d['id'];
+[$s, $d] = $admin->get('/admin/comments');
+check($s === 200 && $d['total'] >= 1 && $d['comments'][0]['body'] === 'moderate me', 'admin comments list shows newest first');
+check(isset($d['comments'][0]['lesson_slug'], $d['comments'][0]['username']), 'admin comments include lesson + author');
+[$s] = $admin->request('PUT', "/admin/comments/$modId", ['body' => 'moderated']);
+check($s === 200, 'admin can edit a comment');
+[, $d] = $admin->get('/admin/comments');
+check($d['comments'][0]['body'] === 'moderated', 'comment edit persisted');
+[$s] = $admin->request('PUT', "/admin/comments/$modId", ['body' => '']);
+check($s === 422, 'admin comment edit validates body');
+[$s] = $admin->request('DELETE', "/comments/$modId");
+check($s === 200, 'admin can delete any comment');
+
+// Activity log
+[$s, $d] = $admin->get('/admin/activity');
+$actions = array_column($d['activity'], 'action');
+check($s === 200 && in_array('registered', $actions, true) && in_array('commented', $actions, true), 'activity log records events');
+check(in_array('completed_lesson', $actions, true) && in_array('read_resource', $actions, true), 'activity log includes progress events');
+
+// Email log (reset email from test 02 was logged)
+[$s, $d] = $admin->get('/admin/emails');
+check($s === 200 && $d['total'] >= 1 && $d['emails'][0]['status'] === 'logged', 'email log captures outgoing mail');
+check(str_contains($d['emails'][0]['body'], 'token='), 'email log stores full body');
 clear_rate_limits();
