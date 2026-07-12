@@ -28,5 +28,8 @@ function routes(): array
         ['POST', '#^/lessons/(\d+)/comments$#', 'handle_comment_create', 'user'],
         ['DELETE', '#^/comments/(\d+)$#', 'handle_comment_delete', 'user'],
         ['PUT', '#^/comments/(\d+)/reaction$#', 'handle_comment_reaction', 'user'],
+        ['GET', '#^/leaderboard$#', 'handle_leaderboard', 'user'],
+        ['PUT', '#^/profile$#', 'handle_profile_update', 'user'],
+        ['PUT', '#^/profile/password$#', 'handle_password_update', 'user'],
     ];
 }
