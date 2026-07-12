@@ -34,6 +34,7 @@ function send_mail(string $to, string $subject, string $html): bool
         }
         try {
             $mail = new PHPMailer(true);
+            $mail->CharSet = PHPMailer::CHARSET_UTF8;
             $mail->isSMTP();
             $mail->Host = env("MAIL_{$profile}_HOST");
             $mail->Port = (int)env("MAIL_{$profile}_PORT", '587');
