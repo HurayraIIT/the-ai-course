@@ -20,6 +20,8 @@ function routes(): array
         ['POST', '#^/auth/logout$#', 'handle_logout', 'user'],
         ['POST', '#^/auth/forgot-password$#', 'handle_forgot_password', 'public'],
         ['POST', '#^/auth/reset-password$#', 'handle_reset_password', 'public'],
+        ['POST', '#^/auth/verify-email$#', 'handle_verify_email', 'public'],
+        ['POST', '#^/auth/resend-verification$#', 'handle_resend_verification', 'user'],
         ['GET', '#^/outline$#', 'handle_outline', 'public'],
         ['GET', '#^/lessons/([a-z0-9-]+)$#', 'handle_lesson', 'user'],
         ['POST', '#^/lessons/(\d+)/resources/(\d+)/read$#', 'handle_resource_read', 'user'],

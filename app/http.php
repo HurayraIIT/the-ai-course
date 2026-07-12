@@ -51,6 +51,14 @@ function require_auth(): array
     return $user;
 }
 
+/** Progress and community actions need a verified email; admins are seeded verified. */
+function require_verified(array $user): void
+{
+    if ($user['email_verified_at'] === null && !$user['is_admin']) {
+        json_error('Please verify your email address first', 403, ['needs_verification' => true]);
+    }
+}
+
 function require_admin(): array
 {
     $user = require_auth();

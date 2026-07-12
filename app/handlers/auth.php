@@ -10,6 +10,26 @@ function handle_me(?array $user): void
     ]);
 }
 
+/** Issues a fresh verification token and emails the link. Failure never blocks the caller. */
+function send_verification_email(int $userId, string $username, string $email): bool
+{
+    $token = bin2hex(random_bytes(32));
+    pdo()->prepare(
+        'INSERT INTO email_verifications (user_id, token_hash, expires_at) VALUES (?, ?, NOW() + INTERVAL 24 HOUR)'
+    )->execute([$userId, hash('sha256', $token)]);
+
+    $link = rtrim(env('APP_URL'), '/') . '/verify-email?token=' . $token;
+    $safeName = htmlspecialchars($username, ENT_QUOTES);
+    return send_mail(
+        $email,
+        'Verify your email — The AI Course',
+        "<p>Hi $safeName,</p>" .
+        "<p>Welcome to The AI Course! <a href=\"$link\">Verify your email address</a> (valid for 24 hours) " .
+        'to start tracking your progress.</p>' .
+        '<p>If you did not create this account, you can ignore this email.</p>'
+    );
+}
+
 function handle_register(): void
 {
     rate_limit('register', client_ip(), 3, 3600);
@@ -48,6 +68,7 @@ function handle_register(): void
         ->execute([$username, $email, $phone, password_hash($password, PASSWORD_DEFAULT)]);
     $id = (int)pdo()->lastInsertId();
     log_activity($id, $username, 'registered');
+    send_verification_email($id, $username, $email);
     login_user($id);
 
     $stmt = pdo()->prepare('SELECT * FROM users WHERE id = ?');
@@ -74,6 +95,44 @@ function handle_login(): void
 
     login_user((int)$user['id']);
     json_response(['user' => user_payload($user), 'csrf' => $_SESSION['csrf']]);
+}
+
+function handle_verify_email(): void
+{
+    $token = (string)(read_json_body()['token'] ?? '');
+
+    $stmt = pdo()->prepare(
+        'SELECT * FROM email_verifications WHERE token_hash = ? AND used_at IS NULL AND expires_at > NOW()'
+    );
+    $stmt->execute([hash('sha256', $token)]);
+    $verification = $stmt->fetch();
+    if (!$verification) {
+        json_error('Invalid or expired verification link', 400);
+    }
+
+    $pdo = pdo();
+    $pdo->beginTransaction();
+    $pdo->prepare('UPDATE users SET email_verified_at = COALESCE(email_verified_at, NOW()) WHERE id = ?')
+        ->execute([(int)$verification['user_id']]);
+    $pdo->prepare('UPDATE email_verifications SET used_at = NOW() WHERE id = ?')
+        ->execute([(int)$verification['id']]);
+    $pdo->commit();
+
+    $stmt = $pdo->prepare('SELECT username FROM users WHERE id = ?');
+    $stmt->execute([(int)$verification['user_id']]);
+    log_activity((int)$verification['user_id'], (string)$stmt->fetchColumn(), 'verified_email');
+
+    json_response(['ok' => true]);
+}
+
+function handle_resend_verification(array $user): void
+{
+    if ($user['email_verified_at'] !== null) {
+        json_error('Your email is already verified', 400);
+    }
+    rate_limit('resend-verification', 'user:' . $user['id'], 3, 3600);
+    send_verification_email((int)$user['id'], $user['username'], $user['email']);
+    json_response(['ok' => true]);
 }
 
 function handle_logout(): void

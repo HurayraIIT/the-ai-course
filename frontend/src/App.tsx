@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import { BrowserRouter, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './auth';
 import { api } from './api';
+import VerifyEmail from './pages/VerifyEmail';
 import { RequireAdmin, RequireAuth } from './components/ui';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -85,6 +87,45 @@ function Header() {
   );
 }
 
+function VerifyBanner() {
+  const { user } = useAuth();
+  const [status, setStatus] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle');
+
+  if (!user || user.email_verified) return null;
+
+  const resend = async () => {
+    setStatus('sending');
+    try {
+      await api('/auth/resend-verification', { method: 'POST' });
+      setStatus('sent');
+    } catch {
+      setStatus('error');
+    }
+  };
+
+  return (
+    <div className="border-b border-amber-200 bg-amber-50">
+      <p role="status" className="mx-auto flex max-w-4xl flex-wrap items-center gap-2 px-4 py-2.5 text-sm text-amber-900">
+        Please verify your email address to track progress and comment — check your inbox at{' '}
+        <strong>{user.email}</strong>.
+        {status === 'sent' ? (
+          <span className="font-medium">Verification email sent.</span>
+        ) : status === 'error' ? (
+          <span className="font-medium">Could not send — try again later.</span>
+        ) : (
+          <button
+            onClick={resend}
+            disabled={status === 'sending'}
+            className="font-medium underline focus:outline-none focus:ring-2 focus:ring-amber-500 disabled:opacity-50"
+          >
+            {status === 'sending' ? 'Sending…' : 'Resend verification email'}
+          </button>
+        )}
+      </p>
+    </div>
+  );
+}
+
 export default function App() {
   return (
     <AuthProvider>
@@ -96,6 +137,7 @@ export default function App() {
           Skip to main content
         </a>
         <Header />
+        <VerifyBanner />
         <main id="main" className="mx-auto max-w-4xl px-4 py-6">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -103,6 +145,7 @@ export default function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/forgot-password" element={<ForgotPassword />} />
             <Route path="/reset-password" element={<ResetPassword />} />
+            <Route path="/verify-email" element={<VerifyEmail />} />
             <Route path="/lessons/:slug" element={<RequireAuth><Lesson /></RequireAuth>} />
             <Route path="/leaderboard" element={<RequireAuth><Leaderboard /></RequireAuth>} />
             <Route path="/settings" element={<RequireAuth><Settings /></RequireAuth>} />

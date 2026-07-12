@@ -41,5 +41,6 @@ export interface User {
   phone: string;
   is_admin: boolean;
   leaderboard_opt_in: boolean;
+  email_verified: boolean;
   avatar_hash: string;
 }

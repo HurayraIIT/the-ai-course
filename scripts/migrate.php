@@ -18,7 +18,23 @@ $root = new PDO("mysql:host=$host;port=$port;charset=utf8mb4", env('DB_USERNAME'
 $root->exec("CREATE DATABASE IF NOT EXISTS `$name` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
 echo "Database `$name` ready\n";
 
+// Grandfather pre-verification users exactly once: when email_verifications
+// doesn't exist yet, everyone registered so far predates the feature.
+$hadVerifications = pdo()->prepare(
+    'SELECT COUNT(*) FROM information_schema.tables
+     WHERE table_schema = ? AND table_name = "email_verifications"'
+);
+$hadVerifications->execute([$name]);
+$grandfather = (int)$hadVerifications->fetchColumn() === 0;
+
 pdo()->exec(file_get_contents(dirname(__DIR__) . '/database/schema.sql'));
+
+if ($grandfather) {
+    $count = pdo()->exec('UPDATE users SET email_verified_at = NOW() WHERE email_verified_at IS NULL');
+    if ($count > 0) {
+        echo "Grandfathered $count pre-verification users as verified\n";
+    }
+}
 
 // Columns added after the initial release (CREATE TABLE IF NOT EXISTS won't add them).
 $hasSources = pdo()->prepare(
@@ -34,9 +50,9 @@ echo "Schema applied\n";
 
 $adminEmail = 'hurayraiit+admin@gmail.com';
 $stmt = pdo()->prepare(
-    'INSERT INTO users (username, email, phone, password_hash, is_admin)
-     VALUES (?, ?, ?, ?, 1)
-     ON DUPLICATE KEY UPDATE is_admin = 1'
+    'INSERT INTO users (username, email, phone, password_hash, is_admin, email_verified_at)
+     VALUES (?, ?, ?, ?, 1, NOW())
+     ON DUPLICATE KEY UPDATE is_admin = 1, email_verified_at = COALESCE(email_verified_at, NOW())'
 );
 $stmt->execute(['admin', $adminEmail, '+0000000000', password_hash('Pass1234@@', PASSWORD_DEFAULT)]);
 echo "Admin user ready: $adminEmail\n";

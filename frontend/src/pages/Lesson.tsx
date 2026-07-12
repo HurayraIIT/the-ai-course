@@ -33,6 +33,7 @@ export default function Lesson() {
   const [lesson, setLesson] = useState<LessonData | null>(null);
   const [locked, setLocked] = useState(false);
   const [notFound, setNotFound] = useState(false);
+  const [actionError, setActionError] = useState<string | null>(null);
 
   const load = useCallback(() => {
     setLesson(null);
@@ -51,21 +52,31 @@ export default function Lesson() {
 
   const markRead = async (resource: Resource) => {
     if (resource.read || !lesson) return;
-    const result = await api<{ lesson_completed: boolean }>(
-      `/lessons/${lesson.id}/resources/${resource.id}/read`,
-      { method: 'POST' },
-    );
-    setLesson({
-      ...lesson,
-      completed: lesson.completed || result.lesson_completed,
-      resources: lesson.resources.map((r) => (r.id === resource.id ? { ...r, read: true } : r)),
-    });
+    setActionError(null);
+    try {
+      const result = await api<{ lesson_completed: boolean }>(
+        `/lessons/${lesson.id}/resources/${resource.id}/read`,
+        { method: 'POST' },
+      );
+      setLesson({
+        ...lesson,
+        completed: lesson.completed || result.lesson_completed,
+        resources: lesson.resources.map((r) => (r.id === resource.id ? { ...r, read: true } : r)),
+      });
+    } catch (err: any) {
+      setActionError(err.message);
+    }
   };
 
   const markComplete = async () => {
     if (!lesson) return;
-    await api(`/lessons/${lesson.id}/complete`, { method: 'POST' });
-    setLesson({ ...lesson, completed: true });
+    setActionError(null);
+    try {
+      await api(`/lessons/${lesson.id}/complete`, { method: 'POST' });
+      setLesson({ ...lesson, completed: true });
+    } catch (err: any) {
+      setActionError(err.message);
+    }
   };
 
   if (locked) {
@@ -112,6 +123,11 @@ export default function Lesson() {
       {lesson.viewing_locked && (
         <p role="status" className="mt-3 rounded-md bg-amber-50 p-3 text-sm text-amber-800">
           Admin preview — this lesson is still locked for you, so progress tracking is disabled.
+        </p>
+      )}
+      {actionError && (
+        <p role="alert" className="mt-3 rounded-md bg-red-50 p-3 text-sm text-red-800">
+          {actionError}
         </p>
       )}
 

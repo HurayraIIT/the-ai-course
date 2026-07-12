@@ -22,6 +22,7 @@ interface AdminUser {
   username: string;
   email: string;
   is_admin: boolean;
+  email_verified: boolean;
   created_at: string;
   last_login_at: string | null;
   completed: number;
@@ -102,6 +103,9 @@ export default function AdminUsers() {
                     {u.username}
                     {u.is_admin && (
                       <span className="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-medium text-amber-800">admin</span>
+                    )}
+                    {!u.email_verified && (
+                      <span className="rounded bg-zinc-100 px-1.5 py-0.5 text-xs font-medium text-zinc-500">unverified</span>
                     )}
                   </Link>
                 </td>

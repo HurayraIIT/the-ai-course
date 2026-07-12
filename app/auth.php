@@ -51,6 +51,7 @@ function user_payload(array $user): array
         'phone' => $user['phone'],
         'is_admin' => (bool)$user['is_admin'],
         'leaderboard_opt_in' => (bool)$user['leaderboard_opt_in'],
+        'email_verified' => $user['email_verified_at'] !== null,
         'avatar_hash' => avatar_hash($user['email']),
     ];
 }

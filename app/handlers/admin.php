@@ -21,7 +21,7 @@ function handle_admin_users(): void
 
     $stmt = pdo()->prepare(
         "SELECT u.id, u.username, u.email, u.phone, u.is_admin, u.leaderboard_opt_in,
-                u.created_at, u.last_login_at,
+                u.email_verified_at, u.created_at, u.last_login_at,
                 COUNT(lc.lesson_id) AS completed
          FROM users u
          LEFT JOIN lesson_completions lc ON lc.user_id = u.id
@@ -50,6 +50,7 @@ function admin_user_row(array $u): array
         'phone' => $u['phone'],
         'is_admin' => (bool)$u['is_admin'],
         'leaderboard_opt_in' => (bool)$u['leaderboard_opt_in'],
+        'email_verified' => ($u['email_verified_at'] ?? null) !== null,
         'created_at' => $u['created_at'],
         'last_login_at' => $u['last_login_at'],
         'completed' => (int)($u['completed'] ?? 0),

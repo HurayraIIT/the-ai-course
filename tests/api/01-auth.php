@@ -74,3 +74,40 @@ for ($i = 0; $i < 5; $i++) {
 [$s] = $c5->login('ratelimit@example.com', 'wrongpass');
 check($s === 429, 'login rate limit kicks in after 5 attempts');
 clear_rate_limits();
+
+// --- Email verification flow ---
+$v = new Client();
+[$s, $d] = $v->register_unverified('verifyme', 'verifyme@example.com');
+check($s === 201 && $d['user']['email_verified'] === false, 'new user starts unverified');
+
+$verifyToken = latest_mail_token('verify-email');
+check($verifyToken !== null, 'verification email logged with token');
+
+// Gated until verified
+$resource = test_pdo()->query(
+    'SELECT r.id, r.lesson_id FROM resources r JOIN lessons l ON l.id = r.lesson_id WHERE l.position = 1 LIMIT 1'
+)->fetch();
+[$s, $d] = $v->request('POST', "/lessons/{$resource['lesson_id']}/resources/{$resource['id']}/read");
+check($s === 403 && ($d['needs_verification'] ?? false) === true, 'progress blocked until verified');
+[$s, $d] = $v->request('POST', "/lessons/{$resource['lesson_id']}/comments", ['body' => 'hi']);
+check($s === 403 && ($d['needs_verification'] ?? false) === true, 'commenting blocked until verified');
+
+// Resend issues a fresh, working token
+[$s] = $v->request('POST', '/auth/resend-verification');
+check($s === 200, 'resend verification works');
+$resentToken = latest_mail_token('verify-email');
+check($resentToken !== null && $resentToken !== $verifyToken, 'resend issues a new token');
+
+[$s] = $v->request('POST', '/auth/verify-email', ['token' => $resentToken]);
+check($s === 200, 'verify with token works');
+[, $d] = $v->bootstrap();
+check($d['user']['email_verified'] === true, 'user shows verified after verifying');
+
+[$s] = $v->request('POST', '/auth/verify-email', ['token' => $resentToken]);
+check($s === 400, 'verification token reuse rejected');
+[$s] = $v->request('POST', '/auth/resend-verification');
+check($s === 400, 'resend rejected once verified');
+
+[$s, $d] = $v->request('POST', "/lessons/{$resource['lesson_id']}/resources/{$resource['id']}/read");
+check($s === 200, 'progress works after verification');
+clear_rate_limits();

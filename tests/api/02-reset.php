@@ -15,7 +15,7 @@ check($s === 200, 'forgot-password returns 200 for unknown email');
 [$s] = $c->request('POST', '/auth/forgot-password', ['email' => 'alice@example.com']);
 check($s === 200, 'forgot-password returns 200 for known email');
 
-$token = latest_mail_token();
+$token = latest_mail_token('reset-password');
 check($token !== null, 'reset email logged with token');
 
 // Weak password rejected, token stays valid
