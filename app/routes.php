@@ -31,5 +31,12 @@ function routes(): array
         ['GET', '#^/leaderboard$#', 'handle_leaderboard', 'user'],
         ['PUT', '#^/profile$#', 'handle_profile_update', 'user'],
         ['PUT', '#^/profile/password$#', 'handle_password_update', 'user'],
+        ['GET', '#^/admin/users$#', 'handle_admin_users', 'admin'],
+        ['GET', '#^/admin/users/(\d+)$#', 'handle_admin_user_detail', 'admin'],
+        ['PUT', '#^/admin/users/(\d+)$#', 'handle_admin_user_update', 'admin'],
+        ['POST', '#^/admin/users/(\d+)/reset-progress$#', 'handle_admin_reset_progress', 'admin'],
+        ['POST', '#^/admin/users/(\d+)/reset-password$#', 'handle_admin_reset_password', 'admin'],
+        ['DELETE', '#^/admin/users/(\d+)$#', 'handle_admin_user_delete', 'admin'],
+        ['GET', '#^/admin/analytics$#', 'handle_admin_analytics', 'admin'],
     ];
 }
