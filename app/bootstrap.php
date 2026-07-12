@@ -63,5 +63,6 @@ require APP_ROOT . '/app/db.php';
 require APP_ROOT . '/app/http.php';
 require APP_ROOT . '/app/auth.php';
 require APP_ROOT . '/app/mailer.php';
+require APP_ROOT . '/app/activity.php';
 require APP_ROOT . '/app/ratelimit.php';
 require APP_ROOT . '/app/routes.php';
