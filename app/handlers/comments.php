@@ -35,7 +35,6 @@ function handle_comments_list(array $user, array $params): void
 
 function handle_comment_create(array $user, array $params): void
 {
-    require_verified($user);
     $lesson = unlocked_lesson_or_fail($user, (int)$params[0], adminBypass: true);
 
     $body = trim((string)(read_json_body()['body'] ?? ''));

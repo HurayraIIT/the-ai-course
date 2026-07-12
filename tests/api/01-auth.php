@@ -22,12 +22,12 @@ check($s === 422, 'register rejects bad phone');
 [$s] = $c->request('POST', '/auth/register', ['username' => 'valid_user', 'email' => 'a@b.com', 'phone' => '+8801700000000', 'password' => 'short']);
 check($s === 422, 'register rejects short password');
 
-// Successful registration logs in
+// Successful registration requires OTP verification before any session exists
 clear_rate_limits();
 [$s, $d] = $c->register('alice', 'alice@example.com');
-check($s === 201 && $d['user']['username'] === 'alice', 'register creates and logs in');
+check($s === 201 && ($d['verification_required'] ?? false) === true, 'register accepted, verification required');
 [$s, $d] = $c->get('/me');
-check($d['user']['username'] === 'alice', 'session persists after register');
+check($d['user']['username'] === 'alice', 'session established after verify + login');
 
 // Duplicates
 $c2 = new Client();
@@ -75,39 +75,48 @@ for ($i = 0; $i < 5; $i++) {
 check($s === 429, 'login rate limit kicks in after 5 attempts');
 clear_rate_limits();
 
-// --- Email verification flow ---
+// --- OTP verification flow ---
 $v = new Client();
 [$s, $d] = $v->register_unverified('verifyme', 'verifyme@example.com');
-check($s === 201 && $d['user']['email_verified'] === false, 'new user starts unverified');
-
-$verifyToken = latest_mail_token('verify-email');
-check($verifyToken !== null, 'verification email logged with token');
-
-// Gated until verified
-$resource = test_pdo()->query(
-    'SELECT r.id, r.lesson_id FROM resources r JOIN lessons l ON l.id = r.lesson_id WHERE l.position = 1 LIMIT 1'
-)->fetch();
-[$s, $d] = $v->request('POST', "/lessons/{$resource['lesson_id']}/resources/{$resource['id']}/read");
-check($s === 403 && ($d['needs_verification'] ?? false) === true, 'progress blocked until verified');
-[$s, $d] = $v->request('POST', "/lessons/{$resource['lesson_id']}/comments", ['body' => 'hi']);
-check($s === 403 && ($d['needs_verification'] ?? false) === true, 'commenting blocked until verified');
-
-// Resend issues a fresh, working token
-[$s] = $v->request('POST', '/auth/resend-verification');
-check($s === 200, 'resend verification works');
-$resentToken = latest_mail_token('verify-email');
-check($resentToken !== null && $resentToken !== $verifyToken, 'resend issues a new token');
-
-[$s] = $v->request('POST', '/auth/verify-email', ['token' => $resentToken]);
-check($s === 200, 'verify with token works');
+check($s === 201 && ($d['verification_required'] ?? false) === true, 'register returns verification_required');
 [, $d] = $v->bootstrap();
-check($d['user']['email_verified'] === true, 'user shows verified after verifying');
+check($d['user'] === null, 'no session after register');
 
-[$s] = $v->request('POST', '/auth/verify-email', ['token' => $resentToken]);
-check($s === 400, 'verification token reuse rejected');
-[$s] = $v->request('POST', '/auth/resend-verification');
-check($s === 400, 'resend rejected once verified');
+[$s, $d] = $v->login('verifyme@example.com', 'secret123');
+check($s === 403 && ($d['needs_verification'] ?? false) === true, 'login blocked until verified');
 
-[$s, $d] = $v->request('POST', "/lessons/{$resource['lesson_id']}/resources/{$resource['id']}/read");
-check($s === 200, 'progress works after verification');
+$otp = latest_mail_otp();
+check($otp !== null, 'OTP email logged');
+
+[$s] = $v->request('POST', '/auth/verify-otp', ['email' => 'verifyme@example.com', 'otp' => '000000']);
+check($s === 400, 'wrong OTP rejected');
+
+// Resend replaces the active code
+clear_rate_limits();
+[$s] = $v->request('POST', '/auth/resend-otp', ['email' => 'verifyme@example.com']);
+check($s === 200, 'resend OTP works');
+[$s] = $v->request('POST', '/auth/resend-otp', ['email' => 'ghost@example.com']);
+check($s === 200, 'resend for unknown email still 200 (no enumeration)');
+$otp = latest_mail_otp();
+
+[$s, $d] = $v->request('POST', '/auth/verify-otp', ['email' => 'verifyme@example.com', 'otp' => $otp]);
+check($s === 200 && $d['user']['email_verified'] === true, 'correct OTP verifies and logs in');
+[, $d] = $v->bootstrap();
+check($d['user']['username'] === 'verifyme', 'session established by OTP');
+
+[$s] = $v->request('POST', '/auth/verify-otp', ['email' => 'verifyme@example.com', 'otp' => $otp]);
+check($s === 400, 'OTP reuse rejected');
+
+[$s] = $v->login('verifyme@example.com', 'secret123');
+check($s === 200, 'login works after verification');
+
+// Guessing protection: 5 attempts per email, then 429
+clear_rate_limits();
+$w = new Client();
+$w->register_unverified('otplimit', 'otplimit@example.com');
+for ($i = 0; $i < 5; $i++) {
+    $w->request('POST', '/auth/verify-otp', ['email' => 'otplimit@example.com', 'otp' => '000000']);
+}
+[$s] = $w->request('POST', '/auth/verify-otp', ['email' => 'otplimit@example.com', 'otp' => '000000']);
+check($s === 429, 'OTP attempts rate limited');
 clear_rate_limits();

@@ -28,7 +28,7 @@ Three [roadmap.sh](https://roadmap.sh) roadmaps — [AI Engineer](https://roadma
 
 ## Features
 
-- Register / login / logout / forgot + reset password, with email verification: new accounts get a 24-hour verification link (resendable); progress tracking and commenting unlock after verifying. Existing users are grandfathered in on first migration.
+- Register / login / logout / forgot + reset password, with OTP email verification: registration emails a 6-digit code (15-minute expiry, resendable, attempt-limited); submitting the code verifies the account and logs the user in. Unverified accounts cannot log in — a login attempt routes them back to the code step.
 - Fully linear course: lesson N unlocks only when lessons 1..N−1 are complete; a lesson completes when all its resources are marked read (zero-resource lessons get a "Mark as complete" button)
 - Guests see the curriculum outline (titles + lock icons) only — no lesson content
 - Global leaderboard (Gravatar avatar + username), ranked by completed lessons, ties broken by who got there first; users can opt out in Settings

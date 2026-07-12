@@ -90,11 +90,15 @@ class Client
         return $result;
     }
 
-    /** Registers and marks the email verified directly in the DB (most tests assume a verified user). */
+    /**
+     * Registers, marks the email verified directly in the DB, and logs in —
+     * most tests just need a working authenticated user.
+     */
     public function register(string $username, string $email, string $password = 'secret123'): array
     {
         $result = $this->register_unverified($username, $email, $password);
         test_pdo()->prepare('UPDATE users SET email_verified_at = NOW() WHERE email = ?')->execute([$email]);
+        $this->login($email, $password);
         return $result;
     }
 
@@ -126,9 +130,16 @@ function clear_rate_limits(): void
     test_pdo()->exec('DELETE FROM rate_limit_hits');
 }
 
-/** Last token in mail.log for the given link path ('reset-password' or 'verify-email'). */
+/** Last token in mail.log for the given link path ('reset-password'). */
 function latest_mail_token(string $path): ?string
 {
     $log = @file_get_contents(dirname(__DIR__, 2) . '/storage/mail.log') ?: '';
     return preg_match_all('#/' . $path . '\?token=([a-f0-9]{64})#', $log, $m) ? end($m[1]) : null;
+}
+
+/** Last 6-digit OTP code appearing in mail.log. */
+function latest_mail_otp(): ?string
+{
+    $log = @file_get_contents(dirname(__DIR__, 2) . '/storage/mail.log') ?: '';
+    return preg_match_all('/>(\d{6})</', $log, $m) ? end($m[1]) : null;
 }

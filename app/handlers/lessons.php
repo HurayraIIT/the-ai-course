@@ -124,7 +124,6 @@ function unlocked_lesson_or_fail(array $user, int $lessonId, bool $adminBypass =
 
 function handle_resource_read(array $user, array $params): void
 {
-    require_verified($user);
     $userId = (int)$user['id'];
     $lesson = unlocked_lesson_or_fail($user, (int)$params[0]);
 
@@ -166,7 +165,6 @@ function handle_resource_read(array $user, array $params): void
 
 function handle_lesson_complete(array $user, array $params): void
 {
-    require_verified($user);
     $userId = (int)$user['id'];
     $lesson = unlocked_lesson_or_fail($user, (int)$params[0]);
 

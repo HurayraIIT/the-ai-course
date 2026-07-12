@@ -140,5 +140,5 @@ check(in_array('completed_lesson', $actions, true) && in_array('read_resource', 
 // Email log (reset email from test 02 was logged)
 [$s, $d] = $admin->get('/admin/emails');
 check($s === 200 && $d['total'] >= 1 && $d['emails'][0]['status'] === 'logged', 'email log captures outgoing mail');
-check(str_contains($d['emails'][0]['body'], 'token='), 'email log stores full body');
+check(preg_match('/token=|\d{6}/', $d['emails'][0]['body']) === 1, 'email log stores full body');
 clear_rate_limits();

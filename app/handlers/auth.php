@@ -10,23 +10,27 @@ function handle_me(?array $user): void
     ]);
 }
 
-/** Issues a fresh verification token and emails the link. Failure never blocks the caller. */
-function send_verification_email(int $userId, string $username, string $email): bool
+/**
+ * Issues a fresh 6-digit OTP (invalidating any previous one) and emails it.
+ * Hash is keyed by user id so identical codes can never verify another account.
+ */
+function send_verification_otp(int $userId, string $username, string $email): bool
 {
-    $token = bin2hex(random_bytes(32));
-    pdo()->prepare(
-        'INSERT INTO email_verifications (user_id, token_hash, expires_at) VALUES (?, ?, NOW() + INTERVAL 24 HOUR)'
-    )->execute([$userId, hash('sha256', $token)]);
+    $otp = (string)random_int(100000, 999999);
+    $pdo = pdo();
+    $pdo->prepare('DELETE FROM email_verifications WHERE user_id = ?')->execute([$userId]);
+    $pdo->prepare(
+        'INSERT INTO email_verifications (user_id, token_hash, expires_at) VALUES (?, ?, NOW() + INTERVAL 15 MINUTE)'
+    )->execute([$userId, hash('sha256', $userId . ':' . $otp)]);
 
-    $link = rtrim(env('APP_URL'), '/') . '/verify-email?token=' . $token;
     $safeName = htmlspecialchars($username, ENT_QUOTES);
     return send_mail(
         $email,
-        'Verify your email — The AI Course',
+        'Your verification code — The AI Course',
         "<p>Hi $safeName,</p>" .
-        "<p>Welcome to The AI Course! <a href=\"$link\">Verify your email address</a> (valid for 24 hours) " .
-        'to start tracking your progress.</p>' .
-        '<p>If you did not create this account, you can ignore this email.</p>'
+        '<p>Your verification code is:</p>' .
+        "<p style=\"font-size:28px;font-weight:bold;letter-spacing:4px\">$otp</p>" .
+        '<p>It expires in 15 minutes. If you did not create this account, you can ignore this email.</p>'
     );
 }
 
@@ -68,12 +72,10 @@ function handle_register(): void
         ->execute([$username, $email, $phone, password_hash($password, PASSWORD_DEFAULT)]);
     $id = (int)pdo()->lastInsertId();
     log_activity($id, $username, 'registered');
-    send_verification_email($id, $username, $email);
-    login_user($id);
+    send_verification_otp($id, $username, $email);
 
-    $stmt = pdo()->prepare('SELECT * FROM users WHERE id = ?');
-    $stmt->execute([$id]);
-    json_response(['user' => user_payload($stmt->fetch()), 'csrf' => $_SESSION['csrf']], 201);
+    // No session yet — the user logs in by submitting the emailed OTP.
+    json_response(['verification_required' => true, 'email' => $email], 201);
 }
 
 function handle_login(): void
@@ -92,46 +94,76 @@ function handle_login(): void
     if (!$user || !password_verify($password, $user['password_hash'])) {
         json_error('Invalid email or password', 401);
     }
+    if ($user['email_verified_at'] === null) {
+        json_error('Please verify your email address first', 403, [
+            'needs_verification' => true,
+            'email' => $user['email'],
+        ]);
+    }
 
     login_user((int)$user['id']);
     json_response(['user' => user_payload($user), 'csrf' => $_SESSION['csrf']]);
 }
 
-function handle_verify_email(): void
+function handle_verify_otp(): void
 {
-    $token = (string)(read_json_body()['token'] ?? '');
+    $body = read_json_body();
+    $email = strtolower(trim((string)($body['email'] ?? '')));
+    $otp = trim((string)($body['otp'] ?? ''));
+
+    // Attempt limit is what keeps a 6-digit code safe from guessing.
+    rate_limit('verify-otp', client_ip(), 10, 900);
+    rate_limit('verify-otp', 'email:' . $email, 5, 900);
+
+    $stmt = pdo()->prepare('SELECT * FROM users WHERE email = ?');
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
+    if (!$user) {
+        json_error('Invalid or expired code', 400);
+    }
+    if ($user['email_verified_at'] !== null) {
+        json_error('This email is already verified — just log in', 400);
+    }
 
     $stmt = pdo()->prepare(
-        'SELECT * FROM email_verifications WHERE token_hash = ? AND used_at IS NULL AND expires_at > NOW()'
+        'SELECT * FROM email_verifications
+         WHERE user_id = ? AND token_hash = ? AND used_at IS NULL AND expires_at > NOW()'
     );
-    $stmt->execute([hash('sha256', $token)]);
+    $stmt->execute([(int)$user['id'], hash('sha256', $user['id'] . ':' . $otp)]);
     $verification = $stmt->fetch();
     if (!$verification) {
-        json_error('Invalid or expired verification link', 400);
+        json_error('Invalid or expired code', 400);
     }
 
     $pdo = pdo();
     $pdo->beginTransaction();
-    $pdo->prepare('UPDATE users SET email_verified_at = COALESCE(email_verified_at, NOW()) WHERE id = ?')
-        ->execute([(int)$verification['user_id']]);
+    $pdo->prepare('UPDATE users SET email_verified_at = NOW() WHERE id = ?')->execute([(int)$user['id']]);
     $pdo->prepare('UPDATE email_verifications SET used_at = NOW() WHERE id = ?')
         ->execute([(int)$verification['id']]);
     $pdo->commit();
 
-    $stmt = $pdo->prepare('SELECT username FROM users WHERE id = ?');
-    $stmt->execute([(int)$verification['user_id']]);
-    log_activity((int)$verification['user_id'], (string)$stmt->fetchColumn(), 'verified_email');
+    log_activity((int)$user['id'], $user['username'], 'verified_email');
+    login_user((int)$user['id']);
 
-    json_response(['ok' => true]);
+    $stmt = $pdo->prepare('SELECT * FROM users WHERE id = ?');
+    $stmt->execute([(int)$user['id']]);
+    json_response(['user' => user_payload($stmt->fetch()), 'csrf' => $_SESSION['csrf']]);
 }
 
-function handle_resend_verification(array $user): void
+function handle_resend_otp(): void
 {
-    if ($user['email_verified_at'] !== null) {
-        json_error('Your email is already verified', 400);
+    $email = strtolower(trim((string)(read_json_body()['email'] ?? '')));
+    rate_limit('resend-otp', client_ip(), 3, 3600);
+    rate_limit('resend-otp', 'email:' . $email, 3, 3600);
+
+    $stmt = pdo()->prepare('SELECT * FROM users WHERE email = ?');
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
+    if ($user && $user['email_verified_at'] === null) {
+        send_verification_otp((int)$user['id'], $user['username'], $user['email']);
     }
-    rate_limit('resend-verification', 'user:' . $user['id'], 3, 3600);
-    send_verification_email((int)$user['id'], $user['username'], $user['email']);
+
+    // Always 200: no account enumeration.
     json_response(['ok' => true]);
 }
 

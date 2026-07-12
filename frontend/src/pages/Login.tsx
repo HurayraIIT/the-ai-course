@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { api, type User } from '../api';
 import { useAuth } from '../auth';
 import { buttonClass, ErrorMessage, inputClass, PageTitle } from '../components/ui';
+import OtpForm from '../components/OtpForm';
 
 export default function Login() {
   const { setUser } = useAuth();
@@ -12,6 +13,9 @@ export default function Login() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
+  const [pendingEmail, setPendingEmail] = useState<string | null>(null);
+
+  const destination = (location.state as any)?.from ?? '/';
 
   const submit = async (e: FormEvent) => {
     e.preventDefault();
@@ -20,13 +24,36 @@ export default function Login() {
     try {
       const data = await api<{ user: User }>('/auth/login', { method: 'POST', body: { email, password } });
       setUser(data.user);
-      navigate((location.state as any)?.from ?? '/');
+      navigate(destination);
     } catch (err: any) {
-      setError(err.message);
+      if (err.data?.needs_verification) {
+        setPendingEmail(err.data.email ?? email);
+      } else {
+        setError(err.message);
+      }
     } finally {
       setBusy(false);
     }
   };
+
+  const onVerified = (user: User) => {
+    setUser(user);
+    navigate(destination);
+  };
+
+  if (pendingEmail) {
+    return (
+      <div className="mx-auto max-w-sm">
+        <PageTitle>Verify your email</PageTitle>
+        <p className="mt-4 text-sm text-zinc-600">
+          Your account isn't verified yet. Use the code from your inbox, or request a fresh one below.
+        </p>
+        <div className="mt-4">
+          <OtpForm email={pendingEmail} onVerified={onVerified} />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-sm">
