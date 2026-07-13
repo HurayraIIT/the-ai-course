@@ -13,7 +13,7 @@ export function setCsrf(token: string) {
   csrf = token;
 }
 
-export async function api<T = any>(path: string, opts: { method?: string; body?: unknown } = {}): Promise<T> {
+export async function api<T = any>(path: string, opts: { method?: string; body?: unknown } = {}, retried = false): Promise<T> {
   const method = opts.method ?? 'GET';
   const res = await fetch('/api' + path, {
     method,
@@ -29,6 +29,12 @@ export async function api<T = any>(path: string, opts: { method?: string; body?:
     csrf = (data as any).csrf;
   }
   if (!res.ok) {
+    // Our cached token can go stale whenever the server replaces the session
+    // (deploy, multi-tab login, logout, expiry). Resync from /me and replay once.
+    if (res.status === 403 && (data as any).error === 'Invalid CSRF token' && !retried && path !== '/me') {
+      await api('/me'); // adopts the current session's CSRF token
+      return api<T>(path, opts, true);
+    }
     throw new ApiError((data as any).error ?? 'Request failed', res.status, data);
   }
   return data as T;
