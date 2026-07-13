@@ -46,8 +46,18 @@ set_exception_handler(function (Throwable $e) {
 
 // --- session ---
 if (PHP_SAPI !== 'cli') {
+    // ponytail: 60-day sessions. Default gc_maxlifetime (24min) is what logs users out fast.
+    $lifetime = 60 * 60 * 24 * 60;
+    ini_set('session.gc_maxlifetime', (string) $lifetime);
+    // Private save path: on shared hosting a neighbor's short gc_maxlifetime
+    // would otherwise GC our session files early.
+    $sessionPath = APP_ROOT . '/storage/sessions';
+    if (is_dir($sessionPath) || @mkdir($sessionPath, 0770, true)) {
+        session_save_path($sessionPath);
+    }
     session_name('aic_session');
     session_set_cookie_params([
+        'lifetime' => $lifetime,
         'httponly' => true,
         'samesite' => 'Lax',
         'secure' => !empty($_SERVER['HTTPS']),
