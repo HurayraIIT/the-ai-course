@@ -5,6 +5,9 @@ declare(strict_types=1);
 $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) ?: '/';
 
 if (str_starts_with($path, '/api/')) {
+    // API responses carry per-session cookies + CSRF tokens; a caching proxy
+    // must never share one visitor's response (or strip its Set-Cookie) with another.
+    header('Cache-Control: no-store');
     require __DIR__ . '/../app/bootstrap.php';
     dispatch($_SERVER['REQUEST_METHOD'], substr($path, 4));
     exit;
