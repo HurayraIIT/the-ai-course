@@ -61,6 +61,7 @@ export default function Register() {
             maxLength={50}
             pattern="[a-zA-Z0-9_\-]+"
             autoComplete="username"
+            placeholder="jane_doe"
             value={form.username}
             onChange={set('username')}
             className={inputClass}
@@ -79,6 +80,7 @@ export default function Register() {
             type="email"
             required
             autoComplete="email"
+            placeholder="you@example.com"
             value={form.email}
             onChange={set('email')}
             className={inputClass}
@@ -93,6 +95,7 @@ export default function Register() {
             type="tel"
             required
             autoComplete="tel"
+            placeholder="+1 555 123 4567"
             value={form.phone}
             onChange={set('phone')}
             className={inputClass}
@@ -108,6 +111,7 @@ export default function Register() {
             required
             minLength={8}
             autoComplete="new-password"
+            placeholder="At least 8 characters"
             value={form.password}
             onChange={set('password')}
             className={inputClass}

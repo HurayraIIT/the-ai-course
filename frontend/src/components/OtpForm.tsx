@@ -37,6 +37,7 @@ export default function OtpForm({ email, onVerified }: { email: string; onVerifi
     <div>
       <p role="status" className="rounded-md bg-blue-50 p-4 text-sm text-blue-900">
         We sent a 6-digit verification code to <strong>{email}</strong>. Enter it below to finish signing in.
+        If it's not in your inbox, please check your spam or junk folder.
       </p>
       <form onSubmit={submit} className="mt-4 space-y-4" aria-describedby="otp-error">
         <div>

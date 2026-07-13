@@ -80,6 +80,22 @@ export default function Settings() {
         </h2>
         <form onSubmit={saveProfile} className="mt-4 space-y-4">
           <div>
+            <label htmlFor="email" className="mb-1 block text-sm font-medium">
+              Email
+            </label>
+            <input
+              id="email"
+              type="email"
+              disabled
+              value={user!.email}
+              className={`${inputClass} cursor-not-allowed bg-zinc-100 text-zinc-500`}
+              aria-describedby="email-hint"
+            />
+            <p id="email-hint" className="mt-1 text-xs text-zinc-500">
+              Your email can't be changed.
+            </p>
+          </div>
+          <div>
             <label htmlFor="username" className="mb-1 block text-sm font-medium">
               Username
             </label>

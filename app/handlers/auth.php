@@ -30,7 +30,8 @@ function send_verification_otp(int $userId, string $username, string $email): bo
         "<p>Hi $safeName,</p>" .
         '<p>Your verification code is:</p>' .
         "<p style=\"font-size:28px;font-weight:bold;letter-spacing:4px\">$otp</p>" .
-        '<p>It expires in 15 minutes. If you did not create this account, you can ignore this email.</p>'
+        '<p>It expires in 15 minutes. If you did not create this account, you can ignore this email.</p>' .
+        '<p style="color:#666;font-size:13px">Not seeing this email in your inbox? Please check your spam or junk folder.</p>'
     );
 }
 
