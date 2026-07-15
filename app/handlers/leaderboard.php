@@ -25,17 +25,21 @@ function handle_leaderboard(array $user): void
          LIMIT $perPage OFFSET $offset"
     );
 
+    $fetched = $stmt->fetchAll();
+    $maxStreaks = max_streaks_for(array_map(fn($r) => (int)$r['id'], $fetched));
+
     $rank = $offset;
-    $rows = array_map(function ($row) use (&$rank, $user) {
+    $rows = array_map(function ($row) use (&$rank, $user, $maxStreaks) {
         return [
             'rank' => ++$rank,
             'username' => $row['username'],
             'avatar_hash' => avatar_hash($row['email']),
             'completed' => (int)$row['completed'],
+            'max_streak' => $maxStreaks[(int)$row['id']] ?? 0,
             'last_active_secs' => $row['last_active_secs'] === null ? null : (int)$row['last_active_secs'],
             'is_me' => (int)$row['id'] === (int)$user['id'],
         ];
-    }, $stmt->fetchAll());
+    }, $fetched);
 
     json_response([
         'leaderboard' => $rows,

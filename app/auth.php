@@ -72,6 +72,44 @@ function current_streak(int $userId): int
     return $streak;
 }
 
+/** Longest run of consecutive calendar days in an ascending, de-duplicated date list. */
+function longest_streak_from_days(array $daysAsc): int
+{
+    if (!$daysAsc) {
+        return 0;
+    }
+    $best = $run = 1;
+    for ($i = 1, $n = count($daysAsc); $i < $n; $i++) {
+        $gap = (int)(new DateTimeImmutable($daysAsc[$i - 1]))->diff(new DateTimeImmutable($daysAsc[$i]))->days;
+        $run = $gap === 1 ? $run + 1 : 1;
+        $best = max($best, $run);
+    }
+    return $best;
+}
+
+/** Best-ever streak per user id, from resource-reading days. One query for the whole set. */
+function max_streaks_for(array $userIds): array
+{
+    if (!$userIds) {
+        return [];
+    }
+    $in = implode(',', array_fill(0, count($userIds), '?'));
+    $stmt = pdo()->prepare(
+        "SELECT user_id, DATE(created_at) d FROM resource_reads
+         WHERE user_id IN ($in) GROUP BY user_id, DATE(created_at) ORDER BY user_id, d"
+    );
+    $stmt->execute($userIds);
+    $byUser = [];
+    foreach ($stmt->fetchAll() as $r) {
+        $byUser[(int)$r['user_id']][] = $r['d'];
+    }
+    $out = [];
+    foreach ($userIds as $uid) {
+        $out[(int)$uid] = longest_streak_from_days($byUser[(int)$uid] ?? []);
+    }
+    return $out;
+}
+
 /** Public-safe shape of a user row for API responses. */
 function user_payload(array $user): array
 {

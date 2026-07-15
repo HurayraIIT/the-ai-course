@@ -17,6 +17,7 @@ interface Row {
   username: string;
   avatar_hash: string;
   completed: number;
+  max_streak: number;
   last_active_secs: number | null;
   is_me: boolean;
 }
@@ -77,6 +78,9 @@ export default function Leaderboard() {
                 Last active
               </th>
               <th scope="col" className={`${thClass} text-right`}>
+                Best streak
+              </th>
+              <th scope="col" className={`${thClass} text-right`}>
                 Completed
               </th>
             </tr>
@@ -93,6 +97,9 @@ export default function Leaderboard() {
                   </span>
                 </td>
                 <td className={`${tdClass} text-zinc-600`}>{activeAgo(row.last_active_secs)}</td>
+                <td className={`${tdClass} text-right tabular-nums`}>
+                  {row.max_streak > 0 ? `🔥 ${row.max_streak}` : '—'}
+                </td>
                 <td className={`${tdClass} text-right tabular-nums`}>{row.completed}</td>
               </tr>
             ))}

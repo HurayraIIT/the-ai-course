@@ -46,13 +46,21 @@ function Header() {
           The AI Course
         </Link>
         {user && (
-          <span
-            aria-label={`${user.streak}-day streak`}
-            title={`${user.streak}-day streak`}
-            className="rounded px-2 py-1 text-sm text-zinc-600"
-          >
-            🔥 {user.streak}
-          </span>
+          <div className="group relative">
+            <span
+              tabIndex={0}
+              aria-label={`${user.streak}-day streak`}
+              className="inline-flex items-center gap-1 rounded-full bg-orange-100 px-2.5 py-1 text-sm font-semibold text-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-400"
+            >
+              🔥 {user.streak}
+            </span>
+            <span
+              role="tooltip"
+              className="pointer-events-none absolute left-0 top-full z-10 mt-1.5 hidden w-56 rounded-md bg-zinc-900 px-3 py-2 text-xs leading-snug text-white shadow-lg group-hover:block group-focus-within:block"
+            >
+              Complete at least one lesson a day to keep your streak alive.
+            </span>
+          </div>
         )}
         <NavLink to="/" className={navLink} end>
           Course
