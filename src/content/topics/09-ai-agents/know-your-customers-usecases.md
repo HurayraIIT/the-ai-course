@@ -6,7 +6,23 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Prompt Personalities — OpenAI Cookbook",
+      "url": "https://developers.openai.com/cookbook/examples/gpt-5/prompt_personalities"
+    },
+    {
+      "type": "official",
+      "title": "Keep Claude in character — Anthropic",
+      "url": "https://platform.claude.com/docs/en/docs/test-and-evaluate/strengthen-guardrails/keep-claude-in-character"
+    },
+    {
+      "type": "article",
+      "title": "The Art of Agent Prompting",
+      "url": "https://blog.agentailor.com/posts/the-art-of-agent-prompting"
+    }
+  ]
 }
 ---
 

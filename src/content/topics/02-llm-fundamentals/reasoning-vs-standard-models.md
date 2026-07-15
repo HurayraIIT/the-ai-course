@@ -6,7 +6,23 @@
   "sources": [
     "ai-agents"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Extended thinking — Claude Docs",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/extended-thinking"
+    },
+    {
+      "type": "official",
+      "title": "Reasoning models — OpenAI",
+      "url": "https://developers.openai.com/api/docs/guides/reasoning"
+    },
+    {
+      "type": "article",
+      "title": "Understanding DeepSeek R1",
+      "url": "https://kili-technology.com/blog/understanding-deepseek-r1"
+    }
+  ]
 }
 ---
 

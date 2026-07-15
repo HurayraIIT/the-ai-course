@@ -38,11 +38,6 @@
       "type": "article",
       "title": "Reasoning LLMs Guide - DAIR.AI",
       "url": "https://www.promptingguide.ai/guides/reasoning-llms"
-    },
-    {
-      "type": "video",
-      "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
-      "url": "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203"
     }
   ]
 }

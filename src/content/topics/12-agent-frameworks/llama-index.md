@@ -42,6 +42,11 @@
       "type": "article",
       "title": "LlamaIndex - Hugging Face",
       "url": "https://huggingface.co/llamaindex"
+    },
+    {
+      "type": "official",
+      "title": "LlamaIndex Documentation",
+      "url": "https://developers.llamaindex.ai/python/framework/"
     }
   ]
 }

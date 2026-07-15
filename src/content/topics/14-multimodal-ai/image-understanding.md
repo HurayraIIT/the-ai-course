@@ -6,7 +6,23 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Vision — Claude Docs",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/vision"
+    },
+    {
+      "type": "official",
+      "title": "Images and vision — OpenAI",
+      "url": "https://developers.openai.com/api/docs/guides/images-vision"
+    },
+    {
+      "type": "article",
+      "title": "What are Vision-Language Models? — NVIDIA",
+      "url": "https://www.nvidia.com/en-us/glossary/vision-language-models/"
+    }
+  ]
 }
 ---
 

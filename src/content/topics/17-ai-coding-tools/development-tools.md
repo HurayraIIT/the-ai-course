@@ -6,7 +6,23 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Claude Code Overview",
+      "url": "https://code.claude.com/docs/en/overview"
+    },
+    {
+      "type": "official",
+      "title": "Cursor Docs",
+      "url": "https://cursor.com/docs"
+    },
+    {
+      "type": "article",
+      "title": "Claude Code vs Cursor — DataCamp",
+      "url": "https://www.datacamp.com/blog/claude-code-vs-cursor"
+    }
+  ]
 }
 ---
 

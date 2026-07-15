@@ -6,7 +6,23 @@
   "sources": [
     "ai-agents"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "ReAct Agent with Query Engine (RAG) Tools — LlamaIndex",
+      "url": "https://developers.llamaindex.ai/python/examples/agent/react_agent_with_query_engine/"
+    },
+    {
+      "type": "official",
+      "title": "Agentic RAG with LangGraph and Qdrant",
+      "url": "https://qdrant.tech/documentation/tutorials-build-essentials/agentic-rag-langgraph/"
+    },
+    {
+      "type": "article",
+      "title": "Agentic RAG With LlamaIndex",
+      "url": "https://www.llamaindex.ai/blog/agentic-rag-with-llamaindex-2721b8a49ff6"
+    }
+  ]
 }
 ---
 

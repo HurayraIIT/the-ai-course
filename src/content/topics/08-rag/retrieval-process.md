@@ -6,7 +6,23 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Hybrid search — Weaviate",
+      "url": "https://docs.weaviate.io/weaviate/concepts/search/hybrid-search"
+    },
+    {
+      "type": "official",
+      "title": "Hybrid search — Pinecone",
+      "url": "https://docs.pinecone.io/guides/search/hybrid-search"
+    },
+    {
+      "type": "article",
+      "title": "Rerankers and Two-Stage Retrieval — Pinecone",
+      "url": "https://www.pinecone.io/learn/series/rag/rerankers/"
+    }
+  ]
 }
 ---
 

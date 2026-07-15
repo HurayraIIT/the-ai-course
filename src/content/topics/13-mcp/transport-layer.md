@@ -6,7 +6,23 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Transports (stdio & Streamable HTTP) — MCP Spec",
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25/basic/transports"
+    },
+    {
+      "type": "official",
+      "title": "Running Your Server — FastMCP",
+      "url": "https://gofastmcp.com/deployment/running-server"
+    },
+    {
+      "type": "video",
+      "title": "MCP in Practice: stdio vs Streamable HTTP",
+      "url": "https://www.youtube.com/watch?v=zo0NayrbzvY"
+    }
+  ]
 }
 ---
 

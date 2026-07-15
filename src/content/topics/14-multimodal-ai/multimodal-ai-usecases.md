@@ -6,7 +6,23 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Multimodal AI — Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai"
+    },
+    {
+      "type": "article",
+      "title": "Multimodal capabilities unlock Vertical AI — Bessemer",
+      "url": "https://www.bvp.com/atlas/part-ii-multimodal-capabilities-unlock-new-opportunities-in-vertical-ai"
+    },
+    {
+      "type": "video",
+      "title": "Large Multimodal Models (MIT, Spring 2025)",
+      "url": "https://www.youtube.com/watch?v=p_GGsKgGxSo"
+    }
+  ]
 }
 ---
 

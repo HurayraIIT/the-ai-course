@@ -6,7 +6,23 @@
   "sources": [
     "ai-agents"
   ],
-  "resources": []
+  "resources": [
+    {
+      "type": "official",
+      "title": "Building Effective AI Agents — Anthropic",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents"
+    },
+    {
+      "type": "article",
+      "title": "Writing AI Agents From Scratch: Planning Is The Key",
+      "url": "https://www.decodingai.com/p/ai-agents-planning"
+    },
+    {
+      "type": "video",
+      "title": "How We Build Effective Agents (Barry Zhang, Anthropic)",
+      "url": "https://www.youtube.com/watch?v=D7_ipDqhtwk"
+    }
+  ]
 }
 ---
 
