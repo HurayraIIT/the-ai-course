@@ -125,9 +125,14 @@ export default function Home() {
 
   const pct =
     outline.completed_count !== null
-      ? Math.round((outline.completed_count / outline.total_lessons) * 100)
+      ? Math.floor((outline.completed_count / outline.total_lessons) * 100)
       : null;
   const frontier = (outline.completed_count ?? 0) + 1;
+
+  const remaining = outline.total_lessons - (outline.completed_count ?? 0);
+  // ponytail: 1 lesson = 1 day, client-local date; good enough, no pace modelling.
+  const eta = new Date();
+  eta.setDate(eta.getDate() + remaining);
 
   return (
     <div>
@@ -155,6 +160,27 @@ export default function Home() {
             Create a free account
           </Link>{' '}
           to start learning and track your progress.
+        </p>
+      )}
+
+      {outline.authenticated && pct !== null && (
+        <p className="mt-3 rounded-md bg-emerald-50 p-3 text-sm text-emerald-900">
+          {remaining > 0 ? (
+            <>
+              At one lesson a day, you'll finish by{' '}
+              <span className="font-semibold">
+                {eta.toLocaleDateString(undefined, {
+                  weekday: 'long',
+                  month: 'long',
+                  day: 'numeric',
+                  year: 'numeric',
+                })}
+              </span>{' '}
+              — {remaining} {remaining === 1 ? 'lesson' : 'lessons'} left.
+            </>
+          ) : (
+            <>🎉 You've completed the course!</>
+          )}
         </p>
       )}
 

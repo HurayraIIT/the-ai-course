@@ -49,4 +49,5 @@ export interface User {
   leaderboard_opt_in: boolean;
   email_verified: boolean;
   avatar_hash: string;
+  streak: number;
 }

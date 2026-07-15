@@ -45,6 +45,15 @@ function Header() {
           </span>
           The AI Course
         </Link>
+        {user && (
+          <span
+            aria-label={`${user.streak}-day streak`}
+            title={`${user.streak}-day streak`}
+            className="rounded px-2 py-1 text-sm text-zinc-600"
+          >
+            🔥 {user.streak}
+          </span>
+        )}
         <NavLink to="/" className={navLink} end>
           Course
         </NavLink>
