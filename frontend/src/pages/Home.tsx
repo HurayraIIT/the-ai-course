@@ -229,6 +229,29 @@ export default function Home() {
           );
         })}
       </div>
+
+      <section className="mt-10 border-t border-zinc-200 pt-6 text-sm text-zinc-500">
+        <h2 className="mb-1 font-semibold text-zinc-700">Attribution</h2>
+        <p>
+          Topics, subtopics, and resource links are adapted from{' '}
+          <a className="text-blue-600 hover:text-blue-700" href="https://roadmap.sh" target="_blank" rel="noreferrer">
+            roadmap.sh
+          </a>{' '}
+          — specifically the{' '}
+          <a className="text-blue-600 hover:text-blue-700" href="https://roadmap.sh/ai-engineer" target="_blank" rel="noreferrer">
+            AI Engineer
+          </a>
+          ,{' '}
+          <a className="text-blue-600 hover:text-blue-700" href="https://roadmap.sh/ai-agents" target="_blank" rel="noreferrer">
+            AI Agents
+          </a>
+          , and{' '}
+          <a className="text-blue-600 hover:text-blue-700" href="https://roadmap.sh/prompt-engineering" target="_blank" rel="noreferrer">
+            Prompt Engineering
+          </a>{' '}
+          roadmaps. Thanks to their contributors.
+        </p>
+      </section>
     </div>
   );
 }

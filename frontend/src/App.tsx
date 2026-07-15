@@ -89,6 +89,7 @@ export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <div className="flex min-h-dvh flex-col">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded focus:bg-blue-600 focus:px-3 focus:py-2 focus:text-white"
@@ -96,7 +97,7 @@ export default function App() {
           Skip to main content
         </a>
         <Header />
-        <main id="main" className="mx-auto max-w-4xl px-4 py-6">
+        <main id="main" className="mx-auto w-full max-w-4xl flex-1 px-4 py-6">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
@@ -115,6 +116,10 @@ export default function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
+        <footer className="flex h-14 items-center justify-center border-t border-zinc-200 px-4 text-center text-sm text-zinc-500">
+          © 2026 Abu Hurayra
+        </footer>
+        </div>
       </BrowserRouter>
     </AuthProvider>
   );
