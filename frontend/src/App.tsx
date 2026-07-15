@@ -1,7 +1,7 @@
-import { BrowserRouter, Link, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Link, Navigate, NavLink, Route, Routes, useNavigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './auth';
 import { api } from './api';
-import { RequireAdmin, RequireAuth } from './components/ui';
+import { AdminLayout, RequireAdmin, RequireAuth } from './components/ui';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -124,12 +124,15 @@ export default function App() {
             <Route path="/lessons/:slug" element={<RequireAuth><Lesson /></RequireAuth>} />
             <Route path="/leaderboard" element={<RequireAuth><Leaderboard /></RequireAuth>} />
             <Route path="/settings" element={<RequireAuth><Settings /></RequireAuth>} />
-            <Route path="/admin/users" element={<RequireAdmin><AdminUsers /></RequireAdmin>} />
+            <Route path="/admin" element={<RequireAdmin><AdminLayout /></RequireAdmin>}>
+              <Route index element={<Navigate to="users" replace />} />
+              <Route path="users" element={<AdminUsers />} />
+              <Route path="comments" element={<AdminComments />} />
+              <Route path="activity" element={<AdminActivity />} />
+              <Route path="emails" element={<AdminEmails />} />
+              <Route path="analytics" element={<AdminAnalytics />} />
+            </Route>
             <Route path="/admin/users/:id" element={<RequireAdmin><AdminUserDetail /></RequireAdmin>} />
-            <Route path="/admin/analytics" element={<RequireAdmin><AdminAnalytics /></RequireAdmin>} />
-            <Route path="/admin/comments" element={<RequireAdmin><AdminComments /></RequireAdmin>} />
-            <Route path="/admin/activity" element={<RequireAdmin><AdminActivity /></RequireAdmin>} />
-            <Route path="/admin/emails" element={<RequireAdmin><AdminEmails /></RequireAdmin>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>

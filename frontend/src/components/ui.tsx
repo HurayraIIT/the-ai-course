@@ -1,5 +1,5 @@
 import { useEffect, useRef, type ReactNode } from 'react';
-import { Navigate, NavLink, useLocation } from 'react-router-dom';
+import { Navigate, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useAuth } from '../auth';
 
 /** Page h1: receives focus on mount so screen readers announce route changes. */
@@ -85,6 +85,26 @@ export function AdminNav() {
         Analytics
       </NavLink>
     </nav>
+  );
+}
+
+const ADMIN_SECTIONS: Record<string, string> = {
+  '/admin/users': 'Users',
+  '/admin/comments': 'Comments',
+  '/admin/activity': 'Activity',
+  '/admin/emails': 'Emails',
+  '/admin/analytics': 'Analytics',
+};
+
+/** Persistent admin shell: title + tab bar stay mounted; only <Outlet/> swaps on tab change. */
+export function AdminLayout() {
+  const section = ADMIN_SECTIONS[useLocation().pathname];
+  return (
+    <div>
+      <PageTitle>{section ? `Admin — ${section}` : 'Admin'}</PageTitle>
+      <AdminNav />
+      <Outlet />
+    </div>
   );
 }
 

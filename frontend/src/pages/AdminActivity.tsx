@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { formatDateTime } from '../format';
 import {
-  AdminNav,
-  PageTitle,
   Pagination,
   Spinner,
   tableClass,
@@ -51,8 +49,6 @@ export default function AdminActivity() {
 
   return (
     <div>
-      <PageTitle>Admin — Activity</PageTitle>
-      <AdminNav />
       <p role="status" className="mt-4 text-sm text-zinc-600">
         {data.total} event{data.total === 1 ? '' : 's'}, most recent first
       </p>

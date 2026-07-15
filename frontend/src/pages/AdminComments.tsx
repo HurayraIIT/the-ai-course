@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { formatDateTime } from '../format';
 import {
-  AdminNav,
   Avatar,
   buttonClass,
   buttonDangerClass,
   buttonSecondaryClass,
   ErrorMessage,
   inputClass,
-  PageTitle,
   Pagination,
   Spinner,
 } from '../components/ui';
@@ -73,8 +71,6 @@ export default function AdminComments() {
 
   return (
     <div>
-      <PageTitle>Admin — Comments</PageTitle>
-      <AdminNav />
       <p role="status" className="mt-4 text-sm text-zinc-600">
         {data.total} comment{data.total === 1 ? '' : 's'}
       </p>

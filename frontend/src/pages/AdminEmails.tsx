@@ -2,8 +2,6 @@ import { Fragment, useEffect, useState } from 'react';
 import { api } from '../api';
 import { formatDateTime } from '../format';
 import {
-  AdminNav,
-  PageTitle,
   Pagination,
   Spinner,
   tableClass,
@@ -48,8 +46,6 @@ export default function AdminEmails() {
 
   return (
     <div>
-      <PageTitle>Admin — Emails</PageTitle>
-      <AdminNav />
       <p role="status" className="mt-4 text-sm text-zinc-600">
         {data.total} outgoing email{data.total === 1 ? '' : 's'} logged, most recent first
       </p>

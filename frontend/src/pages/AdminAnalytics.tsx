@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { formatDate } from '../format';
 import {
-  AdminNav,
-  PageTitle,
   Spinner,
   tableClass,
   tableWrapClass,
@@ -45,8 +43,6 @@ export default function AdminAnalytics() {
 
   return (
     <div>
-      <PageTitle>Admin — Analytics</PageTitle>
-      <AdminNav />
 
       <dl className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-5">
         <Stat label="Users" value={data.total_users} />

@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import { api } from '../api';
 import { formatDateTime } from '../format';
 import {
-  AdminNav,
   Avatar,
   buttonSecondaryClass,
   inputClass,
-  PageTitle,
   Pagination,
   Spinner,
   tableClass,
@@ -58,8 +56,6 @@ export default function AdminUsers() {
 
   return (
     <div>
-      <PageTitle>Admin — Users</PageTitle>
-      <AdminNav />
 
       <form onSubmit={search} role="search" className="mt-4 flex gap-2">
         <label htmlFor="user-search" className="sr-only">
