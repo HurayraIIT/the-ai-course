@@ -9,16 +9,6 @@
   "resources": [
     {
       "type": "article",
-      "title": "A Comprehensive Guide to Function Calling in LLMs",
-      "url": "https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/"
-    },
-    {
-      "type": "article",
-      "title": "Function Calling with LLMs | Prompt Engineering Guide",
-      "url": "https://www.promptingguide.ai/applications/function_calling"
-    },
-    {
-      "type": "article",
       "title": "Function Calling with Open-Source LLMs",
       "url": "https://medium.com/@rushing_andrei/function-calling-with-open-source-llms-594aa5b3a304"
     }

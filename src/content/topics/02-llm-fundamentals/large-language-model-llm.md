@@ -19,11 +19,6 @@
       "url": "https://towardsdatascience.com/new-to-llms-start-here/"
     },
     {
-      "type": "video",
-      "title": "How Large Language Models Work",
-      "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ"
-    },
-    {
       "type": "official",
       "title": "LLM - Anthropic Glossary",
       "url": "https://platform.claude.com/docs/en/about-claude/glossary"

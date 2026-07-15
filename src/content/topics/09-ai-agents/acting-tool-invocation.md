@@ -9,11 +9,6 @@
   "resources": [
     {
       "type": "article",
-      "title": "What are Tools in AI Agents?",
-      "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
-    },
-    {
-      "type": "article",
       "title": "What is Tool Calling in Agents?",
       "url": "https://www.useparagon.com/blog/ai-building-blocks-what-is-tool-calling-a-guide-for-pms"
     }

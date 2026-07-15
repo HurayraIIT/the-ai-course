@@ -23,19 +23,9 @@
       "url": "https://www.youtube.com/watch?v=gMeTK6zzaO4"
     },
     {
-      "type": "official",
-      "title": "What are Tools? - Hugging Face",
-      "url": "https://huggingface.co/learn/agents-course/en/unit1/tools"
-    },
-    {
       "type": "article",
       "title": "Compare 50+ AI Agent Tools in 2026",
       "url": "https://aimultiple.com/ai-agent-tools"
-    },
-    {
-      "type": "article",
-      "title": "AI Agents Explained in Simple Terms for Beginners",
-      "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/"
     }
   ]
 }

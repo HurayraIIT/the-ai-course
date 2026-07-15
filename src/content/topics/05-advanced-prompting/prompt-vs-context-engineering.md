@@ -14,11 +14,6 @@
     },
     {
       "type": "article",
-      "title": "Effective context engineering for AI agents",
-      "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents"
-    },
-    {
-      "type": "article",
       "title": "Beyond Prompting: The Power of Context Engineering",
       "url": "https://towardsdatascience.com/beyond-prompting-the-power-of-context-engineering/"
     },

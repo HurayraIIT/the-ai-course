@@ -6,13 +6,7 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": [
-    {
-      "type": "article",
-      "title": "Assigning Roles",
-      "url": "https://learnprompting.org/docs/basics/roles"
-    }
-  ]
+  "resources": []
 }
 ---
 

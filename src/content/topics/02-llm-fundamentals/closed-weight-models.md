@@ -24,11 +24,6 @@
     },
     {
       "type": "article",
-      "title": "Open-Source LLMs vs Closed LLMs",
-      "url": "https://hatchworks.com/blog/gen-ai/open-source-vs-closed-llms-guide/"
-    },
-    {
-      "type": "article",
       "title": "2024 Comparison of Open-Source Vs Closed-Source LLMs",
       "url": "https://blog.spheron.network/choosing-the-right-llm-2024-comparison-of-open-source-vs-closed-source-llms"
     }

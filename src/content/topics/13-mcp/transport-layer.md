@@ -6,13 +6,7 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": [
-    {
-      "type": "official",
-      "title": "Layer",
-      "url": "https://modelcontextprotocol.io/docs/learn/architecture#layers"
-    }
-  ]
+  "resources": []
 }
 ---
 

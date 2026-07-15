@@ -15,11 +15,6 @@
       "url": "https://www.promptingguide.ai/techniques/react"
     },
     {
-      "type": "video",
-      "title": "4 Methods of Prompt Engineering",
-      "url": "https://youtu.be/vD0E3EUb8-8?si=Y6MCLPzjmhMB4jSu&t=203"
-    },
-    {
       "type": "article",
       "title": "ReAct Prompting: How We Prompt for High-Quality Results from LLMs",
       "url": "https://www.width.ai/post/react-prompting"

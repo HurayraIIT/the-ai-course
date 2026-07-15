@@ -9,11 +9,6 @@
   "resources": [
     {
       "type": "article",
-      "title": "Elements of a Prompt",
-      "url": "https://www.promptingguide.ai/introduction/elements"
-    },
-    {
-      "type": "article",
       "title": "Does Prompt Formatting Have Any Impact on LLM Performance?",
       "url": "https://arxiv.org/html/2411.10541v1"
     }

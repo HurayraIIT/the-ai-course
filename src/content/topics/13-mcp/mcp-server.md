@@ -9,11 +9,6 @@
   ],
   "resources": [
     {
-      "type": "course",
-      "title": "Model Context Protocol (MCP) Course",
-      "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
-    },
-    {
       "type": "official",
       "title": "Understanding MCP Servers",
       "url": "https://modelcontextprotocol.io/docs/learn/server-concepts#understanding-mcp-servers"
@@ -24,11 +19,6 @@
       "url": "https://mcpservers.org/"
     },
     {
-      "type": "video",
-      "title": "The Complete Guide to Building AI Agents for Beginners",
-      "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
-    },
-    {
       "type": "opensource",
       "title": "punkeye/awesome-mcp-servers",
       "url": "https://github.com/punkpeye/awesome-mcp-servers"
@@ -37,11 +27,6 @@
       "type": "article",
       "title": "Introducing the Azure MCP Server",
       "url": "https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/"
-    },
-    {
-      "type": "article",
-      "title": "The Ultimate Guide to MCP",
-      "url": "https://guangzhengli.com/blog/en/model-context-protocol"
     },
     {
       "type": "article",

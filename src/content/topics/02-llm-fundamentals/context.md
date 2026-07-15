@@ -9,11 +9,6 @@
   "resources": [
     {
       "type": "article",
-      "title": "What is a Context Window in AI?",
-      "url": "https://www.ibm.com/think/topics/context-window"
-    },
-    {
-      "type": "article",
       "title": "What Is an AI Context Window?",
       "url": "https://www.coursera.org/articles/context-window"
     },

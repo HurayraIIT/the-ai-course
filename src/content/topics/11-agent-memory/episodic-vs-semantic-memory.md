@@ -16,11 +16,6 @@
       "type": "article",
       "title": "Episodic Memory vs. Semantic Memory: The Key Differences",
       "url": "https://www.magneticmemorymethod.com/episodic-vs-semantic-memory/"
-    },
-    {
-      "type": "article",
-      "title": "Memory Systems in LangChain",
-      "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
     }
   ]
 }

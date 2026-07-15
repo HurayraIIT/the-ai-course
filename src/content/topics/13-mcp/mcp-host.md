@@ -9,11 +9,6 @@
   ],
   "resources": [
     {
-      "type": "course",
-      "title": "Model Context Protocol (MCP) Course",
-      "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
-    },
-    {
       "type": "official",
       "title": "Concepts of MCP",
       "url": "https://modelcontextprotocol.io/docs/learn/architecture#concepts-of-mcp"
@@ -22,21 +17,6 @@
       "type": "official",
       "title": "Vercel Serverless Hosting",
       "url": "https://vercel.com/docs"
-    },
-    {
-      "type": "opensource",
-      "title": "punkeye/awesome-mcp-servers",
-      "url": "https://github.com/punkpeye/awesome-mcp-servers"
-    },
-    {
-      "type": "article",
-      "title": "The Ultimate Guide to MCP",
-      "url": "https://guangzhengli.com/blog/en/model-context-protocol"
-    },
-    {
-      "type": "article",
-      "title": "AWS MCP Servers for Code Assistants",
-      "url": "https://aws.amazon.com/blogs/machine-learning/introducing-aws-mcp-servers-for-code-assistants-part-1/"
     }
   ]
 }

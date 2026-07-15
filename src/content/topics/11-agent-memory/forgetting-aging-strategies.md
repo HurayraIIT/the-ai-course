@@ -9,11 +9,6 @@
   "resources": [
     {
       "type": "article",
-      "title": "Memory Management",
-      "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
-    },
-    {
-      "type": "article",
       "title": "Memory Management for AI Agents",
       "url": "https://techcommunity.microsoft.com/blog/azure-ai-services-blog/memory-management-for-ai-agents/4406359"
     }

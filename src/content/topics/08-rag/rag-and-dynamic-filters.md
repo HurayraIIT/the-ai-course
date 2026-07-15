@@ -9,16 +9,6 @@
   "resources": [
     {
       "type": "article",
-      "title": "4 context engineering strategies every AI engineer needs to know",
-      "url": "https://newsletter.owainlewis.com/p/4-context-engineering-strategies"
-    },
-    {
-      "type": "article",
-      "title": "Context Engineering",
-      "url": "https://blog.langchain.com/context-engineering-for-agents/"
-    },
-    {
-      "type": "article",
       "title": "Is RAG Dead? The Rise of Context Engineering and Semantic Layers for Agentic AI",
       "url": "https://towardsdatascience.com/beyond-rag/"
     }

@@ -9,18 +9,8 @@
   "resources": [
     {
       "type": "article",
-      "title": "Explaining Tokens — the Language and Currency of AI",
-      "url": "https://blogs.nvidia.com/blog/ai-tokens-explained/"
-    },
-    {
-      "type": "article",
       "title": "What Are AI Tokens?",
       "url": "https://methodshop.com/what-are-ai-tokens/"
-    },
-    {
-      "type": "article",
-      "title": "Pricing - OpenAI",
-      "url": "https://openai.com/api/pricing/"
     }
   ]
 }

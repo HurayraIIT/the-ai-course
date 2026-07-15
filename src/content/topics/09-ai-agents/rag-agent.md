@@ -6,18 +6,7 @@
   "sources": [
     "ai-agents"
   ],
-  "resources": [
-    {
-      "type": "article",
-      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained",
-      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
-    },
-    {
-      "type": "article",
-      "title": "What Is Retrieval-Augmented Generation, aka RAG?",
-      "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
-    }
-  ]
+  "resources": []
 }
 ---
 

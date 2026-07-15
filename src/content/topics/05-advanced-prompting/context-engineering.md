@@ -21,11 +21,6 @@
       "type": "article",
       "title": "How to Perform Effective Agentic Context Engineering",
       "url": "https://towardsdatascience.com/how-to-perform-effective-agentic-context-engineering/"
-    },
-    {
-      "type": "video",
-      "title": "Context Engineering vs. Prompt Engineering: Smarter AI with RAG & Agents",
-      "url": "https://www.youtube.com/watch?v=vD0E3EUb8-8"
     }
   ]
 }

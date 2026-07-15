@@ -16,11 +16,6 @@
       "type": "article",
       "title": "15 Essential AI Agent Terms You Must Know",
       "url": "https://shivammore.medium.com/15-essential-ai-agent-terms-you-must-know-6bfc2f332f6d"
-    },
-    {
-      "type": "article",
-      "title": "AI Agent Examples & Use Cases: Real Applications in 2025",
-      "url": "https://eastgate-software.com/ai-agent-examples-use-cases-real-applications-in-2025/"
     }
   ]
 }

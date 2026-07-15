@@ -6,13 +6,7 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": [
-    {
-      "type": "official",
-      "title": "Hugging Face Multimodal Models",
-      "url": "https://huggingface.co/learn/computer-vision-course/en/unit4/multimodal-models/a_multimodal_world"
-    }
-  ]
+  "resources": []
 }
 ---
 

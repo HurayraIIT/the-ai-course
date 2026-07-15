@@ -11,11 +11,6 @@
       "type": "article",
       "title": "Compare 50+ AI Agent Tools in 2025 - AIMultiple",
       "url": "https://research.aimultiple.com/ai-agent-tools/"
-    },
-    {
-      "type": "article",
-      "title": "AI Agents Explained in Simple Terms for Beginners",
-      "url": "https://www.geeky-gadgets.com/ai-agents-explained-for-beginners/"
     }
   ]
 }

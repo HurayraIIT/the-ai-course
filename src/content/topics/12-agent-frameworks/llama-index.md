@@ -25,11 +25,6 @@
     },
     {
       "type": "official",
-      "title": "LlamaIndex Documentation",
-      "url": "https://docs.smith.langchain.com/"
-    },
-    {
-      "type": "official",
       "title": "What is LlamaIndex.TS",
       "url": "https://ts.llamaindex.ai/docs/llamaindex"
     },

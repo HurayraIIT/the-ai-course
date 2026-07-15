@@ -8,11 +8,6 @@
   ],
   "resources": [
     {
-      "type": "article",
-      "title": "What is RAG (Retrieval-Augmented Generation)?",
-      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
-    },
-    {
       "type": "video",
       "title": "Retrieval Augmented Generation (RAG) Explained in 8 Minutes!",
       "url": "https://www.youtube.com/watch?v=HREbdmOSQ18"

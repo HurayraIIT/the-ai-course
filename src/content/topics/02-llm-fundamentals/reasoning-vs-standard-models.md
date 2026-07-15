@@ -6,18 +6,7 @@
   "sources": [
     "ai-agents"
   ],
-  "resources": [
-    {
-      "type": "official",
-      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
-      "url": "https://react-lm.github.io/"
-    },
-    {
-      "type": "article",
-      "title": "ReAct Systems: Enhancing LLMs with Reasoning and Action",
-      "url": "https://learnprompting.org/docs/agents/react"
-    }
-  ]
+  "resources": []
 }
 ---
 

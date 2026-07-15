@@ -9,16 +9,6 @@
   ],
   "resources": [
     {
-      "type": "article",
-      "title": "What is a large language model (LLM)?",
-      "url": "https://www.cloudflare.com/en-gb/learning/ai/what-is-large-language-model/"
-    },
-    {
-      "type": "article",
-      "title": "New to LLMs? Start Here",
-      "url": "https://towardsdatascience.com/new-to-llms-start-here/"
-    },
-    {
       "type": "video",
       "title": "How Large Language Models Work",
       "url": "https://www.youtube.com/watch?v=5sLYAQS9sWQ"

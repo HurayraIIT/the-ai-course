@@ -21,11 +21,6 @@
       "type": "article",
       "title": "Machine Learning vs AI Engineer: What Are the Differences?",
       "url": "https://towardsdatascience.com/machine-learning-vs-ai-engineer-no-confusing-jargon/"
-    },
-    {
-      "type": "video",
-      "title": "AI vs ML",
-      "url": "https://www.youtube.com/watch?v=4RixMPF4xis"
     }
   ]
 }

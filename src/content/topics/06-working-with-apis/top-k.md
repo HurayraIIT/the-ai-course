@@ -14,11 +14,6 @@
       "url": "https://www.dataannotation.tech/blog/top-k-sampling"
     },
     {
-      "type": "video",
-      "title": "What are the LLM’s Top-P + Top-K ?",
-      "url": "https://www.youtube.com/watch?v=aDmp2Uim0zQ"
-    },
-    {
       "type": "official",
       "title": "Gemini API Prompting Strategies - Google",
       "url": "https://ai.google.dev/gemini-api/docs/prompting-strategies"

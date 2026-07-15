@@ -16,11 +16,6 @@
       "type": "official",
       "title": "OpenAI Embedding API",
       "url": "https://platform.openai.com/docs/guides/embeddings"
-    },
-    {
-      "type": "official",
-      "title": "Supabase AI & Vector Documentation",
-      "url": "https://supabase.com/docs/guides/ai"
     }
   ]
 }

@@ -6,18 +6,7 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": [
-    {
-      "type": "article",
-      "title": "What is Retrieval-Augmented Generation (RAG)?",
-      "url": "https://cloud.google.com/use-cases/retrieval-augmented-generation"
-    },
-    {
-      "type": "article",
-      "title": "What Is Retrieval-Augmented Generation, aka RAG?",
-      "url": "https://blogs.nvidia.com/blog/what-is-retrieval-augmented-generation/"
-    }
-  ]
+  "resources": []
 }
 ---
 

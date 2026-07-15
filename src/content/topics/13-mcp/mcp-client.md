@@ -9,24 +9,9 @@
   ],
   "resources": [
     {
-      "type": "course",
-      "title": "Model Context Protocol (MCP) Course",
-      "url": "https://huggingface.co/learn/mcp-course/en/unit0/introduction"
-    },
-    {
       "type": "official",
       "title": "Understanding MCP clients",
       "url": "https://modelcontextprotocol.io/docs/learn/client-concepts#understanding-mcp-clients"
-    },
-    {
-      "type": "video",
-      "title": "The Complete Guide to Building AI Agents for Beginners",
-      "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
-    },
-    {
-      "type": "official",
-      "title": "Model Context Protocol",
-      "url": "https://modelcontextprotocol.io/introduction"
     },
     {
       "type": "official",
@@ -37,11 +22,6 @@
       "type": "official",
       "title": "Anthropic API Documentation",
       "url": "https://docs.anthropic.com/claude/reference"
-    },
-    {
-      "type": "opensource",
-      "title": "Model Context Protocol",
-      "url": "https://github.com/modelcontextprotocol/modelcontextprotocol"
     }
   ]
 }

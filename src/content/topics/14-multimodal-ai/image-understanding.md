@@ -6,13 +6,7 @@
   "sources": [
     "ai-engineer"
   ],
-  "resources": [
-    {
-      "type": "article",
-      "title": "Low or High Fidelity Image Understanding - OpenAI",
-      "url": "https://platform.openai.com/docs/guides/images"
-    }
-  ]
+  "resources": []
 }
 ---
 

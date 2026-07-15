@@ -29,11 +29,6 @@
       "url": "https://www.youtube.com/watch?v=KrKhfm2Xuho"
     },
     {
-      "type": "roadmap",
-      "title": "Visit the Dedicated Claude Code Roadmap",
-      "url": "https://roadmap.sh/claude-code"
-    },
-    {
       "type": "official",
       "title": "Claude API Documentation",
       "url": "https://docs.anthropic.com/en/docs/intro"

@@ -21,11 +21,6 @@
       "type": "article",
       "title": "How to Build Effective AI Agents to Process Millions of Requests",
       "url": "https://towardsdatascience.com/how-to-build-effective-ai-agents-to-process-millions-of-requests/"
-    },
-    {
-      "type": "video",
-      "title": "The Complete Guide to Building AI Agents for Beginners",
-      "url": "https://youtu.be/MOyl58VF2ak?si=-QjRD_5y3iViprJX"
     }
   ]
 }

@@ -11,26 +11,6 @@
       "type": "article",
       "title": "Long Term Memory in AI Agents",
       "url": "https://medium.com/@alozie_igbokwe/ai-101-long-term-memory-in-ai-agents-35f87f2d0ce0"
-    },
-    {
-      "type": "article",
-      "title": "Memory Management in AI Agents",
-      "url": "https://python.langchain.com/docs/how_to/chatbots_memory/"
-    },
-    {
-      "type": "article",
-      "title": "Storing and Retrieving Knowledge for Agents",
-      "url": "https://www.pinecone.io/learn/langchain-retrieval-augmentation/"
-    },
-    {
-      "type": "article",
-      "title": "Short-Term vs Long-Term Memory in AI Agents",
-      "url": "https://adasci.org/short-term-vs-long-term-memory-in-ai-agents/"
-    },
-    {
-      "type": "video",
-      "title": "Building Brain-Like Memory for AI Agents",
-      "url": "https://www.youtube.com/watch?v=VKPngyO0iKg"
     }
   ]
 }

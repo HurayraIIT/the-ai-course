@@ -14,11 +14,6 @@
     },
     {
       "type": "article",
-      "title": "How to Build and Host Your Own MCP Servers in Easy Steps",
-      "url": "https://collabnix.com/how-to-build-and-host-your-own-mcp-servers-in-easy-steps/"
-    },
-    {
-      "type": "article",
       "title": "Expose localhost to Internet",
       "url": "https://ngrok.com/docs"
     },

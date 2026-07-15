@@ -45,11 +45,6 @@
     },
     {
       "type": "article",
-      "title": "Introducing the Azure MCP Server",
-      "url": "https://devblogs.microsoft.com/azure-sdk/introducing-the-azure-mcp-server/"
-    },
-    {
-      "type": "article",
       "title": "The Ultimate Guide to MCP",
       "url": "https://guangzhengli.com/blog/en/model-context-protocol"
     }
