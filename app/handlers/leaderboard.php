@@ -14,7 +14,9 @@ function handle_leaderboard(array $user): void
     $stmt = pdo()->query(
         "SELECT u.id, u.username, u.email,
                 COUNT(lc.lesson_id) AS completed,
-                MAX(lc.completed_at) AS reached_at
+                MAX(lc.completed_at) AS reached_at,
+                (SELECT TIMESTAMPDIFF(SECOND, MAX(al.created_at), NOW())
+                   FROM activity_log al WHERE al.user_id = u.id) AS last_active_secs
          FROM users u
          LEFT JOIN lesson_completions lc ON lc.user_id = u.id
          WHERE u.leaderboard_opt_in = 1
@@ -30,6 +32,7 @@ function handle_leaderboard(array $user): void
             'username' => $row['username'],
             'avatar_hash' => avatar_hash($row['email']),
             'completed' => (int)$row['completed'],
+            'last_active_secs' => $row['last_active_secs'] === null ? null : (int)$row['last_active_secs'],
             'is_me' => (int)$row['id'] === (int)$user['id'],
         ];
     }, $stmt->fetchAll());

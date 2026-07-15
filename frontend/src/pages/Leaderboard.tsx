@@ -17,7 +17,25 @@ interface Row {
   username: string;
   avatar_hash: string;
   completed: number;
+  last_active_secs: number | null;
   is_me: boolean;
+}
+
+// "active now" for the last few seconds, then largest whole unit that fits.
+function activeAgo(secs: number | null): string {
+  if (secs === null) return 'never';
+  if (secs < 5) return 'active now';
+  const units: [number, string][] = [
+    [2592000, 'month'],
+    [86400, 'day'],
+    [3600, 'hour'],
+    [60, 'minute'],
+  ];
+  for (const [size, name] of units) {
+    const n = Math.floor(secs / size);
+    if (n >= 1) return `${n} ${name}${n > 1 ? 's' : ''} ago`;
+  }
+  return `${secs} seconds ago`;
 }
 
 interface LeaderboardData {
@@ -55,6 +73,9 @@ export default function Leaderboard() {
               <th scope="col" className={thClass}>
                 Learner
               </th>
+              <th scope="col" className={thClass}>
+                Last active
+              </th>
               <th scope="col" className={`${thClass} text-right`}>
                 Completed
               </th>
@@ -71,6 +92,7 @@ export default function Leaderboard() {
                     {row.is_me && <span className="text-xs text-blue-700">(you)</span>}
                   </span>
                 </td>
+                <td className={`${tdClass} text-zinc-600`}>{activeAgo(row.last_active_secs)}</td>
                 <td className={`${tdClass} text-right tabular-nums`}>{row.completed}</td>
               </tr>
             ))}
