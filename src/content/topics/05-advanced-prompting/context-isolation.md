@@ -2,7 +2,7 @@
 {
   "title": "Context Isolation",
   "module": "advanced-prompting",
-  "order": 8,
+  "order": 9,
   "sources": [
     "ai-engineer"
   ],

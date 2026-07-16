@@ -2,7 +2,7 @@
 {
   "title": "Unit Testing for Individual Tools",
   "module": "evaluation-and-observability",
-  "order": 1,
+  "order": 2,
   "sources": [
     "ai-agents"
   ],

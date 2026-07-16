@@ -2,7 +2,7 @@
 {
   "title": "Fine-tuning",
   "module": "llm-fundamentals",
-  "order": 7,
+  "order": 8,
   "sources": [
     "ai-engineer"
   ],

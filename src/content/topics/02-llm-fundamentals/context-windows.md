@@ -2,7 +2,7 @@
 {
   "title": "Context Windows",
   "module": "llm-fundamentals",
-  "order": 10,
+  "order": 11,
   "sources": [
     "ai-agents",
     "prompt-engineering"

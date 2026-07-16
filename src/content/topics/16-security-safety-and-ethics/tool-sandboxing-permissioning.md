@@ -2,7 +2,7 @@
 {
   "title": "Tool sandboxing / Permissioning",
   "module": "security-safety-and-ethics",
-  "order": 5,
+  "order": 6,
   "sources": [
     "ai-agents"
   ],

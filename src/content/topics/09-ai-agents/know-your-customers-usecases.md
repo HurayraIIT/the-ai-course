@@ -2,7 +2,7 @@
 {
   "title": "Know your Customers / Usecases",
   "module": "ai-agents",
-  "order": 7,
+  "order": 8,
   "sources": [
     "ai-engineer"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "Token Based Pricing",
   "module": "model-landscape",
-  "order": 22,
+  "order": 24,
   "sources": [
     "ai-agents"
   ],

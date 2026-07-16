@@ -2,7 +2,7 @@
 {
   "title": "Google ADK",
   "module": "agent-frameworks",
-  "order": 12,
+  "order": 13,
   "sources": [
     "ai-engineer"
   ],

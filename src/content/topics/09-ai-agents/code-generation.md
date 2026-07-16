@@ -2,7 +2,7 @@
 {
   "title": "Code generation",
   "module": "ai-agents",
-  "order": 3,
+  "order": 4,
   "sources": [
     "ai-agents"
   ],

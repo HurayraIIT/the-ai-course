@@ -26,6 +26,7 @@
       "tokens",
       "model-weights-parameters",
       "training",
+      "post-training-and-rlhf",
       "pre-trained-models",
       "fine-tuning",
       "inference",
@@ -65,6 +66,8 @@
       "lm-studio",
       "self-hosted-models",
       "choosing-the-right-model",
+      "small-models-and-distillation",
+      "build-vs-integrate",
       "pricing-of-common-models",
       "token-based-pricing"
     ]
@@ -110,6 +113,7 @@
       "context-engineering",
       "prompt-vs-context-engineering",
       "context-compaction",
+      "long-context-and-lost-in-the-middle",
       "context-isolation"
     ]
   },
@@ -136,7 +140,8 @@
       "frequency-penalty",
       "presence-penalty",
       "repetition-penalties",
-      "prompt-caching"
+      "prompt-caching",
+      "rate-limits-retries-and-reliability"
     ]
   },
   {
@@ -179,9 +184,11 @@
       "rag-vs-fine-tuning",
       "chunking",
       "retrieval-process",
+      "reranking",
       "generation",
       "rag-and-dynamic-filters",
-      "rag-and-vector-databases"
+      "rag-and-vector-databases",
+      "knowledge-graphs-and-graph-rag"
     ]
   },
   {
@@ -190,6 +197,7 @@
     "description": "From single prompts to autonomous loops: what agents are, where they shine, and the core agent architectures.",
     "topics": [
       "ai-agents",
+      "workflows-vs-agents",
       "agents-usecases",
       "personal-assistant",
       "code-generation",
@@ -206,7 +214,8 @@
       "rag-agent",
       "planner-executor",
       "dag-agents",
-      "multi-agents"
+      "multi-agents",
+      "autonomy-levels-and-approval-gates"
     ]
   },
   {
@@ -250,6 +259,7 @@
     "description": "Building agents with (or without) a framework: LangChain, LlamaIndex, LangGraph, CrewAI, and the provider agent SDKs.",
     "topics": [
       "manual-implementation",
+      "agent-harness-and-skills",
       "langchain",
       "llama-index",
       "langgraph",
@@ -281,7 +291,8 @@
       "connect-to-local-server",
       "connect-to-remote-server",
       "local-desktop",
-      "remote-cloud"
+      "remote-cloud",
+      "a2a-protocol"
     ]
   },
   {
@@ -311,6 +322,7 @@
     "description": "Knowing whether your AI system works: metrics, testing strategies, eval frameworks, and production tracing.",
     "topics": [
       "metrics-to-track",
+      "eval-driven-development",
       "unit-testing-for-individual-tools",
       "integration-testing-for-flows",
       "human-in-the-loop-evaluation",
@@ -333,6 +345,7 @@
     "topics": [
       "security-and-privacy-concerns",
       "prompt-injection-attacks",
+      "tool-poisoning-and-data-leakage",
       "robust-prompt-engineering",
       "conducting-adversarial-testing",
       "safety-red-team-testing",

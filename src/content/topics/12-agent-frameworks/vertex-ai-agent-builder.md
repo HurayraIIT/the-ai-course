@@ -2,7 +2,7 @@
 {
   "title": "Vertex AI Agent Builder",
   "module": "agent-frameworks",
-  "order": 13,
+  "order": 14,
   "sources": [
     "ai-engineer"
   ],

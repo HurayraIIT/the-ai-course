@@ -2,7 +2,7 @@
 {
   "title": "RAGFlow",
   "module": "agent-frameworks",
-  "order": 5,
+  "order": 6,
   "sources": [
     "ai-engineer"
   ],

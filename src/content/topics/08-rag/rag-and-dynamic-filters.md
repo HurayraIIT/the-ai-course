@@ -2,7 +2,7 @@
 {
   "title": "RAG and Dynamic Filters",
   "module": "rag",
-  "order": 6,
+  "order": 7,
   "sources": [
     "ai-engineer"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "DAG Agents",
   "module": "ai-agents",
-  "order": 16,
+  "order": 17,
   "sources": [
     "ai-agents"
   ],

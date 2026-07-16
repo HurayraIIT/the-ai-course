@@ -2,7 +2,7 @@
 {
   "title": "LangFuse",
   "module": "evaluation-and-observability",
-  "order": 10,
+  "order": 11,
   "sources": [
     "ai-agents"
   ],

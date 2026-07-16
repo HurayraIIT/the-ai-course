@@ -2,7 +2,7 @@
 {
   "title": "LLM Self Evaluation",
   "module": "evaluation-and-observability",
-  "order": 4,
+  "order": 5,
   "sources": [
     "prompt-engineering"
   ],

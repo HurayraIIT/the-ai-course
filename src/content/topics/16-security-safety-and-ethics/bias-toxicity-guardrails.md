@@ -2,7 +2,7 @@
 {
   "title": "Bias & Toxicity Guardrails",
   "module": "security-safety-and-ethics",
-  "order": 10,
+  "order": 11,
   "sources": [
     "ai-agents"
   ],

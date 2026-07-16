@@ -2,7 +2,7 @@
 {
   "title": "Agno",
   "module": "agent-frameworks",
-  "order": 8,
+  "order": 9,
   "sources": [
     "ai-agents"
   ],

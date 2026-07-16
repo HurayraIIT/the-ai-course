@@ -2,7 +2,7 @@
 {
   "title": "Multi-agents",
   "module": "ai-agents",
-  "order": 17,
+  "order": 18,
   "sources": [
     "ai-engineer",
     "ai-agents"

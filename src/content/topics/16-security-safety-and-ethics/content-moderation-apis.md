@@ -2,7 +2,7 @@
 {
   "title": "Content Moderation APIs",
   "module": "security-safety-and-ethics",
-  "order": 8,
+  "order": 9,
   "sources": [
     "ai-engineer"
   ],

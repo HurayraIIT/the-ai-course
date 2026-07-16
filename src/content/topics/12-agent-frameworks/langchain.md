@@ -2,7 +2,7 @@
 {
   "title": "Langchain",
   "module": "agent-frameworks",
-  "order": 1,
+  "order": 2,
   "sources": [
     "ai-engineer",
     "ai-agents"

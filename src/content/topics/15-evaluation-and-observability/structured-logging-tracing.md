@@ -2,7 +2,7 @@
 {
   "title": "Structured logging & tracing",
   "module": "evaluation-and-observability",
-  "order": 13,
+  "order": 14,
   "sources": [
     "ai-agents"
   ],

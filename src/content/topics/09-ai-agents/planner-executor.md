@@ -2,7 +2,7 @@
 {
   "title": "Planner Executor",
   "module": "ai-agents",
-  "order": 15,
+  "order": 16,
   "sources": [
     "ai-agents"
   ],

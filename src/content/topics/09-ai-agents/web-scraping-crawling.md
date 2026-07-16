@@ -2,7 +2,7 @@
 {
   "title": "Web Scraping / Crawling",
   "module": "ai-agents",
-  "order": 5,
+  "order": 6,
   "sources": [
     "ai-agents"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "Self-critique Agents",
   "module": "evaluation-and-observability",
-  "order": 5,
+  "order": 6,
   "sources": [
     "ai-agents"
   ],

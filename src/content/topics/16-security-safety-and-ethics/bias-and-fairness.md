@@ -2,7 +2,7 @@
 {
   "title": "Bias and Fairness",
   "module": "security-safety-and-ethics",
-  "order": 9,
+  "order": 10,
   "sources": [
     "ai-engineer"
   ],

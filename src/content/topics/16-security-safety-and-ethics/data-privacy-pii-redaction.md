@@ -2,7 +2,7 @@
 {
   "title": "Data Privacy + PII Redaction",
   "module": "security-safety-and-ethics",
-  "order": 6,
+  "order": 7,
   "sources": [
     "ai-agents"
   ],

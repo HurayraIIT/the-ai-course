@@ -2,7 +2,7 @@
 {
   "title": "RAG Agent",
   "module": "ai-agents",
-  "order": 14,
+  "order": 15,
   "sources": [
     "ai-agents"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "Context",
   "module": "llm-fundamentals",
-  "order": 9,
+  "order": 10,
   "sources": [
     "ai-engineer"
   ],

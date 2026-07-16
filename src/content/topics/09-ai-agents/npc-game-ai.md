@@ -2,7 +2,7 @@
 {
   "title": "NPC / Game AI",
   "module": "ai-agents",
-  "order": 6,
+  "order": 7,
   "sources": [
     "ai-agents"
   ],

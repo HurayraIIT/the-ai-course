@@ -2,7 +2,7 @@
 {
   "title": "Llama Index",
   "module": "agent-frameworks",
-  "order": 2,
+  "order": 3,
   "sources": [
     "ai-engineer",
     "ai-agents"

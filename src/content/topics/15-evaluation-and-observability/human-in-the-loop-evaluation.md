@@ -2,7 +2,7 @@
 {
   "title": "Human in the Loop Evaluation",
   "module": "evaluation-and-observability",
-  "order": 3,
+  "order": 4,
   "sources": [
     "ai-agents"
   ],

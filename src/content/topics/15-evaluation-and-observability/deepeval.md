@@ -2,7 +2,7 @@
 {
   "title": "DeepEval",
   "module": "evaluation-and-observability",
-  "order": 7,
+  "order": 8,
   "sources": [
     "ai-agents"
   ],

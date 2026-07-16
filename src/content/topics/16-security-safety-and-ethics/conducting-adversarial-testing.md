@@ -2,7 +2,7 @@
 {
   "title": "Conducting adversarial testing",
   "module": "security-safety-and-ethics",
-  "order": 3,
+  "order": 4,
   "sources": [
     "ai-engineer"
   ],

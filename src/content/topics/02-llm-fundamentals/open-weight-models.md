@@ -2,7 +2,7 @@
 {
   "title": "Open Weight Models",
   "module": "llm-fundamentals",
-  "order": 15,
+  "order": 16,
   "sources": [
     "ai-agents"
   ],

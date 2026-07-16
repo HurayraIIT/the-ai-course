@@ -2,7 +2,7 @@
 {
   "title": "Safety + Red Team Testing",
   "module": "security-safety-and-ethics",
-  "order": 4,
+  "order": 5,
   "sources": [
     "ai-agents",
     "prompt-engineering"

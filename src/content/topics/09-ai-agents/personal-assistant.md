@@ -2,7 +2,7 @@
 {
   "title": "Personal assistant",
   "module": "ai-agents",
-  "order": 2,
+  "order": 3,
   "sources": [
     "ai-agents"
   ],

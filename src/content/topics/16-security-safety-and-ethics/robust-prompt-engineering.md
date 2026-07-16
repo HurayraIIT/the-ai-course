@@ -2,7 +2,7 @@
 {
   "title": "Robust prompt engineering",
   "module": "security-safety-and-ethics",
-  "order": 2,
+  "order": 3,
   "sources": [
     "ai-engineer"
   ],

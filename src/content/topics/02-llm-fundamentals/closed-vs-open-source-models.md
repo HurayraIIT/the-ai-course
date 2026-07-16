@@ -2,7 +2,7 @@
 {
   "title": "Closed vs Open Source Models",
   "module": "llm-fundamentals",
-  "order": 14,
+  "order": 15,
   "sources": [
     "ai-engineer"
   ],

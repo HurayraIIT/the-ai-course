@@ -2,7 +2,7 @@
 {
   "title": "Haystack",
   "module": "agent-frameworks",
-  "order": 4,
+  "order": 5,
   "sources": [
     "ai-engineer",
     "ai-agents"

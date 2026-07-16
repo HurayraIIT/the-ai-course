@@ -2,7 +2,7 @@
 {
   "title": "Perception / User Input",
   "module": "ai-agents",
-  "order": 9,
+  "order": 10,
   "sources": [
     "ai-agents"
   ],

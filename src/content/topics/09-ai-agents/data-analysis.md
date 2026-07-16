@@ -2,7 +2,7 @@
 {
   "title": "Data analysis",
   "module": "ai-agents",
-  "order": 4,
+  "order": 5,
   "sources": [
     "ai-agents"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "AI Safety and Ethics",
   "module": "security-safety-and-ethics",
-  "order": 11,
+  "order": 12,
   "sources": [
     "ai-engineer"
   ],

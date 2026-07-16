@@ -2,7 +2,7 @@
 {
   "title": "Ragas",
   "module": "evaluation-and-observability",
-  "order": 8,
+  "order": 9,
   "sources": [
     "ai-agents"
   ],

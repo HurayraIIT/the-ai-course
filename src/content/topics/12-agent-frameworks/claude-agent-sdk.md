@@ -2,7 +2,7 @@
 {
   "title": "Claude Agent SDK",
   "module": "agent-frameworks",
-  "order": 11,
+  "order": 12,
   "sources": [
     "ai-engineer"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "Acting / Tool Invocation",
   "module": "ai-agents",
-  "order": 11,
+  "order": 12,
   "sources": [
     "ai-agents"
   ],

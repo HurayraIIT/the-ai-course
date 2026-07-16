@@ -2,7 +2,7 @@
 {
   "title": "Type of Models",
   "module": "llm-fundamentals",
-  "order": 13,
+  "order": 14,
   "sources": [
     "ai-engineer"
   ],

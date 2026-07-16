@@ -2,7 +2,7 @@
 {
   "title": "LangSmith",
   "module": "evaluation-and-observability",
-  "order": 9,
+  "order": 10,
   "sources": [
     "ai-agents"
   ],

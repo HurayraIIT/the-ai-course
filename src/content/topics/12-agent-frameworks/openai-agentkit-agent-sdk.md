@@ -2,7 +2,7 @@
 {
   "title": "OpenAI AgentKit & Agent SDK",
   "module": "agent-frameworks",
-  "order": 10,
+  "order": 11,
   "sources": [
     "ai-engineer"
   ],

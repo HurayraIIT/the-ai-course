@@ -2,7 +2,7 @@
 {
   "title": "Adding end-user IDs in prompts",
   "module": "security-safety-and-ethics",
-  "order": 7,
+  "order": 8,
   "sources": [
     "ai-engineer"
   ],

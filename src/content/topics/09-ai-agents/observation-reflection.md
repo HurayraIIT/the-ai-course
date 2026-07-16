@@ -2,7 +2,7 @@
 {
   "title": "Observation & Reflection",
   "module": "ai-agents",
-  "order": 12,
+  "order": 13,
   "sources": [
     "ai-agents"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "Closed Weight Models",
   "module": "llm-fundamentals",
-  "order": 16,
+  "order": 17,
   "sources": [
     "ai-agents"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "Reason and Plan",
   "module": "ai-agents",
-  "order": 10,
+  "order": 11,
   "sources": [
     "ai-agents"
   ],

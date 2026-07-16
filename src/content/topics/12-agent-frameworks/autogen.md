@@ -2,7 +2,7 @@
 {
   "title": "AutoGen",
   "module": "agent-frameworks",
-  "order": 7,
+  "order": 8,
   "sources": [
     "ai-agents"
   ],

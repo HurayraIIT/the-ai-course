@@ -2,7 +2,7 @@
 {
   "title": "Agents Usecases",
   "module": "ai-agents",
-  "order": 1,
+  "order": 2,
   "sources": [
     "ai-engineer"
   ],

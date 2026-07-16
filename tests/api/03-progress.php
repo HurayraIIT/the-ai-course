@@ -62,11 +62,10 @@ check($s === 200, 're-reading a resource is fine');
 [, $d] = $c->get('/outline');
 check($d['completed_count'] === 1, 'no double-count on re-read');
 
-// Zero-resource lesson: fast-forward a dedicated user right up to it, then use the button
-$zero = $pdo->query(
-    'SELECT l.id, l.position, l.slug FROM lessons l LEFT JOIN resources r ON r.lesson_id = l.id
-     WHERE r.id IS NULL ORDER BY l.position LIMIT 1'
-)->fetch();
+// Zero-resource lesson: strip resources from the last lesson (every seeded lesson has
+// resources now), fast-forward a dedicated user right up to it, then use the button
+$zero = $pdo->query('SELECT id, position, slug FROM lessons ORDER BY position DESC LIMIT 1')->fetch();
+$pdo->exec("DELETE FROM resources WHERE lesson_id = {$zero['id']}");
 check($zero !== false, 'a zero-resource lesson exists');
 
 clear_rate_limits();

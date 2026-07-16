@@ -2,7 +2,7 @@
 {
   "title": "Reasoning vs Standard Models",
   "module": "llm-fundamentals",
-  "order": 11,
+  "order": 12,
   "sources": [
     "ai-agents"
   ],
@@ -26,7 +26,7 @@
 }
 ---
 
-A **standard model** answers immediately: your prompt goes in, the response streams out. A **reasoning model** (also called a *thinking* model) first spends tokens working through the problem — planning, checking intermediate steps, backtracking — before committing to an answer. This "thinking" is essentially **chain-of-thought** reasoning trained into the model and scaled up at inference time. OpenAI's o-series and GPT-5's thinking modes, Claude's **extended thinking**, Gemini's thinking variants, and DeepSeek-R1 all follow this pattern; by 2026 most frontier models are hybrids where you dial the reasoning effort up or down per request.
+A **standard model** answers immediately: your prompt goes in, the response streams out. A **reasoning model** (also called a *thinking* model) first spends tokens working through the problem — planning, checking intermediate steps, backtracking — before committing to an answer. This "thinking" is essentially **chain-of-thought** reasoning trained into the model and scaled up at inference time — the idea researchers call **test-time compute**: instead of making the model bigger, you let it spend more computation per question, and accuracy on hard problems climbs with the thinking budget. OpenAI's o-series and GPT-5's thinking modes, Claude's **extended thinking**, Gemini's thinking variants, and DeepSeek-R1 all follow this pattern; by 2026 most frontier models are hybrids where you dial the reasoning effort up or down per request.
 
 The tradeoff is the point: reasoning dramatically improves results on math, complex code, multi-step planning, and agentic tasks, but you pay for it in latency and thinking-token costs. Using a reasoning model to reformat JSON burns money and time for nothing; using a standard fast model to architect a migration plan gets you shallow answers. Model routing — matching each task to the cheapest model that does it well — is one of the highest-leverage cost decisions you'll make.
 

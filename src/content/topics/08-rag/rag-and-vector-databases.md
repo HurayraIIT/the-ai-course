@@ -2,7 +2,7 @@
 {
   "title": "RAG and Vector Databases",
   "module": "rag",
-  "order": 7,
+  "order": 8,
   "sources": [
     "ai-agents"
   ],

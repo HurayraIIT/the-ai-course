@@ -35,6 +35,7 @@ export const modules: Module[] = [
       'tokens',
       'model-weights-parameters',
       'training',
+      'post-training-and-rlhf',
       'pre-trained-models',
       'fine-tuning',
       'inference',
@@ -74,6 +75,8 @@ export const modules: Module[] = [
       'lm-studio',
       'self-hosted-models',
       'choosing-the-right-model',
+      'small-models-and-distillation',
+      'build-vs-integrate',
       'pricing-of-common-models',
       'token-based-pricing',
     ],
@@ -119,6 +122,7 @@ export const modules: Module[] = [
       'context-engineering',
       'prompt-vs-context-engineering',
       'context-compaction',
+      'long-context-and-lost-in-the-middle',
       'context-isolation',
     ],
   },
@@ -146,6 +150,7 @@ export const modules: Module[] = [
       'presence-penalty',
       'repetition-penalties',
       'prompt-caching',
+      'rate-limits-retries-and-reliability',
     ],
   },
   {
@@ -188,9 +193,11 @@ export const modules: Module[] = [
       'rag-vs-fine-tuning',
       'chunking',
       'retrieval-process',
+      'reranking',
       'generation',
       'rag-and-dynamic-filters',
       'rag-and-vector-databases',
+      'knowledge-graphs-and-graph-rag',
     ],
   },
   {
@@ -199,6 +206,7 @@ export const modules: Module[] = [
     description: 'From single prompts to autonomous loops: what agents are, where they shine, and the core agent architectures.',
     topics: [
       'ai-agents',
+      'workflows-vs-agents',
       'agents-usecases',
       'personal-assistant',
       'code-generation',
@@ -216,6 +224,7 @@ export const modules: Module[] = [
       'planner-executor',
       'dag-agents',
       'multi-agents',
+      'autonomy-levels-and-approval-gates',
     ],
   },
   {
@@ -259,6 +268,7 @@ export const modules: Module[] = [
     description: 'Building agents with (or without) a framework: LangChain, LlamaIndex, LangGraph, CrewAI, and the provider agent SDKs.',
     topics: [
       'manual-implementation',
+      'agent-harness-and-skills',
       'langchain',
       'llama-index',
       'langgraph',
@@ -291,6 +301,7 @@ export const modules: Module[] = [
       'connect-to-remote-server',
       'local-desktop',
       'remote-cloud',
+      'a2a-protocol',
     ],
   },
   {
@@ -320,6 +331,7 @@ export const modules: Module[] = [
     description: 'Knowing whether your AI system works: metrics, testing strategies, eval frameworks, and production tracing.',
     topics: [
       'metrics-to-track',
+      'eval-driven-development',
       'unit-testing-for-individual-tools',
       'integration-testing-for-flows',
       'human-in-the-loop-evaluation',
@@ -342,6 +354,7 @@ export const modules: Module[] = [
     topics: [
       'security-and-privacy-concerns',
       'prompt-injection-attacks',
+      'tool-poisoning-and-data-leakage',
       'robust-prompt-engineering',
       'conducting-adversarial-testing',
       'safety-red-team-testing',

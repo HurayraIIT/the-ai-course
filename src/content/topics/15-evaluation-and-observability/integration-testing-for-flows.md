@@ -2,7 +2,7 @@
 {
   "title": "Integration Testing for Flows",
   "module": "evaluation-and-observability",
-  "order": 2,
+  "order": 3,
   "sources": [
     "ai-agents"
   ],

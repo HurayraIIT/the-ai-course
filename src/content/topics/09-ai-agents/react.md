@@ -2,7 +2,7 @@
 {
   "title": "ReAct",
   "module": "ai-agents",
-  "order": 13,
+  "order": 14,
   "sources": [
     "ai-engineer",
     "ai-agents",

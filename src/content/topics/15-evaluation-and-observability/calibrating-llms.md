@@ -2,7 +2,7 @@
 {
   "title": "Calibrating LLMs",
   "module": "evaluation-and-observability",
-  "order": 6,
+  "order": 7,
   "sources": [
     "prompt-engineering"
   ],

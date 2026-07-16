@@ -2,7 +2,7 @@
 {
   "title": "Hallucination",
   "module": "llm-fundamentals",
-  "order": 12,
+  "order": 13,
   "sources": [
     "prompt-engineering"
   ],

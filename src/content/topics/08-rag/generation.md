@@ -2,7 +2,7 @@
 {
   "title": "Generation",
   "module": "rag",
-  "order": 5,
+  "order": 6,
   "sources": [
     "ai-engineer"
   ],

@@ -2,7 +2,7 @@
 {
   "title": "LangGraph",
   "module": "agent-frameworks",
-  "order": 3,
+  "order": 4,
   "sources": [
     "ai-agents"
   ],

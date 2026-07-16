@@ -2,7 +2,7 @@
 {
   "title": "Helicone",
   "module": "evaluation-and-observability",
-  "order": 11,
+  "order": 12,
   "sources": [
     "ai-agents"
   ],
