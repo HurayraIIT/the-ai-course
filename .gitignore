@@ -26,3 +26,4 @@ npm-debug.log*
 .playwright-cli/
 
 *.png*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
