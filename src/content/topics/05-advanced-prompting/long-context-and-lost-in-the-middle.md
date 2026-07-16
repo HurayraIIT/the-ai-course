@@ -3,12 +3,12 @@
   "title": "Long context and lost in the middle",
   "module": "advanced-prompting",
   "order": 8,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",
-      "title": "Lost in the Middle: How Language Models Use Long Contexts",
-      "url": "https://arxiv.org/abs/2307.03172"
+      "title": "Context Rot: How Increasing Input Tokens Impacts LLM Performance",
+      "url": "https://research.trychroma.com/context-rot"
     },
     {
       "type": "article",

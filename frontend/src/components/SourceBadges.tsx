@@ -1,8 +1,25 @@
 // Spans, not links: badges often sit inside an <a> row and anchors can't nest.
-const META: Record<string, { label: string; classes: string }> = {
-  'ai-engineer': { label: 'AI Engineer', classes: 'bg-accent-100 text-accent-800' },
-  'ai-agents': { label: 'AI Agents', classes: 'bg-emerald-100 text-emerald-800' },
-  'prompt-engineering': { label: 'Prompt Engineering', classes: 'bg-amber-100 text-amber-800' },
+const META: Record<string, { label: string; classes: string; title: string }> = {
+  'ai-engineer': {
+    label: 'AI Engineer',
+    classes: 'bg-accent-100 text-accent-800',
+    title: 'From the roadmap.sh AI Engineer roadmap',
+  },
+  'ai-agents': {
+    label: 'AI Agents',
+    classes: 'bg-emerald-100 text-emerald-800',
+    title: 'From the roadmap.sh AI Agents roadmap',
+  },
+  'prompt-engineering': {
+    label: 'Prompt Engineering',
+    classes: 'bg-amber-100 text-amber-800',
+    title: 'From the roadmap.sh Prompt Engineering roadmap',
+  },
+  new: {
+    label: 'New',
+    classes: 'bg-violet-100 text-violet-800',
+    title: 'Recently added lesson, written for this course',
+  },
 };
 
 export default function SourceBadges({ sources }: { sources: string[] }) {
@@ -16,7 +33,7 @@ export default function SourceBadges({ sources }: { sources: string[] }) {
           <span
             key={source}
             className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${meta.classes}`}
-            title={`From the roadmap.sh ${meta.label} roadmap`}
+            title={meta.title}
           >
             {meta.label}
           </span>

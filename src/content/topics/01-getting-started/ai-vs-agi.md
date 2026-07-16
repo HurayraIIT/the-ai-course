@@ -2,7 +2,7 @@
 {
   "title": "AI vs AGI",
   "module": "getting-started",
-  "order": 5,
+  "order": 3,
   "sources": [
     "ai-engineer",
     "prompt-engineering"
@@ -17,21 +17,6 @@
       "type": "article",
       "title": "What is AGI?",
       "url": "https://aws.amazon.com/what-is/artificial-general-intelligence/"
-    },
-    {
-      "type": "article",
-      "title": "The crucial difference between AI and AGI",
-      "url": "https://www.forbes.com/sites/bernardmarr/2024/05/20/the-crucial-difference-between-ai-and-agi/"
-    },
-    {
-      "type": "article",
-      "title": "Stop Worrying about AGI: The Immediate Danger is Reduced General Intelligence (RGI)",
-      "url": "https://towardsdatascience.com/stop-worrying-about-agi-the-immediate-danger-is-reduced-general-intelligence-rgi/"
-    },
-    {
-      "type": "article",
-      "title": "Artificial general intelligence - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Artificial_general_intelligence"
     }
   ]
 }

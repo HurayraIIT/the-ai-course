@@ -3,12 +3,12 @@
   "title": "Small models and distillation",
   "module": "model-landscape",
   "order": 21,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",
-      "title": "Distilling the Knowledge in a Neural Network",
-      "url": "https://arxiv.org/abs/1503.02531"
+      "title": "What is knowledge distillation? - IBM",
+      "url": "https://www.ibm.com/think/topics/knowledge-distillation"
     },
     {
       "type": "article",

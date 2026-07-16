@@ -3,7 +3,7 @@
   "title": "A2A protocol",
   "module": "mcp",
   "order": 12,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

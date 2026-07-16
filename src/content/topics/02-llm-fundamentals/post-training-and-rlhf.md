@@ -3,7 +3,7 @@
   "title": "Post-training and RLHF",
   "module": "llm-fundamentals",
   "order": 6,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",
@@ -12,8 +12,8 @@
     },
     {
       "type": "article",
-      "title": "Training language models to follow instructions (InstructGPT)",
-      "url": "https://arxiv.org/abs/2203.02155"
+      "title": "What is RLHF? - AWS",
+      "url": "https://aws.amazon.com/what-is/reinforcement-learning-from-human-feedback/"
     }
   ]
 }

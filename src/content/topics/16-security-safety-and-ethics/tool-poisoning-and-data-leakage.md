@@ -3,7 +3,7 @@
   "title": "Tool poisoning and data leakage",
   "module": "security-safety-and-ethics",
   "order": 2,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

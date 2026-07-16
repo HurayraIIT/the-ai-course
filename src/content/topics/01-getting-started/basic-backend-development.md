@@ -2,7 +2,7 @@
 {
   "title": "Basic Backend Development",
   "module": "getting-started",
-  "order": 6,
+  "order": 4,
   "sources": [
     "ai-agents"
   ],

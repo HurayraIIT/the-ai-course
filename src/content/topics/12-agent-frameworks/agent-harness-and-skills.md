@@ -3,7 +3,7 @@
   "title": "Agent harness and agent skills",
   "module": "agent-frameworks",
   "order": 1,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

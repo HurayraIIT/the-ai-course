@@ -2,7 +2,7 @@
 {
   "title": "REST API Knowledge",
   "module": "getting-started",
-  "order": 8,
+  "order": 6,
   "sources": [
     "ai-agents"
   ],

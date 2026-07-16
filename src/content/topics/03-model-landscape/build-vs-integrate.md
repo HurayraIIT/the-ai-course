@@ -3,17 +3,12 @@
   "title": "Build vs integrate",
   "module": "model-landscape",
   "order": 22,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",
       "title": "Building LLM applications for production",
       "url": "https://huyenchip.com/2023/04/11/llm-engineering.html"
-    },
-    {
-      "type": "article",
-      "title": "The Rise of the AI Engineer",
-      "url": "https://www.latent.space/p/ai-engineer"
     }
   ]
 }

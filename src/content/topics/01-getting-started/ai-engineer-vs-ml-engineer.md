@@ -2,25 +2,20 @@
 {
   "title": "AI Engineer vs ML Engineer",
   "module": "getting-started",
-  "order": 3,
+  "order": 2,
   "sources": [
     "ai-engineer"
   ],
   "resources": [
     {
       "type": "article",
-      "title": "What does an AI Engineer do?",
-      "url": "https://www.codecademy.com/resources/blog/what-does-an-ai-engineer-do/"
+      "title": "Machine Learning vs AI Engineer: What Are the Differences?",
+      "url": "https://towardsdatascience.com/machine-learning-vs-ai-engineer-no-confusing-jargon/"
     },
     {
       "type": "article",
       "title": "What is an ML Engineer?",
       "url": "https://www.coursera.org/articles/what-is-machine-learning-engineer"
-    },
-    {
-      "type": "article",
-      "title": "Machine Learning vs AI Engineer: What Are the Differences?",
-      "url": "https://towardsdatascience.com/machine-learning-vs-ai-engineer-no-confusing-jargon/"
     }
   ]
 }

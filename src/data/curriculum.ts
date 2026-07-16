@@ -15,9 +15,7 @@ export const modules: Module[] = [
     topics: [
       'introduction',
       'what-is-an-ai-engineer',
-      'roles-and-responsiblities',
       'ai-engineer-vs-ml-engineer',
-      'impact-on-product-development',
       'ai-vs-agi',
       'basic-backend-development',
       'git-and-terminal-usage',

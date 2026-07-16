@@ -3,12 +3,12 @@
   "title": "Knowledge graphs and GraphRAG",
   "module": "rag",
   "order": 9,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",
-      "title": "GraphRAG: From Local to Global",
-      "url": "https://arxiv.org/abs/2404.16130"
+      "title": "What is GraphRAG? - Neo4j",
+      "url": "https://neo4j.com/blog/genai/what-is-graphrag/"
     },
     {
       "type": "article",

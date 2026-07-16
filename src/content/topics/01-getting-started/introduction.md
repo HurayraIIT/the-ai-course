@@ -9,16 +9,6 @@
   ],
   "resources": [
     {
-      "type": "article",
-      "title": "AI Engineering",
-      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence_engineering"
-    },
-    {
-      "type": "video",
-      "title": "AI vs Machine Learning",
-      "url": "https://www.youtube.com/watch?v=4RixMPF4xis"
-    },
-    {
       "type": "video",
       "title": "AI vs Machine Learning vs Deep Learning vs GenAI",
       "url": "https://youtu.be/qYNweeDHiyU?si=eRJXjtk8Q-RKQ8Ms"

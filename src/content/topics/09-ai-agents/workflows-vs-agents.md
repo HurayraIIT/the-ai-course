@@ -3,7 +3,7 @@
   "title": "Workflows vs agents",
   "module": "ai-agents",
   "order": 1,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

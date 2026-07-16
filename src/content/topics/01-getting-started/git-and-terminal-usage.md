@@ -2,15 +2,15 @@
 {
   "title": "Git and Terminal Usage",
   "module": "getting-started",
-  "order": 7,
+  "order": 5,
   "sources": [
     "ai-agents"
   ],
   "resources": [
     {
-      "type": "official",
-      "title": "Git Basics",
-      "url": "https://git-scm.com/doc"
+      "type": "video",
+      "title": "Git and Terminal Basics Crash Course (YouTube)",
+      "url": "https://www.youtube.com/watch?v=HVsySz-h9r4"
     },
     {
       "type": "official",
@@ -18,9 +18,9 @@
       "url": "https://ubuntu.com/tutorials/command-line-for-beginners#1-overview"
     },
     {
-      "type": "video",
-      "title": "Git and Terminal Basics Crash Course (YouTube)",
-      "url": "https://www.youtube.com/watch?v=HVsySz-h9r4"
+      "type": "official",
+      "title": "Git Basics",
+      "url": "https://git-scm.com/doc"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "title": "Autonomy levels and approval gates",
   "module": "ai-agents",
   "order": 19,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

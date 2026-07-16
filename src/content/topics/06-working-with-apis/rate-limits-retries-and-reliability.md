@@ -3,7 +3,7 @@
   "title": "Rate limits, retries, and reliability",
   "module": "working-with-apis",
   "order": 19,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

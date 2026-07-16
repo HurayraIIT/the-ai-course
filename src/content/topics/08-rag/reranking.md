@@ -3,7 +3,7 @@
   "title": "Reranking",
   "module": "rag",
   "order": 5,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",

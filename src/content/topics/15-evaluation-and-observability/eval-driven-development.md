@@ -3,7 +3,7 @@
   "title": "Eval-driven development",
   "module": "evaluation-and-observability",
   "order": 1,
-  "sources": [],
+  "sources": ["new"],
   "resources": [
     {
       "type": "article",
