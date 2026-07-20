@@ -2,7 +2,7 @@
 {
   "title": "Build vs integrate",
   "module": "model-landscape",
-  "order": 22,
+  "order": 23,
   "sources": ["new"],
   "resources": [
     {

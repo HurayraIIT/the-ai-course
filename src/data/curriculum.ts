@@ -71,6 +71,7 @@ export const modules: Module[] = [
       'transformers-js',
       'ollama',
       'lm-studio',
+      'quantization',
       'self-hosted-models',
       'choosing-the-right-model',
       'small-models-and-distillation',

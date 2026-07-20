@@ -21,6 +21,11 @@
       "type": "article",
       "title": "Claude Code vs Cursor — DataCamp",
       "url": "https://www.datacamp.com/blog/claude-code-vs-cursor"
+    },
+    {
+      "type": "article",
+      "title": "I ported Kubernetes to the browser",
+      "url": "https://ngrok.com/blog/i-ported-kubernetes-to-the-browser"
     }
   ]
 }

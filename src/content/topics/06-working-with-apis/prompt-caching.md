@@ -13,6 +13,11 @@
       "url": "https://www.ibm.com/think/topics/prompt-caching"
     },
     {
+      "type": "article",
+      "title": "Prompt caching: 10x cheaper LLM tokens, but how?",
+      "url": "https://ngrok.com/blog/prompt-caching"
+    },
+    {
       "type": "video",
       "title": "What is Prompt Caching? Optimize LLM Latency with AI Transformers",
       "url": "https://www.youtube.com/watch?v=u57EnkQaUTY"

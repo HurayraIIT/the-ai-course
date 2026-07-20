@@ -2,7 +2,7 @@
 {
   "title": "Self-Hosted Models",
   "module": "model-landscape",
-  "order": 19,
+  "order": 20,
   "sources": [
     "ai-engineer"
   ],

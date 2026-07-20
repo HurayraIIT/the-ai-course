@@ -2,7 +2,7 @@
 {
   "title": "Choosing the Right Model",
   "module": "model-landscape",
-  "order": 20,
+  "order": 21,
   "sources": [
     "ai-engineer"
   ],
@@ -16,6 +16,11 @@
       "type": "article",
       "title": "Beyond vibes: How to properly select the right LLM for the right task",
       "url": "https://aws.amazon.com/blogs/machine-learning/beyond-vibes-how-to-properly-select-the-right-llm-for-the-right-task/"
+    },
+    {
+      "type": "article",
+      "title": "What those AI benchmark numbers mean",
+      "url": "https://ngrok.com/blog/ai-benchmarks"
     }
   ]
 }

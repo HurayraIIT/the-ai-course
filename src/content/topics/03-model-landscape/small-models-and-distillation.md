@@ -2,7 +2,7 @@
 {
   "title": "Small models and distillation",
   "module": "model-landscape",
-  "order": 21,
+  "order": 22,
   "sources": ["new"],
   "resources": [
     {

@@ -2,7 +2,7 @@
 {
   "title": "Pricing of Common Models",
   "module": "model-landscape",
-  "order": 23,
+  "order": 24,
   "sources": [
     "ai-agents"
   ],

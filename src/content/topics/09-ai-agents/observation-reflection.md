@@ -16,6 +16,11 @@
       "type": "article",
       "title": "Self-Reflective AI: Building Agents That Learn by Observing Themselves",
       "url": "https://arxiv.org/abs/2302.14045"
+    },
+    {
+      "type": "article",
+      "title": "Lessons from my self-improving coding agent",
+      "url": "https://ngrok.com/blog/bmo-self-improving-coding-agent"
     }
   ]
 }
