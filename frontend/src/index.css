@@ -1,6 +1,13 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Typography wraps inline <code> in literal backticks via ::before/::after. Our lesson
+   bodies use backticks for identifiers, so they'd render as `like this`. */
+.prose code::before,
+.prose code::after {
+  content: none;
+}
+
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --color-accent-100: oklch(0.93 0.04 265);

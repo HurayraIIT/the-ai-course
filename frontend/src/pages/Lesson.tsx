@@ -17,6 +17,7 @@ interface Resource {
 interface LessonData {
   id: number;
   position: number;
+  total_lessons: number;
   slug: string;
   title: string;
   sources: string[];
@@ -111,7 +112,7 @@ export default function Lesson() {
   return (
     <article>
       <div className="flex flex-wrap items-center gap-3">
-        <p className="text-sm text-zinc-500">Lesson {lesson.position} of 240</p>
+        <p className="text-sm text-zinc-500">Lesson {lesson.position} of {lesson.total_lessons}</p>
         <SourceBadges sources={lesson.sources} />
       </div>
       <PageTitle>{lesson.title}</PageTitle>

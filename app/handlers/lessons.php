@@ -87,6 +87,7 @@ function handle_lesson(array $user, array $params): void
     json_response([
         'id' => (int)$lesson['id'],
         'position' => (int)$lesson['position'],
+        'total_lessons' => (int)pdo()->query('SELECT COUNT(*) FROM lessons')->fetchColumn(),
         'slug' => $lesson['slug'],
         'module_slug' => $lesson['module_slug'],
         'title' => $lesson['title'],
